@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>มะเร็งปอดวิกฤต คร่า 40 ชีวิตต่อวัน ฝุ่น PM2.5 ตัวการร้าย | タイ語学習</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #1a5276;
+        --primary-light: #2e86c1;
+        --primary-pale: #d6eaf8;
+        --accent: #c0392b;
+        --accent-light: #fadbd8;
+        --bg: #f4f8fb;
+        --bg2: #eaf2fb;
+        --text: #1a2533;
+        --text-light: #3d5a73;
+        --border: #aed6f1;
+        --white: #ffffff;
+        --shadow: 0 2px 12px rgba(26, 82, 118, 0.1);
+        --shadow-lg: 0 6px 28px rgba(26, 82, 118, 0.15);
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: "Noto Sans JP", "Sarabun", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #0d2b45 0%, #1a5276 55%, #2471a3 100%);
+        color: #fff;
+        padding: 36px 24px 28px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "🫁";
+        position: absolute;
+        font-size: 140px;
+        opacity: 0.06;
+        top: -20px;
+        left: -20px;
+      }
+      header::after {
+        content: "😷";
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.06;
+        bottom: -20px;
+        right: -10px;
+      }
+      header h1 {
+        font-family: "Sarabun", sans-serif;
+        font-size: clamp(1.05rem, 3.2vw, 1.55rem);
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      header h2 {
+        font-family: "Noto Serif JP", serif;
+        font-size: clamp(0.88rem, 2.6vw, 1.1rem);
+        font-weight: 400;
+        opacity: 0.92;
+        margin-bottom: 8px;
+      }
+      .header-source {
+        font-size: 0.78rem;
+        opacity: 0.75;
+        margin-top: 6px;
+      }
+      .header-source a { color: #aed6f1; }
+
+      /* TABS */
+      .tab-nav {
+        display: flex;
+        overflow-x: auto;
+        background: var(--white);
+        border-bottom: 2px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 8px rgba(26, 82, 118, 0.08);
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-nav::-webkit-scrollbar { height: 3px; }
+      .tab-nav::-webkit-scrollbar-track { background: #eaf2fb; }
+      .tab-nav::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 2px; }
+
+      .tab-btn {
+        flex: none;
+        padding: 14px 18px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--text-light);
+        cursor: pointer;
+        white-space: nowrap;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        letter-spacing: 0.02em;
+      }
+      .tab-btn:hover { background: var(--bg2); color: var(--primary); }
+      .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); background: var(--primary-pale); }
+
+      .tab-content { display: none; }
+      .tab-content.active { display: block; }
+
+      .content-wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 20px 60px;
+      }
+
+      /* ARTICLE TAB */
+      .article-intro {
+        background: linear-gradient(135deg, #d6eaf8, #aed6f1);
+        border-left: 4px solid var(--primary);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 28px;
+        font-size: 0.92rem;
+        color: var(--text-light);
+      }
+      .article-section { margin-bottom: 36px; }
+      .article-section h3 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary);
+        border-left: 4px solid var(--primary-light);
+        padding: 6px 12px;
+        background: var(--bg2);
+        border-radius: 0 6px 6px 0;
+        margin-bottom: 16px;
+      }
+      .para-block { margin-bottom: 20px; }
+      .para-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: var(--text);
+        background: var(--white);
+        border-radius: 8px;
+        padding: 14px 18px;
+        border: 1px solid var(--border);
+      }
+      .para-jp {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.86rem;
+        line-height: 1.7;
+        color: var(--text-light);
+        background: var(--bg2);
+        border-radius: 8px;
+        padding: 12px 18px;
+        border: 1px solid var(--border);
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      /* QUIZ TAB */
+      .quiz-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .quiz-num {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .quiz-q-thai { font-family: "Sarabun", sans-serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+      .quiz-q-jp { font-size: 0.84rem; color: var(--text-light); margin-bottom: 14px; }
+      .quiz-options { list-style: none; margin-bottom: 12px; }
+      .quiz-options li {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--border);
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-family: "Sarabun", sans-serif;
+        font-size: 0.97rem;
+        transition: all 0.15s;
+        background: var(--bg);
+      }
+      .quiz-options li:hover { background: var(--primary-pale); border-color: var(--primary-light); }
+      .answer-btn {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 18px;
+        font-size: 0.87rem;
+        font-family: "Noto Sans JP", sans-serif;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .answer-btn:hover { background: #0d2b45; }
+      .answer-box {
+        display: none;
+        margin-top: 12px;
+        background: linear-gradient(135deg, #d6eaf8, #aed6f1);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        border-left: 4px solid var(--primary);
+      }
+      .answer-box .correct { font-weight: 700; color: var(--primary); font-size: 1rem; }
+      .answer-box .exp { color: var(--text-light); margin-top: 4px; font-size: 0.85rem; }
+
+      /* DIALOGUE TAB */
+      .dialogue-intro {
+        background: var(--accent-light);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-bottom: 24px;
+        font-size: 0.88rem;
+        color: #7c1e1e;
+        border-left: 4px solid var(--accent);
+      }
+      .dialogue-turn { display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start; }
+      .dialogue-turn.right { flex-direction: row-reverse; }
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-family: "Sarabun", sans-serif;
+      }
+      .avatar-a { background: var(--primary-pale); color: var(--primary); }
+      .avatar-b { background: var(--accent-light); color: var(--accent); }
+      .bubble {
+        border-radius: 14px;
+        padding: 12px 16px;
+        max-width: 75%;
+        box-shadow: var(--shadow);
+      }
+      .bubble-a { background: var(--white); border: 1px solid var(--border); border-top-left-radius: 4px; }
+      .bubble-b { background: var(--primary-pale); border: 1px solid var(--primary-light); border-top-right-radius: 4px; }
+      .bubble-name { font-size: 0.75rem; font-weight: 700; margin-bottom: 4px; color: var(--text-light); }
+      .bubble-thai { font-family: "Sarabun", sans-serif; font-size: 1rem; line-height: 1.65; color: var(--text); }
+      .bubble-jp { font-size: 0.8rem; line-height: 1.6; color: var(--text-light); margin-top: 5px; padding-top: 5px; border-top: 1px dashed var(--border); }
+
+      /* VOCAB TAB */
+      .vocab-category { margin-bottom: 36px; }
+      .vocab-cat-title {
+        font-family: "Noto Serif JP", serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 8px 16px;
+        border-radius: 7px;
+        border-left: 5px solid var(--primary);
+        margin-bottom: 12px;
+      }
+      .vocab-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .vocab-table th {
+        background: var(--primary);
+        color: #fff;
+        padding: 10px 12px;
+        text-align: left;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+      .vocab-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+      .vocab-table tr:last-child td { border-bottom: none; }
+      .vocab-table tr:nth-child(even) td { background: var(--bg2); }
+      .thai-word { font-family: "Sarabun", sans-serif; font-size: 1rem; font-weight: 600; color: var(--primary); }
+      .sup-note { font-size: 0.82rem; color: var(--text-light); }
+
+      @media (max-width: 480px) {
+        .vocab-table { font-size: 0.82rem; }
+        .vocab-table th, .vocab-table td { padding: 7px 8px; }
+        .thai-word { font-size: 0.93rem; }
+      }
+
+      /* EXAMPLES TAB */
+      .example-section { margin-bottom: 30px; }
+      .example-section h4 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 6px 14px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        border-left: 4px solid var(--primary-light);
+      }
+      .example-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 10px;
+      }
+      .ex-thai { font-family: "Sarabun", sans-serif; font-size: 1rem; line-height: 1.75; color: var(--text); margin-bottom: 4px; }
+      .ex-jp { font-size: 0.84rem; color: var(--text-light); line-height: 1.6; }
+      .highlight-word { font-weight: 700; color: #c0392b; }
+
+      @media (max-width: 600px) {
+        .content-wrap { padding: 20px 14px 50px; }
+        header { padding: 24px 16px 20px; }
+        .tab-btn { padding: 12px 13px; font-size: 0.82rem; }
+        .bubble { max-width: 85%; }
+        header h1 { font-size: 1rem; }
+        header h2 { font-size: 0.88rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>มะเร็งปอดวิกฤต คร่า 40 ชีวิตต่อวัน ฝุ่น PM2.5 ตัวการร้าย!</h1>
+      <h2>肺がん危機・1日40人死亡 — PM2.5が主犯！</h2>
+      <div class="header-source">出典: <a href="https://www.bangkokbiznews.com/health/well-being/1185465" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ</div>
+    </header>
+
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('article', event)">📄 記事</button>
+      <button class="tab-btn" onclick="showTab('quiz', event)">❓ 問題</button>
+      <button class="tab-btn" onclick="showTab('dialogue', event)">💬 会話</button>
+      <button class="tab-btn" onclick="showTab('vocab', event)">📚 単語</button>
+      <button class="tab-btn" onclick="showTab('examples', event)">✏️ 例文</button>
+    </nav>
+
+    <!-- ===================== TAB 1: 記事 ===================== -->
+    <div id="tab-article" class="tab-content active">
+      <div class="content-wrap">
+        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+
+        <div class="article-section">
+          <div class="para-block">
+            <div class="para-thai">
+              จากข้อมูลของ<strong>สถาบันมะเร็งแห่งชาติ</strong> พบว่า <strong>มะเร็งปอด</strong>เป็นโรคที่น่ากลัว เพราะทำให้คนไทยเสียชีวิตวันละ 40 คน และมีผู้ป่วยใหม่เพิ่มขึ้นวันละ 48 คน
+              สาเหตุสำคัญอย่างหนึ่งคือ <strong>ฝุ่น PM2.5</strong> ซึ่งองค์การอนามัยโลก (WHO) บอกว่าเป็นสารที่ทำให้เกิดมะเร็งได้ เหมือนกับบุหรี่
+            </div>
+            <div class="para-jp">
+              国立がん研究所のデータによると、<strong>肺がん</strong>は恐ろしい病気で、タイ人を1日40人死亡させており、新規患者も1日48人増えています。主な原因のひとつは<strong>PM2.5粉塵</strong>で、世界保健機関（WHO）はこれをタバコと同様に発がん性物質に指定しています。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ในงานสัมมนาชื่อ "มะเร็งรู้ทัน ป้องกันเป็น รักษาได้" แพทย์ รศ.นพ.นรินทร์ วรวุฒิ บอกว่า WHO คาดว่าจำนวนผู้ป่วยมะเร็งทั่วโลกจะเพิ่มขึ้นมากกว่า 77% ในช่วง 25 ปีข้างหน้า
+            </div>
+            <div class="para-jp">
+              「がんを知ってしっかり予防・治療できる」というセミナーで、ナリン医師はWHOの予測として、世界のがん患者数が今後25年間で77%以上増加すると述べました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              สถิติมะเร็งในไทยปี 2022 พบว่า มีคนไทยป่วยเป็นมะเร็งใหม่ปีละประมาณ 140,000 คน และเสียชีวิตประมาณ 83,000 คน หรือวันละ 227 คน มะเร็งเต้านมพบมากที่สุด รองมาคือมะเร็งปอด
+              ซึ่งมีผู้ป่วยใหม่วันละ 48 คน และเสียชีวิตวันละ 40 คน
+            </div>
+            <div class="para-jp">
+              2022年のタイのがん統計では、年間約14万人が新たにがんと診断され、約8万3千人（1日227人）が死亡しています。最多は乳がんで、次いで肺がんが続きます。肺がんの新規患者は1日48人、死亡者は1日40人です。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>PM2.5 คืออะไร และทำร้ายปอดอย่างไร（PM2.5とは何か、肺にどう害を与えるか）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              แพทย์อธิบายว่า มะเร็งไม่ชอบออกซิเจน แต่ชอบสิ่งแวดล้อมที่เป็นกรด ถ้าเราหายใจเอาออกซิเจนดี ๆ เข้าไปมาก เลือดจะไหลเวียนได้ดี ภูมิคุ้มกันแข็งแรงขึ้น และร่างกายก็จะแข็งแรง
+              แต่อากาศในไทยตอนนี้สกปรกมาก ทำให้ทุกคนมีความเสี่ยงเป็นมะเร็งปอดได้
+            </div>
+            <div class="para-jp">
+              医師によると、がん細胞は酸素が嫌いで酸性の環境を好みます。たくさんの新鮮な酸素を吸えば血液循環が良くなり、免疫力が高まり、体が丈夫になります。しかし現在のタイの大気は非常に汚染されており、誰もが肺がんのリスクにさらされています。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              สิ่งที่น่ากลัวคือ ฝุ่น PM2.5 มีขนาดเล็กมาก เมื่อเราหายใจเข้าไป ฝุ่นจะเข้าลึกถึงหลอดลมและเข้าไปในกระแสเลือดได้ ทำให้เกิดผลเสียต่อร่างกายหลายอย่าง เช่น ถุงลมโป่งพอง ปอดอักเสบ
+              ติดเชื้อได้ง่าย และที่สำคัญ PM2.5 สามารถกระตุ้นให้เซลล์ปกติกลายเป็นเซลล์มะเร็งได้
+            </div>
+            <div class="para-jp">
+              怖いのは、PM2.5はとても粒子が小さいため、吸い込むと気管支の奥まで到達し、血流にまで入り込むことです。肺気腫・肺炎・感染症のリスクが高まり、さらに重要なことに、PM2.5は正常な細胞をがん細胞に変化させる可能性があります。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>วิธีป้องกันมะเร็งปอด（肺がんの予防方法）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              แพทย์แนะนำว่า เพื่อป้องกันมะเร็งปอด ควรหลีกเลี่ยงมลพิษทางอากาศ ออกกำลังกายในที่ที่อากาศสะอาด และรับประทานอาหารที่ช่วยต้านการอักเสบและต้านอนุมูลอิสระ เช่น
+              บร็อคโคลี ชาเขียว แครอท ฟักทอง ขิง และขมิ้นชัน
+            </div>
+            <div class="para-jp">
+              医師の勧めによると、肺がん予防のために大気汚染を避け、空気のきれいな場所で運動し、抗炎症・抗酸化食品を摂ることが大切です。具体的にはブロッコリー・緑茶・ニンジン・かぼちゃ・ショウガ・ウコンなどが挙げられます。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              นอกจากนี้ ควรตรวจสุขภาพประจำปีทุกปี โดยเฉพาะคนที่สูบบุหรี่หรือเคยสูบ มีประวัติโรคปอด หรืออยู่ในที่ที่มีมลพิษมาก การพบมะเร็งปอดตั้งแต่ระยะแรก ทำให้มีโอกาสรักษาหายได้ถึง 80%
+            </div>
+            <div class="para-jp">
+              さらに、毎年健康診断を受けることが重要です。特に現在・過去の喫煙者、肺疾患の既往歴がある人、汚染の多い環境に住む人は要注意です。肺がんを初期段階で発見すれば、治癒率は80%まで高まります。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 2: 問題 ===================== -->
+    <div id="tab-quiz" class="tab-content">
+      <div class="content-wrap">
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:1.2rem;color:var(--primary);margin-bottom:24px">📝 内容確認問題（10問）</h2>
+
+        <!-- Q1 -->
+        <div class="quiz-item">
+          <div class="quiz-num">1</div>
+          <div class="quiz-q-thai">มะเร็งปอดทำให้คนไทยเสียชีวิตวันละกี่คน?</div>
+          <div class="quiz-q-jp">肺がんで毎日何人のタイ人が死亡している？</div>
+          <ul class="quiz-options">
+            <li>ก. วันละ 48 คน（1日48人）</li>
+            <li>ข. วันละ 40 คน（1日40人）</li>
+            <li>ค. วันละ 227 คน（1日227人）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. วันละ 40 คน（1日40人）</div>
+            <div class="exp">肺がんによる死亡者は1日40人。新規患者は1日48人、全がん死亡は1日227人です。</div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-item">
+          <div class="quiz-num">2</div>
+          <div class="quiz-q-thai">ในปี 2022 มีคนไทยป่วยเป็นมะเร็งใหม่ปีละประมาณกี่คน?</div>
+          <div class="quiz-q-jp">2022年のタイでの年間新規がん患者数は？</div>
+          <ul class="quiz-options">
+            <li>ก. ประมาณ 83,000 คน（約83,000人）</li>
+            <li>ข. ประมาณ 100,000 คน（約100,000人）</li>
+            <li>ค. ประมาณ 140,000 คน（約140,000人）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. ประมาณ 140,000 คน（約140,000人）</div>
+            <div class="exp">年間約14万人が新たにがんと診断されます。死亡者は約83,000人です。</div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-item">
+          <div class="quiz-num">3</div>
+          <div class="quiz-q-thai">WHO คาดว่าผู้ป่วยมะเร็งทั่วโลกจะเพิ่มขึ้นเท่าไรใน 25 ปีข้างหน้า?</div>
+          <div class="quiz-q-jp">WHOが予測する今後25年間の世界のがん患者増加率は？</div>
+          <ul class="quiz-options">
+            <li>ก. มากกว่า 50%（50%以上）</li>
+            <li>ข. มากกว่า 77%（77%以上）</li>
+            <li>ค. มากกว่า 100%（100%以上）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. มากกว่า 77%（77%以上）</div>
+            <div class="exp">WHOは世界のがん患者が25年以内に77%以上増加すると予測しています。</div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-item">
+          <div class="quiz-num">4</div>
+          <div class="quiz-q-thai">มะเร็งชอบสิ่งแวดล้อมแบบใด?</div>
+          <div class="quiz-q-jp">がん細胞はどのような環境を好む？</div>
+          <ul class="quiz-options">
+            <li>ก. สิ่งแวดล้อมที่มีออกซิเจนมาก（酸素の多い環境）</li>
+            <li>ข. สิ่งแวดล้อมที่เป็นกรด（酸性の環境）</li>
+            <li>ค. สิ่งแวดล้อมที่สะอาด（清潔な環境）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. สิ่งแวดล้อมที่เป็นกรด（酸性の環境）</div>
+            <div class="exp">がん細胞は酸素を嫌い、酸性の環境を好みます。酸素を十分に摂ることで免疫力が上がり、がんを抑制できます。</div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-item">
+          <div class="quiz-num">5</div>
+          <div class="quiz-q-thai">ฝุ่น PM2.5 เป็นอันตรายเพราะอะไร?</div>
+          <div class="quiz-q-jp">PM2.5粉塵が危険な理由は？</div>
+          <ul class="quiz-options">
+            <li>ก. มีกลิ่นเหม็นมาก（においが強烈）</li>
+            <li>ข. มีขนาดเล็กมาก เข้าสู่หลอดลมและกระแสเลือดได้（非常に小さく気管支や血液に入る）</li>
+            <li>ค. ทำให้ผิวหนังอักเสบ（皮膚に炎症を起こす）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. มีขนาดเล็กมาก เข้าสู่หลอดลมและกระแสเลือดได้（非常に小さく気管支や血液に入る）</div>
+            <div class="exp">PM2.5の粒子は極めて小さく、肺の奥・気管支・血流にまで入り込みます。これが組織へのダメージを引き起こします。</div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="quiz-item">
+          <div class="quiz-num">6</div>
+          <div class="quiz-q-thai">มะเร็งชนิดใดพบมากที่สุดในประเทศไทย?</div>
+          <div class="quiz-q-jp">タイで最も多いがんは？</div>
+          <ul class="quiz-options">
+            <li>ก. มะเร็งปอด（肺がん）</li>
+            <li>ข. มะเร็งตับ（肝臓がん）</li>
+            <li>ค. มะเร็งเต้านม（乳がん）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. มะเร็งเต้านม（乳がん）</div>
+            <div class="exp">乳がんが第1位で、肺がんは第2位です。ただし肺がんは死亡率が非常に高いため特に注意が必要です。</div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="quiz-item">
+          <div class="quiz-num">7</div>
+          <div class="quiz-q-thai">การพบมะเร็งปอดในระยะแรก มีโอกาสรักษาหายได้เท่าไร?</div>
+          <div class="quiz-q-jp">肺がんを初期に発見した場合の治癒率は？</div>
+          <ul class="quiz-options">
+            <li>ก. 50%</li>
+            <li>ข. 80%</li>
+            <li>ค. 95%</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 80%</div>
+            <div class="exp">初期に発見すれば治癒率は80%まで高まります。定期的な健康診断の重要性を示しています。</div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="quiz-item">
+          <div class="quiz-num">8</div>
+          <div class="quiz-q-thai">ข้อใดเป็นอาหารที่ช่วยต้านมะเร็งที่กล่าวถึงในบทความ?</div>
+          <div class="quiz-q-jp">記事で紹介された抗がん食品はどれ？</div>
+          <ul class="quiz-options">
+            <li>ก. บร็อคโคลี ชาเขียว ขิง（ブロッコリー・緑茶・ショウガ）</li>
+            <li>ข. กาแฟ น้ำตาล เนื้อสัตว์（コーヒー・砂糖・肉）</li>
+            <li>ค. ขนมหวาน ผลไม้กระป๋อง（お菓子・缶詰の果物）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ก. บร็อคโคลี ชาเขียว ขิง（ブロッコリー・緑茶・ショウガ）</div>
+            <div class="exp">ブロッコリー・緑茶・ニンジン・かぼちゃ・ショウガ・ウコンなどの抗炎症・抗酸化食品が推奨されています。</div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="quiz-item">
+          <div class="quiz-num">9</div>
+          <div class="quiz-q-thai">PM2.5 ส่งผลเสียอะไรต่อปอด?</div>
+          <div class="quiz-q-jp">PM2.5が肺に与える悪影響は？</div>
+          <ul class="quiz-options">
+            <li>ก. ทำให้ปอดโตขึ้น（肺を大きくする）</li>
+            <li>ข. ทำให้ถุงลมโป่งพอง ปอดอักเสบ และกระตุ้นเซลล์มะเร็ง（肺気腫・肺炎・がん細胞の活性化）</li>
+            <li>ค. ทำให้หัวใจเต้นเร็วขึ้น（心拍数が増加する）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ทำให้ถุงลมโป่งพอง ปอดอักเสบ และกระตุ้นเซลล์มะเร็ง（肺気腫・肺炎・がん細胞の活性化）</div>
+            <div class="exp">PM2.5は肺気腫・肺炎を引き起こし、さらに正常な細胞をがん細胞に変化させる危険性があります。</div>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="quiz-item">
+          <div class="quiz-num">10</div>
+          <div class="quiz-q-thai">ใครควรตรวจสุขภาพปอดเป็นพิเศษ?</div>
+          <div class="quiz-q-jp">特に肺の健康診断を受けるべき人は？</div>
+          <ul class="quiz-options">
+            <li>ก. คนที่ออกกำลังกายบ่อย（よく運動する人）</li>
+            <li>ข. คนที่ชอบทานผัก（野菜が好きな人）</li>
+            <li>ค. คนที่สูบบุหรี่ มีประวัติโรคปอด หรืออยู่ในพื้นที่มลพิษ（喫煙者・肺疾患歴・汚染地域居住者）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. คนที่สูบบุหรี่ มีประวัติโรคปอด หรืออยู่ในพื้นที่มลพิษ（喫煙者・肺疾患歴・汚染地域居住者）</div>
+            <div class="exp">これらのリスクグループは定期的な検診が特に重要です。早期発見が治癒率を大幅に高めます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 3: 会話 ===================== -->
+    <div id="tab-dialogue" class="tab-content">
+      <div class="content-wrap">
+        <div class="dialogue-intro">💬 登場人物: <strong>เฟิร์น (ファーン)</strong> と <strong>โอม (オーム)</strong> — 大学の同期2人がランチ中に話しています。</div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">โอม วันนี้ฝุ่นเยอะมากเลยนะ ใส่หน้ากากมาไหม?</div>
+            <div class="bubble-jp">オーム、今日すごく粉塵が多いね。マスク着けてきた？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">ลืมใส่เลยอยู่ เมื่อเช้าค่า PM2.5 เกิน 100 เลยนะ น่ากลัวจัง</div>
+            <div class="bubble-jp">忘れてきちゃった。今朝PM2.5が100超えてたよね。怖いな。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">ใช่เลย เพิ่งอ่านข่าวมาว่า มะเร็งปอดทำให้คนไทยเสียชีวิตวันละ 40 คนแล้วนะ PM2.5 เป็นสาเหตุหลักอย่างหนึ่งเลย</div>
+            <div class="bubble-jp">そうなの。さっきニュース読んだんだけど、肺がんでタイ人が1日40人も死んでるって。PM2.5が主要な原因のひとつなんだって。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">โห เยอะมากเลย แล้ว PM2.5 มันทำร้ายร่างกายยังไงอ่ะ?</div>
+            <div class="bubble-jp">それは多い！PM2.5って体にどんな害があるの？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">มันมีขนาดเล็กมากเลย สูดเข้าไปแล้วเข้าถึงหลอดลมได้เลย แล้วยังเข้าไปในกระแสเลือดได้อีก ทำให้ปอดอักเสบ ถุงลมโป่งพอง และกระตุ้นให้เซลล์กลายเป็นมะเร็งได้ด้วย</div>
+            <div class="bubble-jp">とても粒子が小さいから、吸い込むと気管支の奥まで届いて、血流にも入り込むんだって。肺炎・肺気腫を起こして、さらに細胞をがん化させる可能性もあるって。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">น่ากลัวจริง ๆ แล้วเราจะป้องกันตัวเองยังไงได้บ้าง?</div>
+            <div class="bubble-jp">本当に怖いね。どうやって自分を守ればいいの？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">ก็ต้องใส่หน้ากาก N95 ในวันที่ฝุ่นเยอะ แล้วก็ทานอาหารที่ช่วยต้านการอักเสบด้วย เช่น บร็อคโคลี ชาเขียว ขิง ขมิ้นชัน</div>
+            <div class="bubble-jp">粉塵が多い日はN95マスクをつけること。あと抗炎症食品を食べること。例えばブロッコリー・緑茶・ショウガ・ウコンとか。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">ออกกำลังกายได้ไหม? หรือต้องระวังอะไรพิเศษ?</div>
+            <div class="bubble-jp">運動はできる？それとも何か特別に気をつけることはある？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">ออกกำลังกายได้ แต่ต้องเลือกที่ที่อากาศสะอาดนะ ถ้าวันไหนฝุ่นเยอะ ก็ควรออกกำลังกายในร่มแทน</div>
+            <div class="bubble-jp">運動はできるよ、でも空気のきれいな場所を選ばないと。粉塵が多い日は室内で運動する方がいいね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">แล้วควรไปตรวจสุขภาพด้วยไหม?</div>
+            <div class="bubble-jp">健康診断も受けた方がいい？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">เฟิร์น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">เฟิร์น</div>
+            <div class="bubble-thai">ควรมากเลย โดยเฉพาะถ้าเคยสูบบุหรี่ หรืออยู่ในพื้นที่ที่มีมลพิษมาก การตรวจพบมะเร็งปอดในระยะแรก ช่วยให้มีโอกาสรักษาหายได้ถึง 80% เลยนะ</div>
+            <div class="bubble-jp">絶対に受けた方がいいよ。特に喫煙経験があったり、汚染の多い地域に住んでいる場合は。肺がんを初期に見つければ80%も治る可能性があるんだって。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">โอม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">โอม</div>
+            <div class="bubble-thai">ขอบคุณมากนะเฟิร์น ตั้งแต่วันนี้จะใส่หน้ากากทุกวันเลย แล้วก็จะไปตรวจสุขภาพปีนี้ด้วย!</div>
+            <div class="bubble-jp">ありがとうファーン！今日から毎日マスクする。それと今年は健康診断にも行くよ！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 4: 単語 ===================== -->
+    <div id="tab-vocab" class="tab-content">
+      <div class="content-wrap">
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🫁 肺・呼吸に関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">ปอด</td><td>肺</td><td class="sup-note">โรคปอด＝肺疾患。ปอดอักเสบ＝肺炎。ปอดแฝด＝肺の両側。แผลในปอด＝肺の傷</td></tr>
+            <tr><td class="thai-word">หลอดลม</td><td>気管支・気管</td><td class="sup-note">หลอด＝管。ลม＝風・空気。หลอดลมอักเสบ＝気管支炎</td></tr>
+            <tr><td class="thai-word">ถุงลม</td><td>肺胞</td><td class="sup-note">ถุง＝袋。ถุงลมโป่งพอง＝肺気腫（肺胞が膨張）。โป่งพอง＝膨れ上がる</td></tr>
+            <tr><td class="thai-word">ถุงลมโป่งพอง</td><td>肺気腫</td><td class="sup-note">喫煙やPM2.5が主な原因。肺胞が破壊され息切れが起こる</td></tr>
+            <tr><td class="thai-word">หายใจ</td><td>呼吸する・息をする</td><td class="sup-note">หายใจเข้า＝吸い込む。หายใจออก＝吐き出す。หายใจไม่ออก＝息ができない</td></tr>
+            <tr><td class="thai-word">สูดดม</td><td>吸い込む・吸引する</td><td class="sup-note">สูดดมฝุ่น＝粉塵を吸い込む。สูดดมอากาศบริสุทธิ์＝清潔な空気を吸い込む</td></tr>
+            <tr><td class="thai-word">ออกซิเจน</td><td>酸素</td><td class="sup-note">ออกซิเจนในเลือด＝血中酸素。ขาดออกซิเจน＝酸欠状態。ออกซิเจนในอากาศ＝大気中の酸素</td></tr>
+            <tr><td class="thai-word">ระบบทางเดินหายใจ</td><td>呼吸器系</td><td class="sup-note">ทางเดิน＝通路。โรคระบบทางเดินหายใจ＝呼吸器疾患</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🏭 大気汚染・環境に関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">ฝุ่น</td><td>粉塵・ほこり</td><td class="sup-note">ฝุ่นละออง＝微粒子・粉塵。ฝุ่นควัน＝煙霧。ฝุ่นพิษ＝有毒粉塵</td></tr>
+            <tr><td class="thai-word">ฝุ่น PM2.5</td><td>PM2.5微粒子</td><td class="sup-note">粒径2.5μm以下の超微粒子。肺・血液に到達できる。ค่า PM2.5＝PM2.5値</td></tr>
+            <tr><td class="thai-word">มลพิษ</td><td>汚染・公害</td><td class="sup-note">มลพิษทางอากาศ＝大気汚染。มลพิษทางน้ำ＝水質汚染。มลพิษทางเสียง＝騒音公害</td></tr>
+            <tr><td class="thai-word">มลภาวะ</td><td>環境汚染</td><td class="sup-note">มลพิษとほぼ同義だが、より広い文脈で使われる</td></tr>
+            <tr><td class="thai-word">อากาศ</td><td>空気・大気・天気</td><td class="sup-note">อากาศดี＝空気がきれい。อากาศเสีย＝空気が悪い。อากาศบริสุทธิ์＝清潔な空気</td></tr>
+            <tr><td class="thai-word">อากาศเป็นพิษ</td><td>有毒な空気・大気汚染</td><td class="sup-note">เป็นพิษ＝有毒な。อากาศเสีย＝汚れた空気（同意）</td></tr>
+            <tr><td class="thai-word">สารก่อมะเร็ง</td><td>発がん性物質</td><td class="sup-note">สาร＝物質。ก่อ＝引き起こす・作る。WHO分類の発がん性物質Group 1に該当</td></tr>
+            <tr><td class="thai-word">สารพิษ</td><td>有害物質・毒物</td><td class="sup-note">สาร＝物質。พิษ＝毒。สารเคมีพิษ＝有毒化学物質</td></tr>
+            <tr><td class="thai-word">กระแสเลือด</td><td>血流・血液循環</td><td class="sup-note">กระแส＝流れ。เลือด＝血液。ไหลเวียนในกระแสเลือด＝血流中を循環する</td></tr>
+            <tr><td class="thai-word">อนุมูลอิสระ</td><td>フリーラジカル・活性酸素</td><td class="sup-note">ต้านอนุมูลอิสระ＝抗酸化（アンチオキシダント）。สารต้านอนุมูลอิสระ＝抗酸化物質</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🔬 がん・医学に関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">มะเร็ง</td><td>がん</td><td class="sup-note">เป็นมะเร็ง＝がんになる。ผู้ป่วยมะเร็ง＝がん患者。รักษามะเร็ง＝がん治療</td></tr>
+            <tr><td class="thai-word">มะเร็งปอด</td><td>肺がん</td><td class="sup-note">มะเร็งเต้านม＝乳がん。มะเร็งตับ＝肝臓がん。มะเร็งลำไส้＝大腸がん</td></tr>
+            <tr><td class="thai-word">เซลล์</td><td>細胞</td><td class="sup-note">เซลล์มะเร็ง＝がん細胞。เซลล์ปกติ＝正常細胞。เซลล์ต้นกำเนิด＝幹細胞</td></tr>
+            <tr><td class="thai-word">กลายพันธุ์</td><td>突然変異する・変異する</td><td class="sup-note">กลาย＝変わる。พันธุ์＝種・遺伝子。เซลล์กลายพันธุ์＝突然変異した細胞</td></tr>
+            <tr><td class="thai-word">เซลล์ต้นกำเนิดมะเร็ง</td><td>がん幹細胞</td><td class="sup-note">ต้นกำเนิด＝起源・源。PM2.5ががん幹細胞の形成を促進する</td></tr>
+            <tr><td class="thai-word">กระตุ้น</td><td>刺激する・促進する</td><td class="sup-note">กระตุ้นเซลล์＝細胞を刺激。กระตุ้นภูมิคุ้มกัน＝免疫を高める。กระตุ้นสมอง＝脳を刺激する</td></tr>
+            <tr><td class="thai-word">การอักเสบ</td><td>炎症</td><td class="sup-note">อักเสบ＝炎症を起こす。ปอดอักเสบ＝肺炎。ต้านการอักเสบ＝抗炎症</td></tr>
+            <tr><td class="thai-word">ติดเชื้อ</td><td>感染する</td><td class="sup-note">เชื้อ＝細菌・ウイルス。ติดเชื้อง่าย＝感染しやすい。โรคติดเชื้อ＝感染症</td></tr>
+            <tr><td class="thai-word">ภูมิคุ้มกัน</td><td>免疫・免疫力</td><td class="sup-note">ภูมิคุ้มกันดี＝免疫力が高い。ภูมิคุ้มกันต่ำ＝免疫力が低い。ระบบภูมิคุ้มกัน＝免疫系</td></tr>
+            <tr><td class="thai-word">พังผืด</td><td>線維化・瘢痕組織</td><td class="sup-note">肺の線維化（pulmonary fibrosis）はPM2.5により引き起こされることがある</td></tr>
+            <tr><td class="thai-word">สถิติ</td><td>統計・データ</td><td class="sup-note">สถิติมะเร็ง＝がん統計。สถิติผู้ป่วย＝患者数データ。ข้อมูลสถิติ＝統計データ</td></tr>
+            <tr><td class="thai-word">ผู้ป่วย</td><td>患者</td><td class="sup-note">ผู้ป่วยมะเร็ง＝がん患者。ผู้ป่วยใหม่＝新規患者。ผู้ป่วยหนัก＝重篤患者</td></tr>
+            <tr><td class="thai-word">ระยะ</td><td>段階・期・フェーズ</td><td class="sup-note">มะเร็งระยะแรก＝初期がん。ระยะสุดท้าย＝末期。ระยะที่ 1-4＝ステージ1〜4</td></tr>
+            <tr><td class="thai-word">รักษาหาย</td><td>治癒する</td><td class="sup-note">รักษา＝治療する。หาย＝治る・なくなる。หายขาด＝完全に治る</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🥦 食事・予防に関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">ต้านอนุมูลอิสระ</td><td>抗酸化（する）</td><td class="sup-note">สารต้านอนุมูลอิสระ＝抗酸化物質。อาหารต้านอนุมูลอิสระ＝抗酸化食品</td></tr>
+            <tr><td class="thai-word">ต้านการอักเสบ</td><td>抗炎症（する）</td><td class="sup-note">อาหารต้านการอักเสบ＝抗炎症食品。ขิง・ขมิ้นが代表例</td></tr>
+            <tr><td class="thai-word">บร็อคโคลี</td><td>ブロッコリー</td><td class="sup-note">スルフォラファン（sulforaphane）が豊富でがん予防効果が期待される</td></tr>
+            <tr><td class="thai-word">ชาเขียว</td><td>緑茶</td><td class="sup-note">ชา＝お茶。เขียว＝緑。ชาดำ＝紅茶。ชาอู่หลง＝ウーロン茶。カテキンが抗酸化作用を持つ</td></tr>
+            <tr><td class="thai-word">ขิง</td><td>ショウガ</td><td class="sup-note">ขิงสด＝生ショウガ。น้ำขิง＝ショウガジュース。抗炎症・抗菌作用がある</td></tr>
+            <tr><td class="thai-word">ขมิ้นชัน</td><td>ウコン・ターメリック</td><td class="sup-note">クルクミン（curcumin）が豊富。抗炎症・抗酸化・抗がん作用が研究されている</td></tr>
+            <tr><td class="thai-word">แครอท</td><td>ニンジン</td><td class="sup-note">ベータカロテン（β-carotene）が豊富で抗酸化作用がある</td></tr>
+            <tr><td class="thai-word">ฟักทอง</td><td>かぼちゃ</td><td class="sup-note">ビタミンAの前駆体カロテノイドが豊富</td></tr>
+            <tr><td class="thai-word">รับประทาน / ทาน</td><td>食べる・摂取する</td><td class="sup-note">รับประทานอาหาร＝食事をする。ทานให้ครบ 5 หมู่＝5大栄養素をバランスよく摂る</td></tr>
+            <tr><td class="thai-word">ตรวจสุขภาพ</td><td>健康診断を受ける</td><td class="sup-note">ตรวจ＝調べる・検査する。ตรวจสุขภาพประจำปี＝年次健康診断</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">💊 病気・リスクに関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">ภัยเงียบ</td><td>サイレントキラー・静かな脅威</td><td class="sup-note">ภัย＝危険・脅威。เงียบ＝静か。症状が出にくい病気に使う表現</td></tr>
+            <tr><td class="thai-word">ความเสี่ยง</td><td>リスク</td><td class="sup-note">เสี่ยงต่อโรค＝病気のリスクがある。ลดความเสี่ยง＝リスクを減らす</td></tr>
+            <tr><td class="thai-word">ป้องกัน</td><td>予防する・防ぐ</td><td class="sup-note">ป้องกันโรค＝病気を予防する。การป้องกัน＝予防（名詞）。ป้องกันตนเอง＝自己防衛</td></tr>
+            <tr><td class="thai-word">หลีกเลี่ยง</td><td>避ける</td><td class="sup-note">หลีกเลี่ยงมลพิษ＝汚染を避ける。พยายามหลีกเลี่ยง＝なるべく避ける</td></tr>
+            <tr><td class="thai-word">สูบบุหรี่</td><td>タバコを吸う・喫煙する</td><td class="sup-note">บุหรี่＝タバコ。เลิกสูบบุหรี่＝禁煙する。ผู้สูบบุหรี่＝喫煙者</td></tr>
+            <tr><td class="thai-word">ประวัติโรค</td><td>病歴・既往歴</td><td class="sup-note">ประวัติ＝歴史・記録。ประวัติครอบครัว＝家族歴。ประวัติการรักษา＝治療歴</td></tr>
+            <tr><td class="thai-word">ฉายแสง</td><td>放射線治療を行う</td><td class="sup-note">ฉาย＝照射する。แสง＝光・放射線。ฉายแสงที่ปอด＝肺への放射線治療</td></tr>
+            <tr><td class="thai-word">การคาดการณ์</td><td>予測・推計</td><td class="sup-note">คาดการณ์＝予測する。WHOคาดการณ์＝WHOが予測する</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🏥 医療・健康管理に関する語彙</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">สถาบันมะเร็งแห่งชาติ</td><td>国立がん研究所</td><td class="sup-note">สถาบัน＝研究所・機関。แห่งชาติ＝国立の</td></tr>
+            <tr><td class="thai-word">องค์การอนามัยโลก (WHO)</td><td>世界保健機関（WHO）</td><td class="sup-note">องค์การ＝機関・組織。อนามัย＝健康・衛生。โลก＝世界</td></tr>
+            <tr><td class="thai-word">หน้ากาก N95</td><td>N95マスク</td><td class="sup-note">หน้ากาก＝マスク。หน้ากากอนามัย＝医療用マスク。N95はPM2.5に有効</td></tr>
+            <tr><td class="thai-word">การเสียชีวิต</td><td>死亡・死</td><td class="sup-note">เสียชีวิต＝死亡する（丁寧語）。ตาย＝死ぬ（日常語）。อัตราการเสียชีวิต＝死亡率</td></tr>
+            <tr><td class="thai-word">โอกาสรอดชีวิต</td><td>生存率・生き残れる可能性</td><td class="sup-note">โอกาส＝可能性・チャンス。รอด＝助かる。ชีวิต＝命・人生</td></tr>
+            <tr><td class="thai-word">ออกกำลังกาย</td><td>運動する</td><td class="sup-note">ออกกำลังกายในที่อากาศดี＝空気のよい場所で運動する。ออกกำลังกายในร่ม＝室内で運動する</td></tr>
+            <tr><td class="thai-word">เสริมสร้าง</td><td>強化する・促進する</td><td class="sup-note">เสริมสร้างสุขภาพ＝健康を増進する。เสริมสร้างภูมิคุ้มกัน＝免疫力を高める</td></tr>
+            <tr><td class="thai-word">ระยะเริ่มต้น</td><td>初期段階</td><td class="sup-note">ระยะ＝段階・期。เริ่มต้น＝始まり。ระยะสุดท้าย＝末期</td></tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================== TAB 5: 例文 ===================== -->
+    <div id="tab-examples" class="tab-content">
+      <div class="content-wrap">
+
+        <div class="example-section">
+          <h4>🫁 肺・呼吸</h4>
+          <div class="example-item">
+            <div class="ex-thai">เขาเป็น<span class="highlight-word">โรคปอดอักเสบ</span>หลังจากอยู่ในพื้นที่ที่มีฝุ่นมาก</div>
+            <div class="ex-jp">彼は粉塵の多い場所にいた後、<strong>肺炎</strong>になった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เมื่อ<span class="highlight-word">สูดดม</span>ฝุ่น PM2.5 เข้าไป มันจะเข้าถึงหลอดลมและกระแสเลือดได้</div>
+            <div class="ex-jp">PM2.5の粉塵を<strong>吸い込む</strong>と、気管支や血流にまで到達する。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ร่างกายต้องการ<span class="highlight-word">ออกซิเจน</span>เพื่อให้ภูมิคุ้มกันทำงานได้ดี</div>
+            <div class="ex-jp">体は免疫系が正常に機能するために<strong>酸素</strong>を必要としている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">คนที่สูบบุหรี่นานมักเป็นโรค<span class="highlight-word">ถุงลมโป่งพอง</span></div>
+            <div class="ex-jp">長年喫煙した人は<strong>肺気腫</strong>になることが多い。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เธอมีปัญหา<span class="highlight-word">ระบบทางเดินหายใจ</span>เพราะอยู่ในเมืองที่มีมลพิษมาก</div>
+            <div class="ex-jp">彼女は汚染の激しい都市に住んでいるため、<strong>呼吸器系</strong>の問題を抱えている。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🏭 大気汚染・環境</h4>
+          <div class="example-item">
+            <div class="ex-thai">ค่า<span class="highlight-word">ฝุ่น PM2.5</span>วันนี้สูงมาก ควรใส่หน้ากากก่อนออกจากบ้าน</div>
+            <div class="ex-jp">今日は<strong>PM2.5</strong>の数値がとても高いので、外出前にマスクをした方がいい。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">มลพิษทางอากาศ</span>เป็นหนึ่งในสาเหตุสำคัญของโรคมะเร็งปอด</div>
+            <div class="ex-jp"><strong>大気汚染</strong>は肺がんの主要な原因のひとつだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">WHO ระบุว่า PM2.5 เป็น<span class="highlight-word">สารก่อมะเร็ง</span>เหมือนกับบุหรี่</div>
+            <div class="ex-jp">WHOはPM2.5をタバコと同様の<strong>発がん性物質</strong>に指定している。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เราควรหลีกเลี่ยง<span class="highlight-word">อากาศเป็นพิษ</span>โดยการอยู่ในอาคารในวันที่ฝุ่นเยอะ</div>
+            <div class="ex-jp">粉塵の多い日は室内にいることで<strong>有毒な空気</strong>を避けるべきだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อาหารที่มีสารต้าน<span class="highlight-word">อนุมูลอิสระ</span>สูงช่วยปกป้องเซลล์จากความเสียหาย</div>
+            <div class="ex-jp"><strong>フリーラジカル</strong>に対抗する抗酸化物質の豊富な食品は、細胞をダメージから守る助けになる。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🔬 がん・医学</h4>
+          <div class="example-item">
+            <div class="ex-thai">คุณยายของฉันเป็น<span class="highlight-word">มะเร็งปอด</span>ระยะแรก แต่ตรวจเจอเร็ว เลยรักษาหายได้</div>
+            <div class="ex-jp">祖母は初期の<strong>肺がん</strong>だったが、早期に発見されたので治癒した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">PM2.5 สามารถ<span class="highlight-word">กระตุ้น</span>ให้เซลล์ปกติ<span class="highlight-word">กลายพันธุ์</span>เป็นเซลล์มะเร็งได้</div>
+            <div class="ex-jp">PM2.5は正常な細胞を<strong>刺激して</strong>がん細胞に<strong>突然変異させる</strong>可能性がある。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายช่วยเสริม<span class="highlight-word">ภูมิคุ้มกัน</span>ให้แข็งแรงขึ้น</div>
+            <div class="ex-jp">運動は<strong>免疫力</strong>を高めてくれる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">โรคนี้มักไม่มีอาการ จึงถูกเรียกว่า<span class="highlight-word">ภัยเงียบ</span></div>
+            <div class="ex-jp">この病気は多くの場合症状がないため、<strong>サイレントキラー</strong>と呼ばれる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ปอดของเขามี<span class="highlight-word">การอักเสบ</span>เรื้อรังจากการสูบบุหรี่มานาน</div>
+            <div class="ex-jp">彼の肺は長年の喫煙で慢性的な<strong>炎症</strong>を起こしていた。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🥦 食事・予防</h4>
+          <div class="example-item">
+            <div class="ex-thai">แพทย์แนะนำให้ทาน<span class="highlight-word">บร็อคโคลี</span>และ<span class="highlight-word">ชาเขียว</span>เพื่อ<span class="highlight-word">ต้านอนุมูลอิสระ</span></div>
+            <div class="ex-jp">医師は<strong>抗酸化</strong>のために<strong>ブロッコリー</strong>と<strong>緑茶</strong>を摂ることを勧めた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ขมิ้นชัน</span>มีสารที่ช่วย<span class="highlight-word">ต้านการอักเสบ</span>ได้ดีมาก</div>
+            <div class="ex-jp"><strong>ウコン</strong>には優れた<strong>抗炎症</strong>作用を持つ成分が含まれている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ควร<span class="highlight-word">ตรวจสุขภาพ</span>ประจำปีเพื่อตรวจหามะเร็งในระยะแรก</div>
+            <div class="ex-jp">初期がんを発見するために毎年<strong>健康診断</strong>を受けるべきだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เธอพยายาม<span class="highlight-word">หลีกเลี่ยง</span>การออกกำลังกายในวันที่อากาศไม่ดี</div>
+            <div class="ex-jp">彼女は大気汚染のひどい日に外で運動するのを<strong>避けるように</strong>している。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การ<span class="highlight-word">เลิกสูบบุหรี่</span>เป็นวิธีที่ดีที่สุดในการลดความเสี่ยงมะเร็งปอด</div>
+            <div class="ex-jp"><strong>禁煙</strong>は肺がんリスクを減らす最善の方法だ。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🏥 医療・健康管理</h4>
+          <div class="example-item">
+            <div class="ex-thai">การพบมะเร็งใน<span class="highlight-word">ระยะเริ่มต้น</span>ทำให้<span class="highlight-word">โอกาสรอดชีวิต</span>สูงมากขึ้น</div>
+            <div class="ex-jp">がんを<strong>初期段階</strong>で見つけることで<strong>生存率</strong>が大幅に高まる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">สถาบันมะเร็งแห่งชาติ</span>รายงานว่ามีผู้ป่วยมะเร็งปอดรายใหม่ปีละกว่า 17,000 คน</div>
+            <div class="ex-jp"><strong>国立がん研究所</strong>は年間17,000人以上の新規肺がん患者が報告されていると発表した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">องค์การอนามัยโลก</span>คาดว่าจำนวนผู้ป่วยมะเร็งทั่วโลกจะ<span class="highlight-word">เพิ่มขึ้น</span>กว่า 77% ใน 25 ปีข้างหน้า</div>
+            <div class="ex-jp"><strong>世界保健機関</strong>は今後25年間で世界のがん患者数が77%以上<strong>増加する</strong>と予測している。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การ<span class="highlight-word">เสริมสร้างภูมิคุ้มกัน</span>ด้วยการออกกำลังกายและอาหารที่ดีช่วย<span class="highlight-word">ป้องกัน</span>โรคได้</div>
+            <div class="ex-jp">運動と良い食事で<strong>免疫力を高める</strong>ことが病気の<strong>予防</strong>に役立つ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">คนที่มี<span class="highlight-word">ประวัติโรคปอด</span>ควรพบแพทย์ทุกปีเพื่อตรวจสอบอาการ</div>
+            <div class="ex-jp"><strong>肺疾患の既往歴</strong>がある人は、毎年医師の診察を受けて状態を確認すべきだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ความเสี่ยง</span>การเป็นมะเร็งปอดสูงขึ้นสำหรับคนที่อาศัยในเมืองใหญ่ที่มีมลพิษ</div>
+            <div class="ex-jp">汚染の多い大都市に住む人は肺がんの<strong>リスク</strong>が高まる。</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function showTab(name, event) {
+        document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+        document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        event.target.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function toggleAnswer(btn) {
+        const box = btn.nextElementSibling;
+        if (box.style.display === "block") {
+          box.style.display = "none";
+          btn.textContent = "答えを見る";
+        } else {
+          box.style.display = "block";
+          btn.textContent = "閉じる";
+        }
+      }
+    </script>
+  </body>
+</html>
