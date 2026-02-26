@@ -1,0 +1,1489 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6時間未満VS8時間超の睡眠、どちらも健康に悪影響 | タイ語学習</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #2d6a4f;
+        --primary-light: #52b788;
+        --primary-pale: #d8f3dc;
+        --accent: #e76f51;
+        --accent-light: #ffddd2;
+        --bg: #f8fffe;
+        --bg2: #edf7f0;
+        --text: #1b2e22;
+        --text-light: #4a6855;
+        --border: #b7e4c7;
+        --white: #ffffff;
+        --shadow: 0 2px 12px rgba(45, 106, 79, 0.1);
+        --shadow-lg: 0 6px 28px rgba(45, 106, 79, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans JP", "Sarabun", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
+        color: #fff;
+        padding: 36px 24px 28px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "💤";
+        position: absolute;
+        font-size: 140px;
+        opacity: 0.07;
+        top: -20px;
+        left: -20px;
+      }
+      header::after {
+        content: "😴";
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.07;
+        bottom: -20px;
+        right: -10px;
+      }
+      .header-source {
+        font-size: 0.78rem;
+        opacity: 0.75;
+        margin-top: 6px;
+      }
+      .header-source a {
+        color: #a9d6b0;
+      }
+      header h1 {
+        font-family: "Sarabun", sans-serif;
+        font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      header h2 {
+        font-family: "Noto Serif JP", serif;
+        font-size: clamp(0.9rem, 2.8vw, 1.15rem);
+        font-weight: 400;
+        opacity: 0.92;
+        margin-bottom: 8px;
+      }
+
+      /* TABS */
+      .tab-nav {
+        display: flex;
+        overflow-x: auto;
+        background: var(--white);
+        border-bottom: 2px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 8px rgba(45, 106, 79, 0.08);
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-nav::-webkit-scrollbar {
+        height: 3px;
+      }
+      .tab-nav::-webkit-scrollbar-track {
+        background: #e8f5e9;
+      }
+      .tab-nav::-webkit-scrollbar-thumb {
+        background: var(--primary-light);
+        border-radius: 2px;
+      }
+
+      .tab-btn {
+        flex: none;
+        padding: 14px 18px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--text-light);
+        cursor: pointer;
+        white-space: nowrap;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        letter-spacing: 0.02em;
+      }
+      .tab-btn:hover {
+        background: var(--bg2);
+        color: var(--primary);
+      }
+      .tab-btn.active {
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+        background: var(--primary-pale);
+      }
+
+      /* TAB CONTENT */
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+
+      .content-wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 20px 60px;
+      }
+
+      /* ARTICLE TAB */
+      .article-intro {
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-left: 4px solid var(--primary);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 28px;
+        font-size: 0.92rem;
+        color: var(--text-light);
+      }
+
+      .article-section {
+        margin-bottom: 36px;
+      }
+      .article-section h3 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--primary);
+        border-left: 4px solid var(--primary-light);
+        padding: 6px 12px;
+        background: var(--bg2);
+        border-radius: 0 6px 6px 0;
+        margin-bottom: 16px;
+      }
+
+      .para-block {
+        margin-bottom: 20px;
+      }
+      .para-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: var(--text);
+        background: var(--white);
+        border-radius: 8px;
+        padding: 14px 18px;
+        border: 1px solid var(--border);
+      }
+      .para-jp {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.86rem;
+        line-height: 1.7;
+        color: var(--text-light);
+        background: var(--bg2);
+        border-radius: 8px;
+        padding: 12px 18px;
+        border: 1px solid var(--border);
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      /* QUIZ TAB */
+      .quiz-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .quiz-num {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .quiz-q-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--text);
+      }
+      .quiz-q-jp {
+        font-size: 0.84rem;
+        color: var(--text-light);
+        margin-bottom: 14px;
+      }
+      .quiz-options {
+        list-style: none;
+        margin-bottom: 12px;
+      }
+      .quiz-options li {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--border);
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-family: "Sarabun", sans-serif;
+        font-size: 0.97rem;
+        transition: all 0.15s;
+        background: var(--bg);
+      }
+      .quiz-options li:hover {
+        background: var(--primary-pale);
+        border-color: var(--primary-light);
+      }
+
+      .answer-btn {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 18px;
+        font-size: 0.87rem;
+        font-family: "Noto Sans JP", sans-serif;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .answer-btn:hover {
+        background: #1b4332;
+      }
+
+      .answer-box {
+        display: none;
+        margin-top: 12px;
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        border-left: 4px solid var(--primary);
+      }
+      .answer-box .correct {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1rem;
+      }
+      .answer-box .exp {
+        color: var(--text-light);
+        margin-top: 4px;
+        font-size: 0.85rem;
+      }
+
+      /* DIALOGUE TAB */
+      .dialogue-intro {
+        background: var(--accent-light);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-bottom: 24px;
+        font-size: 0.88rem;
+        color: #7c3b2a;
+        border-left: 4px solid var(--accent);
+      }
+      .dialogue-turn {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+      }
+      .dialogue-turn.right {
+        flex-direction: row-reverse;
+      }
+
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-family: "Sarabun", sans-serif;
+      }
+      .avatar-a {
+        background: var(--primary-pale);
+        color: var(--primary);
+      }
+      .avatar-b {
+        background: var(--accent-light);
+        color: var(--accent);
+      }
+
+      .bubble {
+        border-radius: 14px;
+        padding: 12px 16px;
+        max-width: 75%;
+        box-shadow: var(--shadow);
+      }
+      .bubble-a {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-top-left-radius: 4px;
+      }
+      .bubble-b {
+        background: var(--primary-pale);
+        border: 1px solid var(--primary-light);
+        border-top-right-radius: 4px;
+      }
+      .bubble-name {
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: var(--text-light);
+      }
+      .bubble-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--text);
+      }
+      .bubble-jp {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        color: var(--text-light);
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: 1px dashed var(--border);
+      }
+
+      /* VOCAB TAB */
+      .vocab-category {
+        margin-bottom: 36px;
+      }
+      .vocab-cat-title {
+        font-family: "Noto Serif JP", serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 8px 16px;
+        border-radius: 7px;
+        border-left: 5px solid var(--primary);
+        margin-bottom: 12px;
+      }
+      .vocab-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .vocab-table th {
+        background: var(--primary);
+        color: #fff;
+        padding: 10px 12px;
+        text-align: left;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+      .vocab-table td {
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+        line-height: 1.55;
+      }
+      .vocab-table tr:last-child td {
+        border-bottom: none;
+      }
+      .vocab-table tr:nth-child(even) td {
+        background: var(--bg2);
+      }
+      .thai-word {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      .sup-note {
+        font-size: 0.82rem;
+        color: var(--text-light);
+      }
+      /* Ensure 補足 always shows on mobile */
+      @media (max-width: 480px) {
+        .vocab-table {
+          font-size: 0.82rem;
+        }
+        .vocab-table th,
+        .vocab-table td {
+          padding: 7px 8px;
+        }
+        .thai-word {
+          font-size: 0.93rem;
+        }
+      }
+
+      /* EXAMPLES TAB */
+      .example-section {
+        margin-bottom: 30px;
+      }
+      .example-section h4 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 6px 14px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        border-left: 4px solid var(--primary-light);
+      }
+      .example-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 10px;
+      }
+      .ex-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--text);
+        margin-bottom: 4px;
+      }
+      .ex-jp {
+        font-size: 0.84rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      .highlight-word {
+        font-weight: 700;
+        color: #e76f51;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 600px) {
+        .content-wrap {
+          padding: 20px 14px 50px;
+        }
+        header {
+          padding: 24px 16px 20px;
+        }
+        .tab-btn {
+          padding: 12px 13px;
+          font-size: 0.82rem;
+        }
+        .bubble {
+          max-width: 85%;
+        }
+        header h1 {
+          font-size: 1rem;
+        }
+        header h2 {
+          font-size: 0.88rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>นอนน้อยกว่า 6 ชม. VS นอนมากกว่า 8 ชม. ส่งผลเสียต่อสุขภาพทั้งคู่</h1>
+      <h2>6時間未満VS8時間超の睡眠、どちらも健康に悪影響</h2>
+      <div class="header-source">
+        出典:
+        <a href="https://www.bangkokbiznews.com/health/well-being/1222193" target="_blank">bangkokbiznews.com</a>
+        ／ กรุงเทพธุรกิจ
+      </div>
+    </header>
+
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('article')">📄 記事</button>
+      <button class="tab-btn" onclick="showTab('quiz')">❓ 問題</button>
+      <button class="tab-btn" onclick="showTab('dialogue')">💬 会話</button>
+      <button class="tab-btn" onclick="showTab('vocab')">📚 単語</button>
+      <button class="tab-btn" onclick="showTab('examples')">✏️ 例文</button>
+    </nav>
+
+    <!-- ===================== TAB 1: 記事 ===================== -->
+    <div id="tab-article" class="tab-content active">
+      <div class="content-wrap">
+        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+
+        <div class="article-section">
+          <div class="para-block">
+            <div class="para-thai">
+              คนไทยมากกว่า 19 ล้านคน หรือประมาณ 30-40% ของประชากรทั้งหมด มีปัญหานอนไม่หลับแบบเรื้อรัง ปัญหานี้ส่งผลต่อชีวิตประจำวัน เช่น ทำให้รู้สึกเหนื่อย เครียด หงุดหงิด และเป็นโรคซึมเศร้าได้
+              สาเหตุหลักมาจากความเครียดเรื่องเงิน เรื่องงาน การดูจอก่อนนอน และโรคประจำตัว
+            </div>
+            <div class="para-jp">
+              タイ人の1,900万人以上、全人口の約30〜40%が慢性的な不眠の問題を抱えています。この問題は日常生活に影響を与え、疲れ・ストレス・イライラ、さらにはうつ病を引き起こすこともあります。主な原因は、お金や仕事のストレス、就寝前のスクリーン使用、持病などです。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">"นอนน้อยกว่า 6 ชั่วโมง" หรือ "นอนมากกว่า 8 ชั่วโมง" ไม่มีแบบไหนดีต่อสุขภาพ เพราะทั้งสองแบบเป็นสัญญาณไม่ดีที่อาจทำให้ร่างกายแย่ลง</div>
+            <div class="para-jp">「6時間未満の睡眠」も「8時間超の睡眠」も、どちらも体に良くありません。どちらも体が悪くなるサインとなる可能性があります。</div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              โดยปกติ การนอนหลับที่ดีควรอยู่ที่ 6-8 ชั่วโมงต่อวัน เพราะในขณะที่เราหลับ ร่างกายจะได้พักและซ่อมแซมตัวเองอย่างเต็มที่ ถ้านอนน้อยหรือนอนมากเกินไปและสะสมนาน ๆ อาจทำให้เกิดโรคต่าง ๆ ได้
+            </div>
+            <div class="para-jp">
+              通常、良い睡眠は1日6〜8時間が目安です。眠っている間、体は十分に休息・修復されるからです。短すぎても長すぎても、それが蓄積するとさまざまな病気につながることがあります。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ผู้ที่นอนไม่พอ จะมีปัญหาสุขภาพด้านอื่น ๆ ตามมา（睡眠不足の人に起こる他の健康問題）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              "นอนไม่พอ" หมายถึงการนอนน้อยจากหลายสาเหตุ เช่น นอนไม่หลับ ต้องทำงานหรืออ่านหนังสือดึก หรือใช้ชีวิตสมัยใหม่ที่ออกไปข้างนอกตอนกลางคืนบ่อย ๆ เมื่อสะสมนาน ๆ จะเกิดปัญหาต่าง ๆ เช่น ตื่นสาย
+              กลิ่นตัวแรง เครียด หงุดหงิด และสุดท้ายกลายเป็นนอนไม่หลับแบบเรื้อรัง เพราะร่างกายและสมองชินกับการนอนดึก ปัญหาสุขภาพอื่น ๆ ที่ตามมา ได้แก่
+            </div>
+            <div class="para-jp">
+              「睡眠不足」とは、不眠・残業・夜遅くまでの勉強・夜遊びなど様々な理由で睡眠が少ない状態を指します。積み重なると、寝坊・体臭・ストレス・イライラ、最終的には慢性不眠につながります。体と脳が夜更かしに慣れてしまうからです。引き起こされる健康問題は以下の通りです。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              1. โรคมะเร็งลำไส้ — คนที่นอนดึกแต่ตื่นเช้า ทานอาหารเช้าไม่ทัน และไม่ออกกำลังกาย จะทำให้ลำไส้เกิดการอักเสบและกลายเป็นมะเร็งได้ จากการศึกษาพบว่า ในกลุ่มคน 1,240 คน มีคนที่นอนน้อยกว่า 6
+              ชั่วโมง ถึง 47% มีอาการของมะเร็งลำไส้มากกว่าคนที่นอนอย่างน้อย 7 ชั่วโมง
+            </div>
+            <div class="para-jp">
+              1. 大腸がん —
+              夜更かしして朝早く起き、朝食を取る時間もなく、運動もしない人は、腸が炎症を起こし大腸がんになることがあります。研究では、1,240人のうち、6時間未満しか眠らない人の47%に、7時間以上眠る人より大腸がんの症状が多く見られました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              2. โรคหัวใจ — เมื่อเราตื่นอยู่นาน สารโปรตีนจะสะสมในหัวใจมากขึ้น และไปเกาะที่หลอดเลือด ทำให้เลือดไหลไม่สะดวก จากการวิจัยพบว่าคนที่ไม่ได้นอนนาน 88 ชั่วโมง มีความดันเลือดสูงผิดปกติ
+              และในผู้หญิงอายุต่ำกว่า 60 ปี มีความเสี่ยงเป็นโรคหัวใจถึง 2 เท่า
+            </div>
+            <div class="para-jp">
+              2. 心臓病 —
+              起きている時間が長いほど、タンパク質が心臓内に蓄積し、血管に付着して血流が悪くなります。88時間眠れなかった人の血圧が異常に高くなり、60歳未満の女性では心臓病リスクが2倍になると報告されています。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">3. โรคเบาหวาน — เมื่อคนเป็นเบาหวานพักผ่อนไม่พอ ระดับน้ำตาลในเลือดจะขึ้นเร็ว 23% และระดับอินซูลินก็สูงขึ้น 48% นอกจากนี้ยังเกิดภาวะร่างกายดื้ออินซูลินได้อีกด้วย</div>
+            <div class="para-jp">3. 糖尿病 — 糖尿病の人が十分に休めないと、血糖値が23%急上昇し、インスリン値も48%急増します。さらにインスリン抵抗性が生じることもあります。</div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">4. ระบบย่อยอาหารทำงานผิดปกติ — ทำให้ท้องอืด ท้องเฟ้อ อาหารย่อยไม่ดี บางครั้งท้องเสีย บางครั้งท้องผูก เพราะกระเพาะอาหารล้า</div>
+            <div class="para-jp">4. 消化器系の不具合 — 胃が疲れることで、腹部膨満感・消化不良・下痢や便秘を交互に起こすことがあります。</div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">5. นอนไม่หลับเรื้อรัง — บางคนต้องรอนานกว่า 30 นาทีถึงจะหลับได้ หรือหลับ ๆ ตื่น ๆ ตลอดคืน ถ้าเป็นแบบนี้นานกว่า 1 เดือน เรียกว่านอนไม่หลับแบบเรื้อรัง</div>
+            <div class="para-jp">5. 慢性不眠症 — 眠るのに30分以上かかる、または一晩中浅い眠りを繰り返す状態が1ヶ月以上続くと慢性不眠と呼ばれます。</div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">6. สมรรถภาพทางเพศลดลง — เพราะการนอนไม่หลับทำให้ฮอร์โมนเทสโทสเทอโรนต่ำลง ทำให้ความต้องการทางเพศลดลงด้วย</div>
+            <div class="para-jp">6. 性機能の低下 — 不眠によってテストステロンが低下し、性欲も減退します。</div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">7. อารมณ์เปลี่ยนแปลงง่าย — ตื่นมาแล้วรู้สึกเหนื่อย ไม่สดชื่น หงุดหงิด และตัดสินใจผิดพลาดง่าย เพราะสมองไม่ได้พักเต็มที่</div>
+            <div class="para-jp">7. 感情の不安定 — 目覚めても疲れが取れず、イライラして判断ミスが増えます。脳が十分に休めていないためです。</div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>วิธีแก้ไขอาการนอนไม่พอ（睡眠不足の改善方法）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              1. กำหนดเวลานอนให้ตรงเวลาทุกวัน และพยายามไม่คิดเรื่องต่าง ๆ ก่อนนอน 2. งดดื่มชาและกาแฟก่อนนอน ทานผักและผลไม้ให้มาก หลีกเลี่ยงอาหารหนักก่อนนอน 3. ออกกำลังกายเพื่อให้ร่างกายขับเหงื่อ
+              ทำให้สมองสดชื่น 4. งดใช้โทรศัพท์และคอมพิวเตอร์ก่อนนอน ปิดไฟและทำห้องให้เงียบ 5. เลือกเตียงและหมอนที่ดี ไม่แข็งและนุ่มจนเกินไป
+            </div>
+            <div class="para-jp">
+              1. 毎日決まった時間に寝るようにし、就寝前は余計なことを考えない。 2. 就寝前のお茶・コーヒーを控え、野菜・果物を多く取り、重い食事を避ける。 3. 運動して汗をかき、脳をスッキリさせる。 4.
+              就寝前のスマホ・PC使用をやめ、照明を消して静かな環境を作る。 5. 硬すぎず柔らかすぎない、自分に合ったベッドと枕を選ぶ。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>นอนมากเกินไป เสี่ยงสมองเสื่อม（寝すぎると脳が衰える危険も）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              โรคนอนเกิน (Hypersomnia) คือการที่หลับนานเกิน 8 ชั่วโมง ยิ่งนอนก็ยิ่งรู้สึกไม่พอ คนที่เป็นโรคนี้จะดูเฉื่อยชา ทานน้อยแต่อ้วนง่าย เพราะกระเพาะไม่ย่อย
+              นอกจากนี้ยังเสี่ยงโรคซึมเศร้าสูงกว่าคนปกติถึง 49% และอาจมีโรคอื่น ๆ ตามมา ดังนี้
+            </div>
+            <div class="para-jp">
+              過眠症（Hypersomnia）とは、8時間以上眠ることで、眠るほど眠い感覚が続く病気です。患者はぐったりして見え、少ししか食べなくても太りやすく（胃が消化しないため）、通常より49%もうつ病リスクが高くなります。他にもさまざまな病気が続くことがあります。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              1. สมองทำงานช้าลง — คิดและทำอะไรเชื่องช้า ขยับตัวน้อยลง ทำให้กระดูกพรุนได้ 2. อ้วนง่าย — น้ำหนักเกินนำไปสู่โรคหัวใจ ความดัน เบาหวาน ฯลฯ 3. ซึมเศร้า อารมณ์แปรปรวน — ในปี 2012
+              พบว่าคนที่นอนมากกว่า 9 ชม. หรือน้อยกว่า 5 ชม. สมองทำงานแย่ลงในระยะเวลา 2 ปี เพราะฮอร์โมนความสุขอย่างซีโรโทนินและเอนดอร์ฟินลดลง 4. มีบุตรยาก — จากการศึกษาในเกาหลีใต้ปี 2013
+              พบว่าผู้หญิงที่นอน 7-8 ชม. มีโอกาสตั้งครรภ์ได้มากกว่าคนที่นอนนานกว่า 9 ชม. 5. เสียชีวิตเร็วกว่า — งานวิจัย 16 ชิ้นในปี 2010 ตรงกันว่าคนที่นอนนานกว่า 9 ชม. เสียชีวิตเร็วกว่าคนที่นอน 7-8
+              ชม. ถึง 1.3% 6. เสี่ยงหัวใจหยุดเต้นขณะนอนหลับ — เพราะสัญญาณสมองดับนานเกินปกติ
+            </div>
+            <div class="para-jp">
+              1. 脳機能低下 — 思考・行動が遅くなり、体を動かさないため骨粗しょう症にもなりやすい。 2. 太りやすくなる — 体重増加が心臓病・高血圧・糖尿病などを引き起こす。 3. うつ・感情の不安定 —
+              2012年の研究で、9時間超または5時間未満の睡眠者は2年で脳機能が低下。幸福ホルモン（セロトニン・エンドルフィン）が減少するため。 4. 不妊 —
+              2013年韓国の研究で、7〜8時間眠る女性の方が9時間超の女性より妊娠率が高いことが判明。 5. 早死に — 2010年の16本の研究が、9時間超眠る人は7〜8時間の人より1.3%早く死亡すると報告。 6.
+              睡眠中の突然死リスク — 脳信号が通常より長く途絶えるため。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>วิธีแก้ไขอาการนอนมากเกินไป（寝すぎの改善方法）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              1. เข้านอนตรงเวลาทุกวัน เมื่อตื่นแล้วให้ลุกเลย อย่าต่อเวลานอน 2. ทานอาหารที่มีประโยชน์ครบ 5 หมู่ หลีกเลี่ยงเครื่องดื่มที่มีคาเฟอีน 3. หากิจกรรมก่อนนอน เช่น อ่านหนังสือหรือหวีผม
+              เพื่อช่วยให้การนอนดีขึ้น 4. อย่าบังคับตัวเองไม่ให้นอน เพราะจะทำให้พฤติกรรมการนอนแย่ลง
+            </div>
+            <div class="para-jp">
+              1. 毎日決まった時間に寝て、目覚めたらすぐ起き上がる。惰眠を禁止。 2. 栄養バランスの良い食事を取り、カフェイン飲料を避ける。 3. 読書や髪を整えるなど、就寝前のルーティンを作る。 4.
+              「眠らないよう」と無理に強制しない。かえって睡眠パターンが乱れる。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>การนอนที่ดีและถูกต้อง ควรทำอย่างไร（良質な睡眠のためのアドバイス）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              1. นอน 6-8 ชม.ต่อวัน ไม่น้อยไม่มากกว่านี้ ควรนอนก่อน 4 ทุ่ม (22:00 น.) และตื่นประมาณตี 5 ถึง 6 โมงเช้า 2. อาบน้ำก่อนนอนทุกครั้ง เพื่อให้รู้สึกสบายตัว 3. นอนกลางคืนเป็นหลัก ถ้านอนกลางวัน
+              ไม่ควรนอนนานกว่า 1 ชั่วโมง 4. ทำกิจวัตรทุกอย่างให้ตรงเวลาสม่ำเสมอ หรือที่เรียกว่า "นาฬิกาชีวิต" 5. ไม่ควรใช้ยานอนหลับ เพราะอาจดื้อยาได้ ควรปรับพฤติกรรมการนอนเอง
+            </div>
+            <div class="para-jp">
+              1. 1日6〜8時間眠る。夜10時前に就寝し、朝5〜6時に起きるのが理想。 2. 毎回入浴してから寝ることで、快適に眠れる。 3. 基本的に夜に眠る。昼寝は1時間以内に留める。 4.
+              全ての日課を規則正しく行う（「体内時計」を整える）。 5. 睡眠薬は避ける。耐性がつくため、自分で睡眠習慣を改善すべき。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>อดนอน ส่งผลเสียต่อสุขภาพอย่างมาก（睡眠不足は健康に大きな悪影響）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              นพ.ธเนศ แก่นสาร จากโรงพยาบาลรามาธิบดี อธิบายว่า การนอนเพียงพอเป็นการพักผ่อนที่สำคัญมากของคนเรา แต่วิถีชีวิตในปัจจุบันทำให้หลายคนอดนอน ซึ่งไม่เพียงทำให้ง่วงในวันรุ่งขึ้น
+              แต่ยังส่งผลต่อสุขภาพได้มากกว่าที่เราคิด อันตรายของการอดนอนขึ้นอยู่กับระยะเวลา ถ้าอดนอนไม่กี่วันจะรู้สึกเหนื่อย กังวล หงุดหงิด แต่ถ้าอดนอนเรื้อรังจะเพิ่มความเสี่ยงโรคหัวใจ มีสมาธิน้อยลง
+              ทำงานผิดพลาด จำอะไรไม่ค่อยได้ และเกิดอุบัติเหตุได้ง่าย
+            </div>
+            <div class="para-jp">
+              ラマティボディ病院のタネート医師によると、十分な睡眠は人間にとって最も重要な休息です。しかし現代の生活スタイルが多くの人を睡眠不足にさせています。翌日の眠気だけでなく、私たちが思う以上に健康に影響します。
+              睡眠不足の危険性は期間によって異なります。数日間なら疲労・不安・イライラ。慢性化すると心血管疾患リスク増大・集中力低下・作業ミス・記憶力低下・事故の増加などを引き起こします。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              คนเราควรนอนวันละกี่ชั่วโมง ขึ้นอยู่กับอายุ วัยเด็กควรนอน 8-10 ชั่วโมง วัยทำงานควรนอน 6-8 ชั่วโมง ส่วนผู้สูงอายุมักนอนน้อยลงประมาณ 5-6 ชั่วโมง นอกจากเวลาแล้ว คุณภาพการนอนก็สำคัญ
+              ควรหลับสนิท ไม่ถูกรบกวน และไม่ตื่นกลางดึก การนอนชดเชยทำได้ แต่ส่วนมากร่างกายจะตื่นขึ้นเองในเวลาที่เคยตื่น จึงอาจนอนชดเชยได้ไม่มากนัก
+            </div>
+            <div class="para-jp">
+              1日に何時間眠るべきかは年齢によって異なります。子供は8〜10時間、働き盛りは6〜8時間、高齢者は5〜6時間程度。時間だけでなく睡眠の質も重要で、深く眠れているか・邪魔されないか・夜中に目が覚めないかが大切です。
+              寝だめは可能ですが、体は習慣的な起床時間に自然と目覚めるため、大きな補充にはなりにくいです。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>คำแนะนำในการนอนอย่างมีคุณภาพ（質の高い睡眠のための提言）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              1 ใน 3 ของคนทำงานมักอดนอน จนนอนไม่ถึง 6-8 ชั่วโมง แต่คุณภาพการนอนสำคัญกว่าระยะเวลา ถ้าหลับสนิทไม่ตื่นกลางดึก ก็ถือว่าเป็นการนอนที่ดีต่อสุขภาพ การนอนที่มีคุณภาพเป็นการพักผ่อนที่ดีที่สุด
+              ถ้าเรารู้ว่าสาเหตุของการนอนไม่หลับคืออะไร และพยายามหลีกเลี่ยงสาเหตุนั้น ก็จะช่วยให้นอนหลับดีขึ้น และมีชีวิตที่ดีในระยะยาว
+            </div>
+            <div class="para-jp">
+              働く人の3人に1人が睡眠不足で6〜8時間眠れていませんが、睡眠の質は時間以上に重要です。深く眠れていて夜中に目覚めなければ、健康的な睡眠と言えます。
+              質の高い睡眠は最良の休息です。不眠の原因を特定し、それを避けるよう努力することで、より良い睡眠が得られ、長期的に生活の質が向上します。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 2: 問題 ===================== -->
+    <div id="tab-quiz" class="tab-content">
+      <div class="content-wrap">
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+
+        <!-- Q1 -->
+        <div class="quiz-item">
+          <div class="quiz-num">1</div>
+          <div class="quiz-q-thai">คนไทยที่มีปัญหานอนไม่หลับเรื้อรังมีประมาณกี่คน?</div>
+          <div class="quiz-q-jp">慢性的な不眠の問題を抱えるタイ人は約何人？</div>
+          <ul class="quiz-options">
+            <li>ก. ประมาณ 10 ล้านคน（約1,000万人）</li>
+            <li>ข. มากกว่า 19 ล้านคน（1,900万人以上）</li>
+            <li>ค. ประมาณ 5 ล้านคน（約500万人）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. มากกว่า 19 ล้านคน（1,900万人以上）</div>
+            <div class="exp">全人口の約30〜40%にあたる1,900万人以上が慢性不眠に悩んでいます。</div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-item">
+          <div class="quiz-num">2</div>
+          <div class="quiz-q-thai">การนอนหลับที่ดีควรนอนกี่ชั่วโมงต่อวัน?</div>
+          <div class="quiz-q-jp">良い睡眠は1日何時間が目安？</div>
+          <ul class="quiz-options">
+            <li>ก. 4-5 ชั่วโมง（4〜5時間）</li>
+            <li>ข. 6-8 ชั่วโมง（6〜8時間）</li>
+            <li>ค. 9-10 ชั่วโมง（9〜10時間）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 6-8 ชั่วโมง（6〜8時間）</div>
+            <div class="exp">1日6〜8時間が「効果的な睡眠」の目安とされています。</div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-item">
+          <div class="quiz-num">3</div>
+          <div class="quiz-q-thai">จากการวิจัย คนที่นอนน้อยกว่า 6 ชั่วโมงในกลุ่ม 1,240 คน มีกี่เปอร์เซ็นต์ที่มีอาการมะเร็งลำไส้?</div>
+          <div class="quiz-q-jp">1,240人の研究で、6時間未満の睡眠者のうち何%に大腸がんの症状が見られた？</div>
+          <ul class="quiz-options">
+            <li>ก. 23%</li>
+            <li>ข. 47%</li>
+            <li>ค. 30%</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 47%</div>
+            <div class="exp">6時間未満しか眠らない人のうち47%に大腸がんの症状が見られました。</div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-item">
+          <div class="quiz-num">4</div>
+          <div class="quiz-q-thai">การอดนอนทำให้ระดับกลูโคสในเลือดของผู้ป่วยเบาหวานสูงขึ้นเท่าไร?</div>
+          <div class="quiz-q-jp">睡眠不足で糖尿病患者の血糖値は何%上昇する？</div>
+          <ul class="quiz-options">
+            <li>ก. 10%</li>
+            <li>ข. 23%</li>
+            <li>ค. 48%</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 23%</div>
+            <div class="exp">血糖値は23%急上昇します（インスリンは48%上昇）。</div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-item">
+          <div class="quiz-num">5</div>
+          <div class="quiz-q-thai">โรคนอนเกิน (Hypersomnia) คือการนอนนานกว่ากี่ชั่วโมง?</div>
+          <div class="quiz-q-jp">過眠症（Hypersomnia）は何時間以上の睡眠を指す？</div>
+          <ul class="quiz-options">
+            <li>ก. มากกว่า 6 ชั่วโมง（6時間超）</li>
+            <li>ข. มากกว่า 8 ชั่วโมง（8時間超）</li>
+            <li>ค. มากกว่า 10 ชั่วโมง（10時間超）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. มากกว่า 8 ชั่วโมง（8時間超）</div>
+            <div class="exp">過眠症は8時間を超えて眠り続け、それでもまだ眠い感覚が続く病気です。</div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="quiz-item">
+          <div class="quiz-num">6</div>
+          <div class="quiz-q-thai">การนอนมากเกินไปทำให้ความเสี่ยงโรคซึมเศร้าสูงขึ้นกว่าคนปกติเท่าไร?</div>
+          <div class="quiz-q-jp">寝すぎはうつ病リスクを通常より何%高める？</div>
+          <ul class="quiz-options">
+            <li>ก. 20%</li>
+            <li>ข. 49%</li>
+            <li>ค. 30%</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 49%</div>
+            <div class="exp">過眠症の人はうつ病になるリスクが通常より49%高いとされています。</div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="quiz-item">
+          <div class="quiz-num">7</div>
+          <div class="quiz-q-thai">จากการศึกษาในเกาหลีใต้ปี 2013 ผู้หญิงที่นอนกี่ชั่วโมงมีโอกาสตั้งครรภ์ได้มากกว่า?</div>
+          <div class="quiz-q-jp">2013年韓国の研究で、何時間眠る女性の妊娠率が最も高かった？</div>
+          <ul class="quiz-options">
+            <li>ก. 5-6 ชั่วโมง（5〜6時間）</li>
+            <li>ข. 7-8 ชั่วโมง（7〜8時間）</li>
+            <li>ค. 9-10 ชั่วโมง（9〜10時間）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 7-8 ชั่วโมง（7〜8時間）</div>
+            <div class="exp">7〜8時間眠る女性の方が9時間超の女性より妊娠率が高いことが判明しました。</div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="quiz-item">
+          <div class="quiz-num">8</div>
+          <div class="quiz-q-thai">ควรนอนตอนกลางวันได้ไม่เกินกี่ชั่วโมง?</div>
+          <div class="quiz-q-jp">昼寝は最大何時間以内が推奨されている？</div>
+          <ul class="quiz-options">
+            <li>ก. ไม่เกิน 30 นาที（30分以内）</li>
+            <li>ข. ไม่เกิน 1 ชั่วโมง（1時間以内）</li>
+            <li>ค. ไม่เกิน 2 ชั่วโมง（2時間以内）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ไม่เกิน 1 ชั่วโมง（1時間以内）</div>
+            <div class="exp">昼寝は1時間以内にとどめましょう。2時間以上になると夜の睡眠に支障が出ます。</div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="quiz-item">
+          <div class="quiz-num">9</div>
+          <div class="quiz-q-thai">ข้อใดถูกต้องเกี่ยวกับการอดนอน?</div>
+          <div class="quiz-q-jp">睡眠不足について正しいものはどれ？</div>
+          <ul class="quiz-options">
+            <li>ก. ทำให้เสื่อมสมรรถภาพทางเพศโดยตรง（直接的に性機能を低下させる）</li>
+            <li>ข. ทำให้ระบบไหลเวียนเลือดผิดปกติ（血液循環に異常をきたす）</li>
+            <li>ค. ทำให้เข้าสู่วัยทองเร็วขึ้น（更年期を早める）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ทำให้ระบบไหลเวียนเลือดผิดปกติ（血液循環に異常をきたす）</div>
+            <div class="exp">慢性的な睡眠不足は心血管疾患リスクを高め、血圧上昇などを引き起こします。性機能低下・更年期への影響はありません。</div>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="quiz-item">
+          <div class="quiz-num">10</div>
+          <div class="quiz-q-thai">อะไรที่สำคัญกว่า ระหว่างระยะเวลาการนอน กับคุณภาพการนอน?</div>
+          <div class="quiz-q-jp">睡眠時間と睡眠の質、どちらが大切？</div>
+          <ul class="quiz-options">
+            <li>ก. ระยะเวลาการนอน（睡眠時間）</li>
+            <li>ข. คุณภาพการนอน（睡眠の質）</li>
+            <li>ค. สำคัญเท่ากัน（同じくらい大切）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. คุณภาพการนอน（睡眠の質）</div>
+            <div class="exp">記事では「時間より質が大切」と述べています。深く眠れていれば時間が少し短くても健康に良い影響があります。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 3: 会話 ===================== -->
+    <div id="tab-dialogue" class="tab-content">
+      <div class="content-wrap">
+        <div class="dialogue-intro">💬 登場人物: <strong>ต้น (トン)</strong> と <strong>แนน (ナーン)</strong> — 同僚の友人2人が昼休みに話しています。</div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">แนน ดูหน้าตาเหนื่อยเลยนะ นอนไม่หลับหรือเปล่า?</div>
+            <div class="bubble-jp">ナーン、疲れた顔してるね。眠れなかった？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">ใช่เลย เมื่อคืนนอนได้แค่ 4 ชั่วโมง เพราะต้องทำงานส่งดึกมาก</div>
+            <div class="bubble-jp">そうなの。昨夜は4時間しか寝られなかった。締め切りがあって遅くまで仕事してたんだ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">โอ้โห อันตรายนะ เพิ่งอ่านบทความที่บอกว่า นอนน้อยกว่า 6 ชั่วโมงเสี่ยงโรคหัวใจด้วย</div>
+            <div class="bubble-jp">えー、それは危ないよ。6時間未満の睡眠は心臓病リスクが高まるって記事を読んだばかりだよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">จริงเหรอ? น่ากลัวเลยนะ แล้วนอนมากไปก็ไม่ดีด้วยใช่ไหม?</div>
+            <div class="bubble-jp">本当に？それは怖いね。寝すぎも良くないんだよね？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">ถูกต้องเลย บทความบอกว่านอนมากกว่า 8 ชั่วโมงก็เสี่ยงโรคซึมเศร้า และอ้วนง่ายได้ด้วย เพราะกระเพาะไม่ค่อยทำงาน</div>
+            <div class="bubble-jp">そうそう。記事によると8時間以上寝るとうつ病リスクや、胃が動かないから太りやすくなるリスクもあるって。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">แล้วควรนอนกี่ชั่วโมงถึงจะดี? ต้นแนะนำอะไรได้บ้าง?</div>
+            <div class="bubble-jp">じゃあ何時間眠るのがいいの？何かアドバイスある？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">6-8 ชั่วโมงต่อวัน และควรเข้านอนก่อน 4 ทุ่ม แล้วตื่นเช้าประมาณตี 5 ถึง 6 โมง แบบนี้จะสดชื่นมากเลย</div>
+            <div class="bubble-jp">1日6〜8時間で、夜10時前に寝て朝5〜6時に起きるといいよ。そうするとすごくスッキリするよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">ฉันมักเล่นโทรศัพท์ก่อนนอนนาน ๆ น่าจะเป็นปัญหาด้วยใช่ไหม?</div>
+            <div class="bubble-jp">私、寝る前にスマホをずっと見てる習慣があるんだけど、それも問題だよね？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">ใช่เลย แสงจากจอทำให้สมองตื่นตัว นอนไม่ค่อยหลับ ลองวางโทรศัพท์ก่อนนอนอย่างน้อย 30 นาทีดูนะ</div>
+            <div class="bubble-jp">そうだよ。画面の光が脳を覚醒させるから眠りにくくなるの。就寝30分前にはスマホを置いてみてよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">โอเค จะลองทำดู แล้วการออกกำลังกายช่วยได้ด้วยไหม?</div>
+            <div class="bubble-jp">わかった、試してみる。運動も効果ある？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">ต้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">ต้น</div>
+            <div class="bubble-thai">ช่วยได้มากเลย! ออกกำลังกายทำให้ร่างกายขับเหงื่อ สมองสดชื่น แล้วก็นอนหลับได้ดีขึ้นด้วย แต่อย่าออกกำลังกายก่อนนอนทันทีนะ</div>
+            <div class="bubble-jp">すごく効果あるよ！運動すると汗をかいて脳がスッキリして、眠りも深くなる。ただし、寝る直前の運動はダメだよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">แนน</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">แนน</div>
+            <div class="bubble-thai">ขอบคุณมากนะต้น คืนนี้จะพยายามนอนให้ตรงเวลาเลย สุขภาพสำคัญกว่าอะไรทั้งนั้น!</div>
+            <div class="bubble-jp">ありがとう、トン！今夜から決まった時間に寝るようにするね。健康が一番大事だもん！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 4: 単語 ===================== -->
+    <div id="tab-vocab" class="tab-content">
+      <div class="content-wrap">
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🛌 睡眠・状態に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">นอนหลับ</td>
+              <td>眠る・睡眠をとる</td>
+              <td class="sup-note">นอน（横になる）+ หลับ（眠る）。「หลับ」単独でも「眠る」の意味。対義語はตื่น（目が覚める）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">นอนไม่หลับ</td>
+              <td>眠れない</td>
+              <td class="sup-note">「ไม่」は否定。นอนไม่หลับเรื้อรัง＝慢性不眠症</td>
+            </tr>
+            <tr>
+              <td class="thai-word">หลับสนิท</td>
+              <td>深く眠る・ぐっすり眠る</td>
+              <td class="sup-note">สนิท＝ぴったり・完全に。หลับสนิทไม่ถูกรบกวน＝邪魔されずぐっすり眠る</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ตื่น</td>
+              <td>目が覚める</td>
+              <td class="sup-note">ตื่นนอน＝起床する。ตื่นสาย＝寝坊する。ตื่นกลางดึก＝夜中に目が覚める</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ง่วง / ง่วงนอน</td>
+              <td>眠い</td>
+              <td class="sup-note">ง่วงมาก＝すごく眠い。ง่วงซึม＝眠くてぼーっとする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เรื้อรัง</td>
+              <td>慢性的な</td>
+              <td class="sup-note">急性(เฉียบพลัน)の反対。โรคเรื้อรัง＝慢性病。「長引く」というニュアンス</td>
+            </tr>
+            <tr>
+              <td class="thai-word">นอนชดเชย</td>
+              <td>寝だめ・補充睡眠</td>
+              <td class="sup-note">ชดเชย＝補う・埋め合わせる。นอนชดเชยสัปดาห์ละครั้ง＝週1回寝だめする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">อดนอน</td>
+              <td>睡眠不足・徹夜する</td>
+              <td class="sup-note">อด＝我慢する・断つ。อดอาหาร＝絶食。อดนอนทั้งคืน＝一晩中起きている</td>
+            </tr>
+            <tr>
+              <td class="thai-word">นอนเกิน / นอนมากเกินไป</td>
+              <td>寝すぎ</td>
+              <td class="sup-note">เกิน＝超える・過ぎる。เกินพอ＝必要以上に</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคนอนเกิน (Hypersomnia)</td>
+              <td>過眠症</td>
+              <td class="sup-note">โรคขี้เซา（怠け者病）とも呼ばれる。いくら寝ても眠い状態</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">💊 健康・病気に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">สุขภาพ</td>
+              <td>健康</td>
+              <td class="sup-note">สุขภาพดี＝健康状態が良い。สุขภาพแย่＝体調が悪い。สุขภาพจิต＝精神的健康</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรค</td>
+              <td>病気・病</td>
+              <td class="sup-note">เป็นโรค＝病気にかかる。โรคระบาด＝伝染病。โรคประจำตัว＝持病</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคซึมเศร้า</td>
+              <td>うつ病</td>
+              <td class="sup-note">ซึมเศร้า＝落ち込んでいる。โรคซึมเศร้าเรื้อรัง＝慢性うつ病</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคหัวใจ</td>
+              <td>心臓病</td>
+              <td class="sup-note">หัวใจ＝心臓。โรคหัวใจและหลอดเลือด＝心血管疾患</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคเบาหวาน</td>
+              <td>糖尿病</td>
+              <td class="sup-note">น้ำตาลในเลือดสูง＝血糖値が高い。อินซูลิน＝インスุリン</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคมะเร็งลำไส้</td>
+              <td>大腸がん</td>
+              <td class="sup-note">มะเร็ง＝がん。ลำไส้＝腸。มะเร็งเต้านม＝乳がん。มะเร็งปอด＝肺がん</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โรคกระดูกพรุน</td>
+              <td>骨粗しょう症</td>
+              <td class="sup-note">กระดูก＝骨。พรุน＝穴が多い・もろい</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ความดันเลือด / ความดันโลหิต</td>
+              <td>血圧</td>
+              <td class="sup-note">ความดันสูง＝高血圧。ความดันต่ำ＝低血圧</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ภาวะมีบุตรยาก</td>
+              <td>不妊</td>
+              <td class="sup-note">ภาวะ＝状態・症状。มีบุตร＝子どもを持つ。ยาก＝難しい</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สมรรถภาพทางเพศ</td>
+              <td>性機能</td>
+              <td class="sup-note">สมรรถภาพ＝能力・機能。เสื่อมสมรรถภาพ＝機能が低下する</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🧠 身体・医学に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">สมอง</td>
+              <td>脳</td>
+              <td class="sup-note">สมองเสื่อม＝認知症・脳の衰え。สมองล้า＝脳疲労。ทำร้ายสมอง＝脳を傷つける</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ร่างกาย</td>
+              <td>身体・体</td>
+              <td class="sup-note">ร่างกายและจิตใจ＝体と心。ร่างกายแข็งแรง＝体が丈夫</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ฮอร์โมน</td>
+              <td>ホルモン</td>
+              <td class="sup-note">ฮอร์โมนเทสโทสเทอโรน＝テストステロン。ฮอร์โมนในร่างกาย＝体内ホルモン</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ซีโรโทนิน</td>
+              <td>セロトニン</td>
+              <td class="sup-note">สารแห่งความสุข（幸福物質）とも言われる。เอนดอร์ฟิน（エンドルフィン）と並んで登場</td>
+            </tr>
+            <tr>
+              <td class="thai-word">อินซูลิน</td>
+              <td>インスリン</td>
+              <td class="sup-note">ภาวะดื้ออินซูลิน＝インスリン抵抗性。กลูโคส＝グルコース（血糖）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">หลอดเลือด</td>
+              <td>血管</td>
+              <td class="sup-note">หลอดเลือดหัวใจ＝冠動脈。หลอดเลือดอุดตัน＝血管閉塞</td>
+            </tr>
+            <tr>
+              <td class="thai-word">กระเพาะอาหาร</td>
+              <td>胃</td>
+              <td class="sup-note">กระเพาะอาหารไม่ย่อย＝胃が消化しない。กระเพาะล้า＝胃が疲れる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ระบบย่อยอาหาร</td>
+              <td>消化器系</td>
+              <td class="sup-note">ย่อย＝消化する。ย่อยอาหารไม่ดี＝消化不良</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">😴 症状・感覚に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">เหนื่อย / อ่อนเพลีย</td>
+              <td>疲れた・だるい</td>
+              <td class="sup-note">เหนื่อย＝疲れた（一般的）。อ่อนเพลีย＝虚弱・疲弊した（より深刻）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">หงุดหงิด</td>
+              <td>イライラする</td>
+              <td class="sup-note">อารมณ์หงุดหงิด＝イライラした感情。หงุดหงิดง่าย＝すぐイライラする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เครียด</td>
+              <td>ストレスを感じる・緊張する</td>
+              <td class="sup-note">ความเครียด＝ストレス（名詞）。คลายเครียด＝ストレスを解消する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">วิตกกังวล</td>
+              <td>不安に感じる・心配する</td>
+              <td class="sup-note">วิตก＝心配する。กังวล＝気にする。กังวลใจ＝心配して気が重い</td>
+            </tr>
+            <tr>
+              <td class="thai-word">อารมณ์แปรปรวน</td>
+              <td>感情が不安定</td>
+              <td class="sup-note">อารมณ์＝感情・気分。แปรปรวน＝変動する。อารมณ์เสีย＝機嫌が悪い</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เฉื่อยชา</td>
+              <td>ぐったりしている・のろい</td>
+              <td class="sup-note">ไร้ชีวิตชีวา（活力がない）に近い意味。ช้า＝遅い</td>
+            </tr>
+            <tr>
+              <td class="thai-word">กระปรี้กระเปร่า</td>
+              <td>元気いっぱい・活き活きとした</td>
+              <td class="sup-note">เฉื่อยชาの反対。สดชื่น＝さわやか・さっぱりした。ตื่นตัว＝覚醒している</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ท้องอืด</td>
+              <td>お腹の張り・腹部膨満</td>
+              <td class="sup-note">ท้อง＝お腹。ท้องเฟ้อ＝ガス・膨満感。ท้องเสีย＝下痢。ท้องผูก＝便秘</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🌿 生活習慣・改善に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">พักผ่อน</td>
+              <td>休憩する・休む</td>
+              <td class="sup-note">พักผ่อนเพียงพอ＝十分に休む。พักผ่อนหย่อนใจ＝気晴らし・娯楽</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ออกกำลังกาย</td>
+              <td>運動する</td>
+              <td class="sup-note">ออกกำลังกายสม่ำเสมอ＝定期的に運動する。ขับเหงื่อ＝汗をかく</td>
+            </tr>
+            <tr>
+              <td class="thai-word">นาฬิกาชีวิต</td>
+              <td>体内時計（生物時計）</td>
+              <td class="sup-note">นาฬิกา＝時計。ชีวิต＝人生・生活。วงจรชีวิต＝生活サイクル</td>
+            </tr>
+            <tr>
+              <td class="thai-word">กำหนดเวลา</td>
+              <td>時間を決める・スケジュールを立てる</td>
+              <td class="sup-note">กำหนด＝設定する・決定する。ตรงเวลา＝時間通りに</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สม่ำเสมอ</td>
+              <td>規則正しく・コンスタントに</td>
+              <td class="sup-note">ออกกำลังกายสม่ำเสมอ＝定期的に運動する。สม่ำเสมอ＝均一で安定した</td>
+            </tr>
+            <tr>
+              <td class="thai-word">หลีกเลี่ยง</td>
+              <td>避ける</td>
+              <td class="sup-note">หลีกเลี่ยงสาเหตุ＝原因を避ける。พยายามหลีกเลี่ยง＝なるべく避けようとする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ปรับพฤติกรรม</td>
+              <td>行動・習慣を改善する</td>
+              <td class="sup-note">ปรับ＝調整する。พฤติกรรม＝行動・習慣。เปลี่ยนพฤติกรรม＝行動を変える</td>
+            </tr>
+            <tr>
+              <td class="thai-word">คุณภาพการนอน</td>
+              <td>睡眠の質</td>
+              <td class="sup-note">คุณภาพ＝品質・質。คุณภาพชีวิต＝生活の質（QOL）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ยานอนหลับ</td>
+              <td>睡眠薬</td>
+              <td class="sup-note">ยา＝薬。ดื้อยา＝薬に耐性ができる。ไม่ควรใช้ยานอนหลับ＝睡眠薬は使わない方がよい</td>
+            </tr>
+            <tr>
+              <td class="thai-word">คาเฟอีน</td>
+              <td>カフェイン</td>
+              <td class="sup-note">กาแฟ（コーヒー）・ชา（お茶）に含まれる。กระตุ้นสมอง＝脳を刺激する</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">📊 数量・統計・頻度に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">เปอร์เซ็นต์ / %</td>
+              <td>パーセント</td>
+              <td class="sup-note">47%＝สี่สิบเจ็ดเปอร์เซ็นต์。数字+เปอร์เซ็นต์の順</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สะสม</td>
+              <td>蓄積する・積み重なる</td>
+              <td class="sup-note">สะสมนาน ๆ＝長期間積み重なる。ออมสะสม＝貯金する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ระยะยาว</td>
+              <td>長期的に</td>
+              <td class="sup-note">ระยะสั้น＝短期的に。ระยะเวลา＝期間・時間の長さ</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เสี่ยง</td>
+              <td>リスクがある・危険にさらされている</td>
+              <td class="sup-note">ความเสี่ยง＝リスク（名詞）。เสี่ยงต่อโรค＝病気のリスクがある</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ส่งผล</td>
+              <td>影響を与える・結果をもたらす</td>
+              <td class="sup-note">ส่งผลเสีย＝悪影響を与える。ส่งผลดี＝良い影響を与える。ส่งผลต่อ+名詞</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 5: 例文 ===================== -->
+    <div id="tab-examples" class="tab-content">
+      <div class="content-wrap">
+        <div class="example-section">
+          <h4>🛌 睡眠・状態</h4>
+          <div class="example-item">
+            <div class="ex-thai">คืนนี้ฉันอยากจะ<span class="highlight-word">นอนหลับ</span>ให้เร็ว เพราะพรุ่งนี้ต้องตื่นแต่เช้า</div>
+            <div class="ex-jp">今夜は早く<strong>眠りたい</strong>、明日早起きしなきゃいけないから。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">แม้ว่าจะเหนื่อยมาก แต่เธอก็<span class="highlight-word">นอนไม่หลับ</span>เลยตลอดคืน</div>
+            <div class="ex-jp">とても疲れているのに、彼女は一晩中<strong>眠れなかった</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ถ้า<span class="highlight-word">หลับสนิท</span>ทุกคืน ร่างกายก็จะแข็งแรงมากขึ้น</div>
+            <div class="ex-jp">毎晩<strong>ぐっすり眠れれば</strong>、体はどんどん丈夫になる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เขา<span class="highlight-word">ตื่น</span>กลางดึกบ่อย ๆ จนรู้สึกเหนื่อยตอนเช้า</div>
+            <div class="ex-jp">彼は夜中によく<strong>目が覚める</strong>ので、朝はいつも疲れている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ฉัน<span class="highlight-word">ง่วง</span>มากเลย เมื่อคืนนอนได้แค่ 3 ชั่วโมงเอง</div>
+            <div class="ex-jp">すごく<strong>眠い</strong>よ、昨夜は3時間しか寝られなかったから。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">โรคปวดหัวของเธอกลายเป็น<span class="highlight-word">เรื้อรัง</span>แล้ว ต้องไปพบแพทย์เร็ว ๆ นี้</div>
+            <div class="ex-jp">彼女の頭痛はもう<strong>慢性的</strong>になってしまった、早めに医者に行かないと。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การ<span class="highlight-word">นอนชดเชย</span>ในวันหยุดอาจช่วยได้ แต่ไม่ใช่วิธีที่ดีที่สุด</div>
+            <div class="ex-jp">休日の<strong>寝だめ</strong>は多少効果があるかもしれないが、最善の方法ではない。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ระหว่างสอบ นักศึกษาหลายคนต้อง<span class="highlight-word">อดนอน</span>เพื่ออ่านหนังสือ</div>
+            <div class="ex-jp">試験期間中、多くの学生は勉強のために<strong>睡眠を削る</strong>ことになる。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>💊 健康・病気</h4>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายสม่ำเสมอช่วยให้<span class="highlight-word">สุขภาพ</span>ดีขึ้นได้อย่างมาก</div>
+            <div class="ex-jp">定期的な運動は<strong>健康</strong>を大幅に改善してくれる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">
+              คุณตาของฉันเป็น<span class="highlight-word">โรคเบาหวาน</span>
+              เลยต้องระวังเรื่องอาหารมาก
+            </div>
+            <div class="ex-jp">私の祖父は<strong>糖尿病</strong>なので、食事にとても気をつけなければならない。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ถ้า<span class="highlight-word">ความดันเลือด</span>สูงเป็นเวลานาน อาจนำไปสู่โรคหัวใจได้</div>
+            <div class="ex-jp"><strong>血圧</strong>が長期間高い状態が続くと、心臓病につながる可能性がある。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เขาป่วยเป็น<span class="highlight-word">โรคซึมเศร้า</span>มานานกว่าสองปีแล้ว</div>
+            <div class="ex-jp">彼は2年以上<strong>うつ病</strong>を患っている。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🧠 身体・医学</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">สมอง</span>ของเราต้องการการพักผ่อนเพื่อเก็บข้อมูลที่ได้เรียนรู้ในแต่ละวัน</div>
+            <div class="ex-jp">私たちの<strong>脳</strong>は、毎日学んだ情報を整理するために休息を必要とする。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ระดับ<span class="highlight-word">ฮอร์โมน</span>ในร่างกายเปลี่ยนแปลงตามการนอนหลับ</div>
+            <div class="ex-jp">体内の<strong>ホルモン</strong>レベルは睡眠によって変化する。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายช่วยเพิ่ม<span class="highlight-word">ซีโรโทนิน</span>ในสมอง ทำให้รู้สึกมีความสุขมากขึ้น</div>
+            <div class="ex-jp">運動は脳内の<strong>セロトニン</strong>を増やし、より幸せを感じさせてくれる。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>😴 症状・感覚</h4>
+          <div class="example-item">
+            <div class="ex-thai">หลังจากประชุมนาน ฉันรู้สึก<span class="highlight-word">อ่อนเพลีย</span>มากจนอยากนอนเลย</div>
+            <div class="ex-jp">長い会議の後、<strong>疲弊して</strong>すぐに寝たい気分になった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เมื่อนอนไม่พอ เขาจะ<span class="highlight-word">หงุดหงิด</span>และพูดไม่ดีกับคนรอบข้าง</div>
+            <div class="ex-jp">睡眠不足のとき、彼は<strong>イライラして</strong>周りの人にきつく当たってしまう。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">งานมากจนเกินไปทำให้เธอ<span class="highlight-word">เครียด</span>และนอนหลับยาก</div>
+            <div class="ex-jp">仕事が多すぎて彼女は<strong>ストレスを感じ</strong>、眠れなくなってしまった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">วันนี้เธอดู<span class="highlight-word">กระปรี้กระเปร่า</span>มาก คงนอนหลับพักผ่อนได้ดีคืนที่แล้ว</div>
+            <div class="ex-jp">今日の彼女はとても<strong>元気いっぱいだ</strong>、昨晩よく眠れたんだろう。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เขามักมีอาการ<span class="highlight-word">ท้องอืด</span>หลังจากทานอาหารมื้อดึก</div>
+            <div class="ex-jp">彼は深夜に食事をした後によく<strong>お腹が張る</strong>。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🌿 生活習慣・改善</h4>
+          <div class="example-item">
+            <div class="ex-thai">หมอแนะนำให้เธอ<span class="highlight-word">ออกกำลังกาย</span>อย่างน้อยสัปดาห์ละ 3 ครั้ง</div>
+            <div class="ex-jp">医者は彼女に少なくとも週3回<strong>運動する</strong>よう勧めた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การทำกิจวัตรประจำวัน<span class="highlight-word">สม่ำเสมอ</span>ช่วยให้นาฬิกาชีวิตทำงานได้ดี</div>
+            <div class="ex-jp">日課を<strong>規則正しく</strong>こなすことで、体内時計が正常に機能する。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เราควร<span class="highlight-word">หลีกเลี่ยง</span>การดื่มกาแฟหลัง 6 โมงเย็น เพื่อให้นอนหลับได้ง่ายขึ้น</div>
+            <div class="ex-jp">夜6時以降はコーヒーを飲むことを<strong>避けるべきだ</strong>、眠りやすくなるように。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ถ้าอยากมี<span class="highlight-word">คุณภาพการนอน</span>ที่ดี ควรปิดโทรศัพท์ก่อนนอน</div>
+            <div class="ex-jp">良い<strong>睡眠の質</strong>を得たいなら、就寝前にスマホをオフにすべきだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ผู้เชี่ยวชาญแนะนำว่า ไม่ควรใช้<span class="highlight-word">ยานอนหลับ</span>เป็นระยะยาว เพราะจะดื้อยาได้</div>
+            <div class="ex-jp">専門家は、<strong>睡眠薬</strong>を長期使用すべきでないと勧めている、耐性がつくから。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เครื่องดื่มที่มี<span class="highlight-word">คาเฟอีน</span>อย่างชาและกาแฟ ควรดื่มตอนเช้าเท่านั้น</div>
+            <div class="ex-jp">お茶やコーヒーなど<strong>カフェイン</strong>を含む飲み物は、朝だけ飲むべきだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การนอนน้อยเกินไปจะ<span class="highlight-word">ส่งผล</span>เสียต่อสุขภาพในระยะยาว</div>
+            <div class="ex-jp">睡眠不足は長期的に健康に悪い<strong>影響を与える</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">พฤติกรรมการใช้หน้าจอก่อนนอนเป็น<span class="highlight-word">ความเสี่ยง</span>หลักของโรคนอนไม่หลับ</div>
+            <div class="ex-jp">就寝前のスクリーン使用習慣は不眠症の主な<strong>リスク</strong>だ。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTab(name) {
+        document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
+        document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        event.target.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function toggleAnswer(btn) {
+        const box = btn.nextElementSibling;
+        if (box.style.display === "block") {
+          box.style.display = "none";
+          btn.textContent = "答えを見る";
+        } else {
+          box.style.display = "block";
+          btn.textContent = "閉じる";
+        }
+      }
+    </script>
+  </body>
+</html>

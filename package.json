@@ -1,0 +1,17 @@
+{
+  "name": "reading-thai-articles",
+  "version": "1.0.0",
+  "description": "ฝึกอ่าน",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [
+    "thai",
+    "reading"
+  ],
+  "author": "Naoki Taniguchi",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
