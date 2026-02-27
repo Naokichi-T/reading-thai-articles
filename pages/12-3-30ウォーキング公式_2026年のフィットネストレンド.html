@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12-3-30ウォーキング公式：2026年のフィットネストレンド | タイ語学習</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #2d6a4f;
+        --primary-light: #52b788;
+        --primary-pale: #d8f3dc;
+        --accent: #e76f51;
+        --accent-light: #ffddd2;
+        --bg: #f8fffe;
+        --bg2: #edf7f0;
+        --text: #1b2e22;
+        --text-light: #4a6855;
+        --border: #b7e4c7;
+        --white: #ffffff;
+        --shadow: 0 2px 12px rgba(45, 106, 79, 0.1);
+        --shadow-lg: 0 6px 28px rgba(45, 106, 79, 0.15);
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: "Noto Sans JP", "Sarabun", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
+        color: #fff;
+        padding: 36px 24px 28px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "🚶";
+        position: absolute;
+        font-size: 140px;
+        opacity: 0.07;
+        top: -20px;
+        left: -20px;
+      }
+      header::after {
+        content: "💪";
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.07;
+        bottom: -20px;
+        right: -10px;
+      }
+      header h1 {
+        font-family: "Sarabun", sans-serif;
+        font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      header h2 {
+        font-family: "Noto Serif JP", serif;
+        font-size: clamp(0.9rem, 2.8vw, 1.15rem);
+        font-weight: 400;
+        opacity: 0.92;
+        margin-bottom: 8px;
+      }
+      .header-meta {
+        font-size: 0.78rem;
+        opacity: 0.75;
+        margin-top: 6px;
+      }
+      .header-meta a { color: #a9d6b0; }
+
+      /* TABS */
+      .tab-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        background: var(--white);
+        border-bottom: 2px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 8px rgba(45, 106, 79, 0.08);
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-nav::-webkit-scrollbar { height: 3px; }
+      .tab-nav::-webkit-scrollbar-track { background: #e8f5e9; }
+      .tab-nav::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 2px; }
+
+      .tab-btn {
+        flex: none;
+        padding: 14px 18px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--text-light);
+        cursor: pointer;
+        white-space: nowrap;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        letter-spacing: 0.02em;
+      }
+      .tab-btn:hover { background: var(--bg2); color: var(--primary); }
+      .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); background: var(--primary-pale); }
+
+      /* TAB CONTENT */
+      .tab-content { display: none; }
+      .tab-content.active { display: block; }
+
+      .content-wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 20px 60px;
+      }
+
+      /* ARTICLE TAB */
+      .article-intro {
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-left: 4px solid var(--primary);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 28px;
+        font-size: 0.92rem;
+        color: var(--text-light);
+      }
+
+      .formula-box {
+        background: linear-gradient(135deg, #1b4332, #2d6a4f);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin: 20px 0;
+        color: #fff;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .formula-item {
+        text-align: center;
+        background: rgba(255,255,255,0.12);
+        border-radius: 10px;
+        padding: 14px 20px;
+        min-width: 120px;
+      }
+      .formula-num {
+        font-family: "Sarabun", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #95d5b2;
+      }
+      .formula-label {
+        font-size: 0.8rem;
+        opacity: 0.85;
+        margin-top: 4px;
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      .article-section { margin-bottom: 36px; }
+      .article-section h3 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--primary);
+        border-left: 4px solid var(--primary-light);
+        padding: 6px 12px;
+        background: var(--bg2);
+        border-radius: 0 6px 6px 0;
+        margin-bottom: 16px;
+      }
+
+      .para-block { margin-bottom: 20px; }
+      .para-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: var(--text);
+        background: var(--white);
+        border-radius: 8px;
+        padding: 14px 18px;
+        border: 1px solid var(--border);
+      }
+      .para-jp {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.86rem;
+        line-height: 1.7;
+        color: var(--text-light);
+        background: var(--bg2);
+        border-radius: 8px;
+        padding: 12px 18px;
+        border: 1px solid var(--border);
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      /* QUIZ TAB */
+      .quiz-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .quiz-num {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 50%;
+        width: 28px; height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .quiz-q-thai { font-family: "Sarabun", sans-serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; color: var(--text); }
+      .quiz-q-jp { font-size: 0.84rem; color: var(--text-light); margin-bottom: 14px; }
+      .quiz-options { list-style: none; margin-bottom: 12px; }
+      .quiz-options li {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--border);
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-family: "Sarabun", sans-serif;
+        font-size: 0.97rem;
+        transition: all 0.15s;
+        background: var(--bg);
+      }
+      .quiz-options li:hover { background: var(--primary-pale); border-color: var(--primary-light); }
+      .answer-btn {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 18px;
+        font-size: 0.87rem;
+        font-family: "Noto Sans JP", sans-serif;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .answer-btn:hover { background: #1b4332; }
+      .answer-box {
+        display: none;
+        margin-top: 12px;
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        border-left: 4px solid var(--primary);
+      }
+      .answer-box .correct { font-weight: 700; color: var(--primary); font-size: 1rem; }
+      .answer-box .exp { color: var(--text-light); margin-top: 4px; font-size: 0.85rem; }
+
+      /* DIALOGUE TAB */
+      .dialogue-intro {
+        background: var(--accent-light);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-bottom: 24px;
+        font-size: 0.88rem;
+        color: #7c3b2a;
+        border-left: 4px solid var(--accent);
+      }
+      .dialogue-turn { display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start; }
+      .dialogue-turn.right { flex-direction: row-reverse; }
+      .avatar {
+        width: 42px; height: 42px;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-family: "Sarabun", sans-serif;
+      }
+      .avatar-a { background: var(--primary-pale); color: var(--primary); }
+      .avatar-b { background: var(--accent-light); color: var(--accent); }
+      .bubble {
+        border-radius: 14px;
+        padding: 12px 16px;
+        max-width: 75%;
+        box-shadow: var(--shadow);
+      }
+      .bubble-a { background: var(--white); border: 1px solid var(--border); border-top-left-radius: 4px; }
+      .bubble-b { background: var(--primary-pale); border: 1px solid var(--primary-light); border-top-right-radius: 4px; }
+      .bubble-name { font-size: 0.75rem; font-weight: 700; margin-bottom: 4px; color: var(--text-light); }
+      .bubble-thai { font-family: "Sarabun", sans-serif; font-size: 1rem; line-height: 1.65; color: var(--text); }
+      .bubble-jp { font-size: 0.8rem; line-height: 1.6; color: var(--text-light); margin-top: 5px; padding-top: 5px; border-top: 1px dashed var(--border); }
+
+      /* VOCAB TAB */
+      .vocab-category { margin-bottom: 36px; }
+      .vocab-cat-title {
+        font-family: "Noto Serif JP", serif;
+        font-size: 1.05rem; font-weight: 700;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 8px 16px;
+        border-radius: 7px;
+        border-left: 5px solid var(--primary);
+        margin-bottom: 12px;
+      }
+      .vocab-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .vocab-table th {
+        background: var(--primary);
+        color: #fff;
+        padding: 10px 12px;
+        text-align: left;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+      .vocab-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.55; }
+      .vocab-table tr:last-child td { border-bottom: none; }
+      .vocab-table tr:nth-child(even) td { background: var(--bg2); }
+      .thai-word { font-family: "Sarabun", sans-serif; font-size: 1rem; font-weight: 600; color: var(--primary); }
+      .sup-note { font-size: 0.82rem; color: var(--text-light); }
+
+      /* EXAMPLES TAB */
+      .example-section { margin-bottom: 30px; }
+      .example-section h4 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 6px 14px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        border-left: 4px solid var(--primary-light);
+      }
+      .example-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 10px;
+      }
+      .ex-thai { font-family: "Sarabun", sans-serif; font-size: 1rem; line-height: 1.75; color: var(--text); margin-bottom: 4px; }
+      .ex-jp { font-size: 0.84rem; color: var(--text-light); line-height: 1.6; }
+      .highlight-word { font-weight: 700; color: #e76f51; }
+
+      /* RESPONSIVE */
+      @media (max-width: 600px) {
+        .content-wrap { padding: 20px 14px 50px; }
+        header { padding: 24px 16px 20px; }
+        .tab-btn { padding: 12px 13px; font-size: 0.82rem; }
+        .bubble { max-width: 85%; }
+        header h1 { font-size: 1rem; }
+        header h2 { font-size: 0.88rem; }
+        .vocab-table { font-size: 0.82rem; }
+        .vocab-table th, .vocab-table td { padding: 7px 8px; }
+        .thai-word { font-size: 0.93rem; }
+        .formula-box { gap: 10px; }
+        .formula-item { min-width: 90px; padding: 10px 14px; }
+        .formula-num { font-size: 1.6rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>สูตรเดิน 12 - 3 - 30 เทรนด์ออกกำลังกายปี 2569 ทำง่ายได้ผลจริง</h1>
+      <h2>12-3-30ウォーキング公式：2026年のフィットネストレンド、簡単で本当に効果あり</h2>
+      <div class="header-meta">
+        出典: <a href="https://www.bangkokbiznews.com/health/longevity/1220919" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ　|　記事日付: 2026年2月12日
+      </div>
+    </header>
+
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('article', event)">📄 記事</button>
+      <button class="tab-btn" onclick="showTab('quiz', event)">❓ 問題</button>
+      <button class="tab-btn" onclick="showTab('dialogue', event)">💬 会話</button>
+      <button class="tab-btn" onclick="showTab('vocab', event)">📚 単語</button>
+      <button class="tab-btn" onclick="showTab('examples', event)">✏️ 例文</button>
+    </nav>
+
+    <!-- ===================== TAB 1: 記事 ===================== -->
+    <div id="tab-article" class="tab-content active">
+      <div class="content-wrap">
+        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+
+        <div class="article-section">
+          <div class="para-block">
+            <div class="para-thai">
+              ตอนนี้ทั่วโลกกำลังสนใจการ <strong>"เดิน"</strong> มากขึ้นในฐานะรูปแบบการออกกำลังกาย หลายคนเคยคิดว่าการเดินเบาเกินไป แต่งานวิจัยใหม่บอกว่าการเดินที่ดีนั้นส่งผลดีต่อสุขภาพกาย สมอง และคุณภาพชีวิตได้อย่างยั่งยืน
+            </div>
+            <div class="para-jp">
+              今、世界中で「歩くこと」が運動として改めて注目されています。多くの人がウォーキングは「軽すぎる」と思っていましたが、新しい研究によると、良いウォーキングは身体の健康・脳・生活の質に持続的な良い影響を与えるとされています。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              แนวคิดที่คนพูดถึงมากตอนนี้คือ <strong>สูตรเดิน 12 - 3 - 30</strong> บนลู่วิ่ง ซึ่งเป็นวิธีออกกำลังกายที่ทำง่ายในชีวิตประจำวัน และได้รับการยกให้เป็นรูปแบบการออกกำลังกายของปี 2569
+            </div>
+            <div class="para-jp">
+              今話題になっているのが、トレッドミルを使った<strong>12-3-30ウォーキング公式</strong>です。日常生活でも実践しやすい運動方法として、2026年の運動トレンドに選ばれています。
+            </div>
+          </div>
+
+          <div class="formula-box">
+            <div class="formula-item">
+              <div class="formula-num">12</div>
+              <div class="formula-label">傾斜 12%<br>ความชัน 12%</div>
+            </div>
+            <div class="formula-item">
+              <div class="formula-num">3</div>
+              <div class="formula-label">速度 時速3マイル<br>ความเร็ว 3 ไมล์/ชม.</div>
+            </div>
+            <div class="formula-item">
+              <div class="formula-num">30</div>
+              <div class="formula-label">時間 30分<br>นาน 30 นาที</div>
+            </div>
+          </div>
+
+          <div class="para-block">
+            <div class="para-thai">
+              คนที่มีลู่วิ่งสามารถทำได้เลย ส่วนคนที่ไม่มีลู่วิ่งก็สามารถเดินขึ้นเนินจริงๆ ได้แทน
+            </div>
+            <div class="para-jp">
+              トレッドミルを持っている人はすぐ実践できます。持っていない人は、実際の坂道を歩くことで代替できます。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ทำไมการเดินถึงกลับมาเป็นเทรนด์ออกกำลังกาย（なぜウォーキングがトレンドに戻ってきたのか）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              งานวิจัยจำนวนมากพบว่า <strong>การเดินทุกวัน</strong> ช่วยลดความเสี่ยงของโรคหัวใจ โรคเบาหวาน และโรคสมองเสื่อม นอกจากนี้ยังช่วยลดน้ำหนัก เสริมกล้ามเนื้อ เพิ่มสมาธิ ทำให้อารมณ์ดีขึ้น และทำให้สมองทำงานได้ดีขึ้น หรือที่เรียกว่า <strong>neuroplasticity</strong> ซึ่งหมายถึงความสามารถของสมองในการสร้างการเชื่อมต่อใหม่
+            </div>
+            <div class="para-jp">
+              多くの研究が、<strong>毎日歩くこと</strong>が心臓病・糖尿病・認知症のリスクを減らすことを示しています。また、減量・筋肉強化・集中力アップ・感情の安定・脳の柔軟性（<strong>neuroplasticity</strong>＝脳が新しいつながりを作る能力）にも役立ちます。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              รอย แฮมิลตัน ศาสตราจารย์ด้านประสาทวิทยา มหาวิทยาลัยเพนซิลเวเนีย อธิบายว่า การเดินเร็วประมาณหนึ่งชั่วโมง สัปดาห์ละหลายครั้ง เป็นการออกกำลังกายแบบแอโรบิกที่ดีต่อสมองมาก เขายังบอกด้วยว่า การออกกำลังกายตอนเช้าตรู่หรือตอนเย็นอาจช่วยหัวใจ ระบบเผาผลาญ และการนอนหลับได้มากขึ้น และควรอบอุ่นร่างกายก่อนและหลังออกกำลังกายเสมอ
+            </div>
+            <div class="para-jp">
+              ペンシルバニア大学の神経学教授ロイ・ハミルトンは、週に数回1時間程度の速歩きは脳にとって非常に良い有酸素運動だと説明しています。また、早朝や夕方の運動は心臓・代謝・睡眠の質により多くの効果をもたらす可能性があり、運動前後のウォームアップとクールダウンは常に行うべきだと述べています。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>สูตร 12 - 3 - 30 ต่างจากคาร์ดิโอทั่วไปอย่างไร（12-3-30公式が一般的な有酸素運動と違う点）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              สิ่งที่ทำให้สูตรนี้ต่างออกไปคือ <strong>ความชัดเจน</strong> คนไม่ต้องคิดมาก ไม่ต้องคำนวณ ไม่ต้องถามตัวเองว่าทำมากพอหรือยัง แค่ทำตามตัวเลขก็เสร็จแล้ว
+            </div>
+            <div class="para-jp">
+              この公式が他と異なる点は<strong>わかりやすさ</strong>です。深く考えたり計算したり「十分やれたか」と自問する必要がありません。数字通りにやれば完了です。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              Virlo.ai ซึ่งเป็นแพลตฟอร์มที่ศึกษาวิดีโอสุขภาพและฟิตเนสมากกว่า 1,100 คลิป มียอดรับชมเกือบ 70 ล้านครั้ง พบว่าเนื้อหาเกี่ยวกับการเดินแบบ 12 - 3 - 30 มีคนดูซ้ำและบันทึกไว้ดูภายหลังมากกว่าเนื้อหาฟิตเนสแบบยิมทั่วไป
+            </div>
+            <div class="para-jp">
+              フィットネス動画1,100本以上・総視聴回数7,000万近くを分析したVirlo.aiによると、12-3-30に関するコンテンツは一般的なジムフィットネスコンテンツより繰り返し視聴・保存の数が多かったことがわかりました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              นิโคลัส เมาโร ผู้ร่วมก่อตั้ง Virlo.ai บอกว่า ข้อมูลนี้แสดงให้เห็นว่าคนกำลังมองหาการออกกำลังกายที่พวกเขาสามารถทำได้จริงและทำได้ต่อเนื่อง สูตร 12 - 3 - 30 เข้าใจง่าย จำง่าย และทำซ้ำได้ง่าย ซึ่งสำคัญกว่าความแปลกใหม่หรือการออกกำลังกายที่หนักมาก
+            </div>
+            <div class="para-jp">
+              Virlo.aiの共同創設者ニコラス・マウロは、このデータは人々が本当に続けられる運動を求めていることを示していると述べています。12-3-30は理解しやすく・覚えやすく・繰り返しやすい、これは目新しさや過度なハードさより重要だと言います。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              นอกจากนี้ ผลวิเคราะห์ยังพบว่าคนอายุ 30, 40 และ 50 ปีขึ้นไปสนใจมาก โดยเฉพาะเมื่อนำเสนอว่าเป็น "สิ่งที่ทำได้ระยะยาว" มากกว่าโปรแกรมลดน้ำหนักแบบเร่งด่วน
+            </div>
+            <div class="para-jp">
+              分析では30代・40代・50代以上の参加が特に高く、「急速なダイエットプログラム」ではなく「長期間続けられること」として紹介された際に特に関心が集まりました。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>หลักฐานด้านการเผาผลาญและการลดไขมัน（代謝・脂肪燃焼の根拠）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              จากการทดลองเปรียบเทียบ พบว่าสูตร 12 - 3 - 30 กับการวิ่งบนลู่วิ่ง เผาผลาญพลังงานรวมได้ใกล้เคียงกัน แต่การเดินชันนั้นใช้พลังงานจาก <strong>ไขมัน</strong> มากกว่า และเป็นการออกกำลังกายที่มีแรงกระแทกต่ำ จึงเหมาะกับคนหลายกลุ่มมากกว่า การเดินชันยังทำให้หัวใจและระบบเผาผลาญทำงานมากขึ้น โดยไม่กระทบข้อต่อเหมือนการวิ่ง
+            </div>
+            <div class="para-jp">
+              比較実験によると、12-3-30公式とトレッドミルランニングの総エネルギー消費量はほぼ同等ですが、坂道ウォーキングの方が<strong>脂肪</strong>由来のエネルギーを多く使います。また低衝撃の運動なので、より多くの人に向いています。坂道ウォーキングは走りのように関節に負担をかけずに、心臓と代謝を活発にします。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ทำได้แม้ไม่มีลู่วิ่ง（トレッドミルなしでも実践可能）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              ถ้าไม่มีลู่วิ่ง สามารถออกไปเดินกลางแจ้งได้เลย โดยเลือกเส้นทางที่มีเนิน ทางลาด หรือบันไดในสนามกีฬา เดินต่อเนื่อง 30 นาที หรือเดินขึ้นเนินซ้ำๆ เช่น 5 รอบ รอบละ 6 นาที
+            </div>
+            <div class="para-jp">
+              トレッドミルがなくても、屋外で坂道・傾斜路・スタジアムの階段を選んで歩けます。30分連続、または6分×5セットのように坂道を繰り返すやり方でも大丈夫です。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ความเร็วที่เหมาะสมคือเดินเร็วพอที่จะพูดคุยได้ แต่ร้องเพลงไม่ได้ หายใจเร็วขึ้นแต่ยังควบคุมได้ การออกกำลังกายกลางแจ้งยังช่วยให้จิตใจดีขึ้นและลดความเครียดได้ด้วย
+            </div>
+            <div class="para-jp">
+              適切な速度は、会話はできるが歌うことはできないくらい。呼吸は速まるが、コントロールはできる状態です。屋外での運動は精神的にも良い効果があり、ストレスを減らす効果もあります。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ทำไมคนถึงทำต่อเนื่องได้（なぜ継続できるのか）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              นักวิจัยพบว่า คนเริ่มเบื่อการออกกำลังกายแบบสุดขีด และหันมาหาการออกกำลังกายที่เข้ากับชีวิตจริงมากกว่า นิโคลัสสรุปว่า ความสำเร็จของ 12 - 3 - 30 ไม่ได้อยู่ที่ความหนัก แต่อยู่ที่การ <strong>ลดอุปสรรค</strong> มันชัดเจน คนรู้ว่าต้องทำอะไร ใช้เวลานานเท่าไร และรู้ว่าเสร็จแล้วเมื่อไร
+            </div>
+            <div class="para-jp">
+              研究者たちは、人々が過激なフィットネス文化に疲れ、実生活に合った運動を求めていることを発見しました。ニコラスは、12-3-30の成功は強度ではなく<strong>障壁を下げること</strong>にあると結論づけています。明確で、何をするか・どれくらいかかるか・いつ終わるかがわかるからです。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ท้ายที่สุด สุขภาพระยะยาวไม่ได้ขึ้นอยู่กับการออกกำลังกายที่โหดที่สุด แต่ขึ้นอยู่กับกิจกรรมที่เราสามารถกลับมาทำได้อีกครั้งในวันถัดไปเสมอๆ
+            </div>
+            <div class="para-jp">
+              結局のところ、長期的な健康は最もきつい運動にかかっているのではなく、翌日もまた続けて行える活動にかかっているのです。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 2: 問題 ===================== -->
+    <div id="tab-quiz" class="tab-content">
+      <div class="content-wrap">
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:1.2rem;color:var(--primary);margin-bottom:24px">📝 内容確認問題（10問）</h2>
+
+        <div class="quiz-item">
+          <div class="quiz-num">1</div>
+          <div class="quiz-q-thai">สูตรเดิน 12 - 3 - 30 หมายถึงอะไร?</div>
+          <div class="quiz-q-jp">12-3-30ウォーキング公式とは何を意味するか？</div>
+          <ul class="quiz-options">
+            <li>ก. ความชัน 12% / ความเร็ว 3 ไมล์ต่อชั่วโมง / 30 นาที</li>
+            <li>ข. เดิน 12 กม. / 3 วันต่อสัปดาห์ / 30 นาที</li>
+            <li>ค. 12 ขั้นบันได / ความเร็ว 3 กม./ชม. / 30 วัน</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ก. ความชัน 12% / ความเร็ว 3 ไมล์ต่อชั่วโมง / 30 นาที</div>
+            <div class="exp">傾斜12%・速度時速3マイル・30分間歩くのが12-3-30公式の内容です。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">2</div>
+          <div class="quiz-q-thai">การเดินทุกวันช่วยลดความเสี่ยงของโรคอะไรได้บ้าง?</div>
+          <div class="quiz-q-jp">毎日歩くことはどんな病気のリスクを減らすか？</div>
+          <ul class="quiz-options">
+            <li>ก. โรคหัวใจ, โรคเบาหวาน, โรคสมองเสื่อม</li>
+            <li>ข. โรคกระดูกพรุน, โรคผิวหนัง, โรคตา</li>
+            <li>ค. โรคไขข้อ, โรคไต, โรคตับ</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ก. โรคหัวใจ, โรคเบาหวาน, โรคสมองเสื่อม</div>
+            <div class="exp">記事では心臓病・糖尿病・認知症のリスクを減らすと述べられています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">3</div>
+          <div class="quiz-q-thai">Virlo.ai ศึกษาวิดีโอสุขภาพและฟิตเนสกี่คลิป?</div>
+          <div class="quiz-q-jp">Virlo.aiは何本の健康・フィットネス動画を分析したか？</div>
+          <ul class="quiz-options">
+            <li>ก. มากกว่า 500 คลิป</li>
+            <li>ข. มากกว่า 1,100 คลิป</li>
+            <li>ค. มากกว่า 5,000 คลิป</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. มากกว่า 1,100 คลิป</div>
+            <div class="exp">Virlo.aiは1,100本以上の動画（総視聴回数約7,000万）を分析しました。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">4</div>
+          <div class="quiz-q-thai">สิ่งที่ทำให้สูตร 12 - 3 - 30 แตกต่างจากคาร์ดิโอทั่วไปคืออะไร?</div>
+          <div class="quiz-q-jp">12-3-30公式が一般的な有酸素運動と異なる最大の特徴は何か？</div>
+          <ul class="quiz-options">
+            <li>ก. ความหนักของการออกกำลังกาย</li>
+            <li>ข. ความชัดเจน ทำตามตัวเลขได้เลย</li>
+            <li>ค. ใช้อุปกรณ์พิเศษหลายอย่าง</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ความชัดเจน ทำตามตัวเลขได้เลย</div>
+            <div class="exp">数字通りにやるだけでよく、計算や判断が不要な「わかりやすさ」が最大の特徴です。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">5</div>
+          <div class="quiz-q-thai">กลุ่มอายุไหนที่มีส่วนร่วมสูงมากในเทรนด์ 12 - 3 - 30?</div>
+          <div class="quiz-q-jp">12-3-30トレンドで特に参加が高かった年齢層はどれか？</div>
+          <ul class="quiz-options">
+            <li>ก. อายุ 10, 20 และ 30 ปีขึ้นไป</li>
+            <li>ข. อายุ 30, 40 และ 50 ปีขึ้นไป</li>
+            <li>ค. อายุ 60, 70 และ 80 ปีขึ้นไป</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. อายุ 30, 40 และ 50 ปีขึ้นไป</div>
+            <div class="exp">分析では30代・40代・50代以上の参加が特に高かったとされています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">6</div>
+          <div class="quiz-q-thai">การเดินชันเผาผลาญพลังงานจากอะไรมากกว่าการวิ่ง?</div>
+          <div class="quiz-q-jp">坂道ウォーキングは走りより何由来のエネルギーを多く使うか？</div>
+          <ul class="quiz-options">
+            <li>ก. คาร์โบไฮเดรต (แป้ง)</li>
+            <li>ข. ไขมัน</li>
+            <li>ค. โปรตีน</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ไขมัน</div>
+            <div class="exp">坂道ウォーキングはランニングより脂肪由来のエネルギーを多く使うとされています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">7</div>
+          <div class="quiz-q-thai">ถ้าไม่มีลู่วิ่ง ควรทำอย่างไร?</div>
+          <div class="quiz-q-jp">トレッドミルがない場合はどうすればよいか？</div>
+          <ul class="quiz-options">
+            <li>ก. ไม่สามารถทำสูตรนี้ได้เลย</li>
+            <li>ข. เดินขึ้นเนิน ทางลาด หรือบันไดกลางแจ้ง</li>
+            <li>ค. ต้องซื้อลู่วิ่งก่อนเสมอ</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. เดินขึ้นเนิน ทางลาด หรือบันไดกลางแจ้ง</div>
+            <div class="exp">坂道・傾斜路・屋外の階段を使って代替することができます。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">8</div>
+          <div class="quiz-q-thai">ความเร็วในการเดินที่เหมาะสมตามบทความคืออะไร?</div>
+          <div class="quiz-q-jp">記事に書かれている適切な歩行速度はどれか？</div>
+          <ul class="quiz-options">
+            <li>ก. เดินช้า หายใจปกติ</li>
+            <li>ข. เดินเร็วพอที่พูดคุยได้ แต่ร้องเพลงไม่ได้</li>
+            <li>ค. วิ่งเร็วจนพูดไม่ได้</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. เดินเร็วพอที่พูดคุยได้ แต่ร้องเพลงไม่ได้</div>
+            <div class="exp">会話はできるが歌うことはできない速度が適切とされています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">9</div>
+          <div class="quiz-q-thai">Neuroplasticity หมายถึงอะไร?</div>
+          <div class="quiz-q-jp">Neuroplasticityとはどういう意味か？</div>
+          <ul class="quiz-options">
+            <li>ก. การที่สมองสร้างการเชื่อมต่อใหม่ได้</li>
+            <li>ข. การที่กล้ามเนื้อยืดหยุ่นได้</li>
+            <li>ค. การที่หัวใจสูบฉีดเลือดได้ดีขึ้น</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ก. การที่สมองสร้างการเชื่อมต่อใหม่ได้</div>
+            <div class="exp">Neuroplasticityとは「脳が新しいつながりを作る能力」のことです。記事ではウォーキングがこの能力を高めるとされています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">10</div>
+          <div class="quiz-q-thai">ตามบทความ อะไรคือกุญแจสำคัญของสุขภาพระยะยาว?</div>
+          <div class="quiz-q-jp">記事によると、長期的な健康の鍵は何か？</div>
+          <ul class="quiz-options">
+            <li>ก. การออกกำลังกายที่โหดที่สุด</li>
+            <li>ข. กิจกรรมที่สามารถทำได้ต่อเนื่องทุกวัน</li>
+            <li>ค. การใช้อุปกรณ์ออกกำลังกายราคาแพง</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. กิจกรรมที่สามารถทำได้ต่อเนื่องทุกวัน</div>
+            <div class="exp">記事の最後で「長期的な健康は最もきつい運動ではなく、毎日続けられる活動にかかっている」と結論づけています。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 3: 会話 ===================== -->
+    <div id="tab-dialogue" class="tab-content">
+      <div class="content-wrap">
+        <div class="dialogue-intro">💬 登場人物: <strong>มิ้ว (ミウ)</strong> と <strong>เบิ้ม (ブーム)</strong> — 同僚の友人2人が昼休みにジムの話をしています。</div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">เบิ้ม เมื่อวานไปยิมมาเหรอ? ดูสดชื่นเลยนะ</div>
+            <div class="bubble-jp">ブーム、昨日ジム行ってきたの？元気そうだね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">ใช่เลย! ลองทำสูตรเดิน 12 - 3 - 30 ครั้งแรก รู้สึกดีมากเลย</div>
+            <div class="bubble-jp">そうなの！12-3-30ウォーキングを初めてやってみたんだけど、すごく気持ちよかったよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">สูตร 12 - 3 - 30 คืออะไรอ่ะ? ไม่เคยได้ยิน</div>
+            <div class="bubble-jp">12-3-30って何？聞いたことなかった。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">คือการเดินบนลู่วิ่ง ปรับความชัน 12 เปอร์เซ็น ความเร็ว 3 ไมล์ต่อชั่วโมง นาน 30 นาที แค่นั้นเลย จำง่ายมาก</div>
+            <div class="bubble-jp">トレッドミルで傾斜12%・速度時速3マイル・30分歩くだけ。覚えやすくてシンプルだよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">โอ้ ฟังดูง่ายดีนะ แต่ความชัน 12 เปอร์เซ็นนี่ชันมากไหม?</div>
+            <div class="bubble-jp">へえ、簡単そうだね。でも傾斜12%ってきつくない？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">ชันพอสมควรเลยนะ แต่ยังพูดคุยได้อยู่ ไม่ได้หนักจนหายใจไม่ออก เหมือนเดินขึ้นเขาสูงๆ</div>
+            <div class="bubble-jp">それなりに急だけど、まだ会話できるくらい。息が切れるほどじゃないよ。急な山を登る感じかな。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">แล้วมันเผาผลาญแคลอรีได้มากไหม? เทียบกับการวิ่งยังไง?</div>
+            <div class="bubble-jp">カロリー消費はどうなの？走るのと比べてどう？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">เผาผลาญใกล้เคียงกับการวิ่งเลย แถมยังเผาผลาญไขมันได้มากกว่าด้วย และข้อต่อไม่เจ็บเพราะแรงกระแทกต่ำกว่า</div>
+            <div class="bubble-jp">消費カロリーはランニングとほぼ同じなの。それに脂肪燃焼率が高くて、低衝撃だから関節も痛くならないよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">ฟังดูดีมากเลย แต่ฉันไม่มีลู่วิ่งอ่ะ ทำแบบอื่นได้ไหม?</div>
+            <div class="bubble-jp">すごくいいね。でも私トレッドミル持ってないんだけど、他の方法でできる？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">ได้เลย! หาเส้นทางที่มีเนินหรือทางลาดกลางแจ้ง แล้วเดินต่อเนื่อง 30 นาที ได้ผลใกล้เคียงกันมาก แถมได้อากาศบริสุทธิ์ด้วย</div>
+            <div class="bubble-jp">できるよ！屋外で坂道や傾斜のある道を探して30分歩けばほぼ同じ効果が出るよ。新鮮な空気も吸えてさらにいいよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">เยี่ยมเลย! แล้วต้องทำบ่อยแค่ไหนถึงจะเห็นผล?</div>
+            <div class="bubble-jp">いいね！どれくらいの頻度でやれば効果が出るかな？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เบิ้ม</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เบิ้ม</div>
+            <div class="bubble-thai">อ่านเจอว่าสัปดาห์ละหลายครั้งก็พอ ที่สำคัญคือทำสม่ำเสมอ ไม่ต้องทุกวันก็ได้ แต่ทำต่อเนื่องระยะยาว อย่าลืมอบอุ่นร่างกายก่อนด้วยนะ</div>
+            <div class="bubble-jp">週に何回かやれば十分って読んだよ。大事なのは継続することで、毎日じゃなくていいけど長期的に続けること。ウォームアップも忘れずにね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้ว</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้ว</div>
+            <div class="bubble-thai">โอเค วันอาทิตย์นี้ลองเดินขึ้นเนินแถวบ้านดูเลย ขอบคุณมากเบิ้ม!</div>
+            <div class="bubble-jp">わかった！今週の日曜日に家の近くの坂道でやってみるね。ありがとうブーム！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 4: 単語 ===================== -->
+    <div id="tab-vocab" class="tab-content">
+      <div class="content-wrap">
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🚶 運動・ウォーキング関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">เดิน</td><td>歩く</td><td class="sup-note">เดินเร็ว＝速歩き。เดินขึ้นเนิน＝坂道を歩く。เดินออกกำลังกาย＝ウォーキング運動</td></tr>
+            <tr><td class="thai-word">ออกกำลังกาย</td><td>運動する</td><td class="sup-note">ออก＝出る。กำลัง＝力。กาย＝身体。ออกกำลังกายสม่ำเสมอ＝定期的に運動する</td></tr>
+            <tr><td class="thai-word">ลู่วิ่ง</td><td>トレッドミル</td><td class="sup-note">ลู่＝走路・コース。วิ่ง＝走る。สายพานวิ่ง とも言う</td></tr>
+            <tr><td class="thai-word">ความชัน</td><td>傾斜・勾配</td><td class="sup-note">ชัน＝急な。ความชัน 12 เปอร์เซ็น＝傾斜12%。ทางชัน＝急坂</td></tr>
+            <tr><td class="thai-word">ความเร็ว</td><td>速度・スピード</td><td class="sup-note">เร็ว＝速い。ความเร็วต่ำ＝低速。ความเร็วสูง＝高速。ความเร็วคงที่＝一定速度</td></tr>
+            <tr><td class="thai-word">เนิน</td><td>丘・小高い土地</td><td class="sup-note">เดินขึ้นเนิน＝丘を登る。เนินเขา＝小山。ทางลาด＝傾斜のある道</td></tr>
+            <tr><td class="thai-word">ทางลาด</td><td>坂道・傾斜路</td><td class="sup-note">ลาด＝傾く・斜めな。ทางลาดชัน＝急な坂道。ทางชันกว่า＝より急な坂</td></tr>
+            <tr><td class="thai-word">คาร์ดิโอ</td><td>有酸素運動・カーディオ</td><td class="sup-note">カーディオ (Cardio)の音訳。คาร์ดิโอทั่วไป＝一般的な有酸素運動</td></tr>
+            <tr><td class="thai-word">แอโรบิก</td><td>有酸素運動・エアロビクス</td><td class="sup-note">Aerobicの音訳。การออกกำลังกายแบบแอโรบิก＝有酸素運動。แอนแอโรบิก＝無酸素運動</td></tr>
+            <tr><td class="thai-word">อบอุ่นร่างกาย</td><td>ウォームアップする</td><td class="sup-note">อบอุ่น＝温める。คูลดาวน์＝クールダウン。ต้องอบอุ่นก่อนเสมอ＝必ず先にウォームアップすること</td></tr>
+            <tr><td class="thai-word">วอร์มอัพ</td><td>ウォームアップ</td><td class="sup-note">Warm-upの音訳。อบอุ่นร่างกาย と同義。คูลดาวน์＝クールดาウン</td></tr>
+            <tr><td class="thai-word">แรงกระแทก</td><td>衝撃・インパクト</td><td class="sup-note">แรง＝力。กระแทก＝ぶつかる。แรงกระแทกต่ำ＝低衝撃。ป้องกันข้อ＝関節を守る</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">💪 身体・健康関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">สุขภาพ</td><td>健康</td><td class="sup-note">สุขภาพดี＝健康状態が良い。สุขภาพแย่＝体調が悪い。สุขภาพกาย＝身体の健康。สุขภาพจิต＝精神的健康</td></tr>
+            <tr><td class="thai-word">กล้ามเนื้อ</td><td>筋肉</td><td class="sup-note">กล้ามเนื้อขา＝足の筋肉。สะโพก＝腰・臀部。เสริมกล้ามเนื้อ＝筋肉を強化する</td></tr>
+            <tr><td class="thai-word">ข้อต่อ</td><td>関節</td><td class="sup-note">ข้อเข่า＝膝関節。ข้อเท้า＝足首関節。ปวดข้อ＝関節が痛む。ป้องกันข้อ＝関節を守る</td></tr>
+            <tr><td class="thai-word">ระบบเผาผลาญ</td><td>代謝・メタボリズム</td><td class="sup-note">เผาผลาญ＝燃やす・消費する。ระบบเผาผลาญดี＝代謝が良い。เผาผลาญพลังงาน＝エネルギーを消費する</td></tr>
+            <tr><td class="thai-word">ไขมัน</td><td>脂肪</td><td class="sup-note">เผาผลาญไขมัน＝脂肪を燃焼する。ไขมันในเลือด＝血中脂肪。ลดไขมัน＝脂肪を減らす</td></tr>
+            <tr><td class="thai-word">แคลอรี / พลังงาน</td><td>カロリー・エネルギー</td><td class="sup-note">เผาผลาญแคลอรี＝カロリーを消費する。แคลอรีต่ำ＝低カロリー。พลังงานจากไขมัน＝脂肪由来エネルギー</td></tr>
+            <tr><td class="thai-word">หัวใจ</td><td>心臓</td><td class="sup-note">อัตราการเต้นหัวใจ＝心拍数。โรคหัวใจ＝心臓病。หัวใจเต้นแรง＝心臓が激しく打つ</td></tr>
+            <tr><td class="thai-word">สมอง</td><td>脳</td><td class="sup-note">สมองเสื่อม＝認知症・脳の衰え。สมองล้า＝脳疲労。สมองทำงานดีขึ้น＝脳が良く働くようになる</td></tr>
+            <tr><td class="thai-word">น้ำหนัก</td><td>体重</td><td class="sup-note">ลดน้ำหนัก＝減量する。เพิ่มน้ำหนัก＝体重を増やす。น้ำหนักเกิน＝過体重</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🧠 脳・心理関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">สมาธิ</td><td>集中力</td><td class="sup-note">มีสมาธิ＝集中している。เพิ่มสมาธิ＝集中力を高める。สมาธิสั้น＝集中力が短い・注意欠如</td></tr>
+            <tr><td class="thai-word">อารมณ์</td><td>感情・気分</td><td class="sup-note">อารมณ์ดี＝気分が良い。อารมณ์เสีย＝機嫌が悪い。ความมั่นคงทางอารมณ์＝感情の安定</td></tr>
+            <tr><td class="thai-word">ความเครียด</td><td>ストレス</td><td class="sup-note">คลายเครียด＝ストレスを解消する。ลดความเครียด＝ストレスを減らす。เครียดมาก＝とてもストレスが多い</td></tr>
+            <tr><td class="thai-word">neuroplasticity / ความยืดหยุ่นของสมอง</td><td>神経可塑性・脳の柔軟性</td><td class="sup-note">脳が新しいつながりを作る能力。การเรียนรู้เพิ่มขึ้น＝学習能力が高まる</td></tr>
+            <tr><td class="thai-word">จิตใจ</td><td>心・精神</td><td class="sup-note">สุขภาพจิต＝精神的健康。จิตใจดี＝心が健やか。จิตใจแข็งแกร่ง＝精神が強い</td></tr>
+            <tr><td class="thai-word">คุณภาพชีวิต</td><td>生活の質（QOL）</td><td class="sup-note">คุณภาพ＝品質。ชีวิต＝人生・生活。พัฒนาคุณภาพชีวิต＝生活の質を向上させる</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🏥 病気・リスク関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">โรคหัวใจและหลอดเลือด</td><td>心血管疾患</td><td class="sup-note">หลอดเลือด＝血管。โรคหัวใจ＝心臓病。หลอดเลือดอุดตัน＝血管閉塞</td></tr>
+            <tr><td class="thai-word">โรคเบาหวาน</td><td>糖尿病</td><td class="sup-note">เบาหวานชนิดที่ 2＝2型糖尿病。น้ำตาลในเลือด＝血糖値。อินซูลิน＝インスリン</td></tr>
+            <tr><td class="thai-word">โรคสมองเสื่อม</td><td>認知症</td><td class="sup-note">สมองเสื่อม＝脳が衰える。ความจำเสื่อม＝記憶力が落ちる。อัลไซเมอร์＝アルツハイマー</td></tr>
+            <tr><td class="thai-word">ความเสี่ยง</td><td>リスク・危険性</td><td class="sup-note">เสี่ยง＝危険にさらされている。ลดความเสี่ยง＝リスクを減らす。เสี่ยงเป็นโรค＝病気になるリスクがある</td></tr>
+            <tr><td class="thai-word">ส่งผล</td><td>影響を与える</td><td class="sup-note">ส่งผลดี＝良い影響を与える。ส่งผลเสีย＝悪影響を与える。ส่งผลต่อ+名詞＝〜に影響を与える</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">📊 継続・習慣・トレンド関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">เทรนด์</td><td>トレンド・流行</td><td class="sup-note">Trendの音訳。เทรนด์ใหม่＝新しいトレンド。เทรนด์ออกกำลังกาย＝フィットネストレンド</td></tr>
+            <tr><td class="thai-word">สม่ำเสมอ</td><td>規則正しく・コンスタントに</td><td class="sup-note">ออกกำลังกายสม่ำเสมอ＝定期的に運動する。ทำสม่ำเสมอ＝継続的に行う</td></tr>
+            <tr><td class="thai-word">ระยะยาว</td><td>長期的に</td><td class="sup-note">ระยะสั้น＝短期的。ผลระยะยาว＝長期的な効果。ทำได้ระยะยาว＝長期間続けられる</td></tr>
+            <tr><td class="thai-word">ต่อเนื่อง</td><td>継続的に・連続して</td><td class="sup-note">เดินต่อเนื่อง 30 นาที＝30分連続で歩く。ทำต่อเนื่อง＝継続して行う。ไม่ต่อเนื่อง＝断続的に</td></tr>
+            <tr><td class="thai-word">ยั่งยืน</td><td>持続可能な・サステナブル</td><td class="sup-note">คำตอบที่ยั่งยืน＝持続可能な答え。การพัฒนาที่ยั่งยืน＝持続可能な発展</td></tr>
+            <tr><td class="thai-word">อุปสรรค</td><td>障壁・障害</td><td class="sup-note">ลดอุปสรรค＝障壁を下げる。เอาชนะอุปสรรค＝障害を乗り越える。ไม่มีอุปสรรค＝障害がない</td></tr>
+            <tr><td class="thai-word">ชัดเจน</td><td>明確な・はっきりした</td><td class="sup-note">ไม่ชัดเจน＝不明確な。พูดชัดเจน＝はっきり話す。ชัดเจนมาก＝非常に明確</td></tr>
+            <tr><td class="thai-word">โครงสร้าง</td><td>構造・仕組み</td><td class="sup-note">มีโครงสร้าง＝構造がある。การเดินแบบมีโครงสร้าง＝構造化されたウォーキング</td></tr>
+            <tr><td class="thai-word">วิถีชีวิต</td><td>ライフスタイル</td><td class="sup-note">วิถี＝方式・スタイル。ชีวิต＝人生。วิถีชีวิตสุขภาพดี＝健康的なライフスタイル</td></tr>
+            <tr><td class="thai-word">สุดขั้ว</td><td>極端な・過激な</td><td class="sup-note">วัฒนธรรมฟิตเนสแบบสุดขั้ว＝過激なフィットネス文化。สุดขีด とも言う</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🔬 研究・データ関連</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">งานวิจัย</td><td>研究・調査</td><td class="sup-note">ทำงานวิจัย＝研究を行う。ผลงานวิจัย＝研究結果。งานวิจัยใหม่＝新しい研究</td></tr>
+            <tr><td class="thai-word">นักวิจัย</td><td>研究者</td><td class="sup-note">ศาสตราจารย์＝教授。ผู้เชี่ยวชาญ＝専門家。แพทย์＝医師</td></tr>
+            <tr><td class="thai-word">หลักฐาน</td><td>証拠・エビデンス</td><td class="sup-note">หลักฐานวิทยาศาสตร์＝科学的証拠。อิงหลักฐาน＝証拠に基づく</td></tr>
+            <tr><td class="thai-word">เปรียบเทียบ</td><td>比較する</td><td class="sup-note">การทดลองเปรียบเทียบ＝比較実験。เปรียบเทียบกัน＝互いに比較する</td></tr>
+            <tr><td class="thai-word">ข้อมูล</td><td>データ・情報</td><td class="sup-note">ข้อมูลวิเคราะห์＝分析データ。ข้อมูลจากงานวิจัย＝研究からのデータ。ข้อมูลสุขภาพ＝健康データ</td></tr>
+            <tr><td class="thai-word">สะท้อน</td><td>反映する・示す</td><td class="sup-note">ข้อมูลสะท้อนว่า＝データが示すところでは。สะท้อนความจริง＝真実を反映する</td></tr>
+            <tr><td class="thai-word">แพลตฟอร์ม</td><td>プラットフォーム</td><td class="sup-note">Platformの音訳。แพลตฟอร์มออนไลน์＝オンラインプラットフォーム</td></tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🌿 動詞・基本表現</div>
+          <table class="vocab-table">
+            <tr><th>タイ語</th><th>意味</th><th>補足</th></tr>
+            <tr><td class="thai-word">ลดน้ำหนัก</td><td>減量する・痩せる</td><td class="sup-note">ลด＝減らす。น้ำหนัก＝体重。ลดน้ำหนักเร่งด่วน＝急速に減量する</td></tr>
+            <tr><td class="thai-word">เพิ่ม</td><td>増やす・高める</td><td class="sup-note">เพิ่มสมาธิ＝集中力を高める。เพิ่มกล้ามเนื้อ＝筋肉を増やす。เพิ่มประสิทธิภาพ＝効率を上げる</td></tr>
+            <tr><td class="thai-word">เสริม</td><td>強化する・補う</td><td class="sup-note">เสริมกล้ามเนื้อ＝筋肉を強化する。เสริมสร้าง＝構築・強化する。เสริมความแข็งแรง＝体力をつける</td></tr>
+            <tr><td class="thai-word">ปรับ</td><td>調整する・設定する</td><td class="sup-note">ปรับความชัน＝傾斜を調整する。ปรับความเร็ว＝速度を調整する。ปรับพฤติกรรม＝行動を変える</td></tr>
+            <tr><td class="thai-word">หันมา</td><td>転向する・〜に向かう</td><td class="sup-note">หันมาออกกำลังกาย＝運動するようになる。หันมาสนใจ＝関心を持つようになる</td></tr>
+            <tr><td class="thai-word">สัมพันธ์กับ</td><td>〜と関連している</td><td class="sup-note">สัมพันธ์＝関係・関連。ความสัมพันธ์＝関係性。เชื่อมโยงกับ とも同義</td></tr>
+            <tr><td class="thai-word">เหมาะ / เหมาะสม</td><td>適している・ふさわしい</td><td class="sup-note">เหมาะกับ+名詞＝〜に適している。ไม่เหมาะ＝適していない。เหมาะสมที่สุด＝最も適している</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TAB 5: 例文 ===================== -->
+    <div id="tab-examples" class="tab-content">
+      <div class="content-wrap">
+
+        <div class="example-section">
+          <h4>🚶 運動・ウォーキング関連</h4>
+          <div class="example-item">
+            <div class="ex-thai">ทุกเช้าฉัน<span class="highlight-word">เดิน</span>รอบสวนสาธารณะ 30 นาที</div>
+            <div class="ex-jp">毎朝、私は公園を30分<strong>歩きます</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เขา<span class="highlight-word">ออกกำลังกาย</span>ที่ยิมทุกเย็นหลังเลิกงาน</div>
+            <div class="ex-jp">彼は仕事の後、毎夕ジムで<strong>運動します</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เธอซื้อ<span class="highlight-word">ลู่วิ่ง</span>มาไว้ที่บ้านเพื่อความสะดวก</div>
+            <div class="ex-jp">彼女は便利さのために家に<strong>トレッドミル</strong>を買いました。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ปรับ<span class="highlight-word">ความชัน</span>ของลู่วิ่งให้สูงขึ้นทำให้เหนื่อยมากขึ้น</div>
+            <div class="ex-jp">トレッドミルの<strong>傾斜</strong>を上げると、もっときつくなります。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ตั้ง<span class="highlight-word">ความเร็ว</span>ลู่วิ่งที่ 3 ไมล์ต่อชั่วโมงเป็นจุดเริ่มต้นที่ดี</div>
+            <div class="ex-jp">トレッドミルの<strong>速度</strong>を時速3マイルに設定するのは良いスタートです。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">แถวบ้านมี<span class="highlight-word">เนิน</span>เล็กๆ ที่เหมาะสำหรับออกกำลังกาย</div>
+            <div class="ex-jp">家の近くに運動にぴったりの小さな<strong>丘</strong>があります。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เดินบน<span class="highlight-word">ทางลาด</span>ช่วยเผาผลาญพลังงานได้มากกว่าพื้นราบ</div>
+            <div class="ex-jp"><strong>坂道</strong>を歩くと、平地より多くのエネルギーを消費できます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินเป็น<span class="highlight-word">คาร์ดิโอ</span>ที่ง่ายและทำได้ทุกที่</div>
+            <div class="ex-jp">ウォーキングはどこでもできる手軽な<strong>有酸素運動</strong>です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การวิ่งเป็น<span class="highlight-word">แอโรบิก</span>ที่ดีแต่ต้องระวังการบาดเจ็บ</div>
+            <div class="ex-jp">ランニングは良い<strong>有酸素運動</strong>ですが、怪我に気をつけないといけません。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ควร<span class="highlight-word">อบอุ่นร่างกาย</span>ก่อนออกกำลังกายทุกครั้งเพื่อป้องกันการบาดเจ็บ</div>
+            <div class="ex-jp">怪我を防ぐために、毎回運動前に必ず<strong>ウォームアップ</strong>しましょう。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อย่าลืม<span class="highlight-word">วอร์มอัพ</span>ก่อนและคูลดาวน์หลังออกกำลังกายเสมอ</div>
+            <div class="ex-jp">運動の前は必ず<strong>ウォームアップ</strong>し、後はクールダウンをすることを忘れずに。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินมี<span class="highlight-word">แรงกระแทก</span>ต่ำกว่าการวิ่ง จึงเหมาะกับคนสูงอายุ</div>
+            <div class="ex-jp">ウォーキングはランニングより<strong>衝撃</strong>が少ないので、高齢者に向いています。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>💪 身体・健康関連</h4>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายสม่ำเสมอช่วยรักษา<span class="highlight-word">สุขภาพ</span>ให้ดีได้ในระยะยาว</div>
+            <div class="ex-jp">定期的な運動は長期的に<strong>健康</strong>を維持するのに役立ちます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินขึ้นเนินช่วยเสริม<span class="highlight-word">กล้ามเนื้อ</span>ขาและสะโพกได้ดี</div>
+            <div class="ex-jp">坂道ウォーキングは足と臀部の<strong>筋肉</strong>を鍛えるのに効果的です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินดีกว่าการวิ่งตรงที่ไม่ทำให้<span class="highlight-word">ข้อต่อ</span>เจ็บ</div>
+            <div class="ex-jp">ウォーキングはランニングより<strong>関節</strong>を傷めない点が優れています。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายช่วยให้<span class="highlight-word">ระบบเผาผลาญ</span>ทำงานได้ดีขึ้น</div>
+            <div class="ex-jp">運動は<strong>代謝</strong>機能を向上させます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินชันช่วยเผาผลาญ<span class="highlight-word">ไขมัน</span>ได้มากกว่าการเดินพื้นเรียบ</div>
+            <div class="ex-jp">坂道ウォーキングは平地より多くの<strong>脂肪</strong>を燃焼できます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดิน 30 นาทีเผาผลาญ<span class="highlight-word">แคลอรี</span>ได้มากพอสมควร</div>
+            <div class="ex-jp">30分のウォーキングでそれなりの<strong>カロリー</strong>を消費できます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายสม่ำเสมอช่วยให้<span class="highlight-word">หัวใจ</span>แข็งแรงขึ้น</div>
+            <div class="ex-jp">定期的な運動は<strong>心臓</strong>を強くします。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินช่วยให้<span class="highlight-word">สมอง</span>สร้างเซลล์ประสาทใหม่ได้</div>
+            <div class="ex-jp">ウォーキングは<strong>脳</strong>が新しい神経細胞を作るのを助けます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เธอ<span class="highlight-word">ลดน้ำหนัก</span>ได้ 5 กิโลในสองเดือนด้วยการเดินทุกวัน</div>
+            <div class="ex-jp">彼女は毎日ウォーキングして2ヶ月で5キロ<strong>減量しました</strong>。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🧠 脳・心理関連</h4>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายช่วยเพิ่ม<span class="highlight-word">สมาธิ</span>และทำให้ทำงานได้มีประสิทธิภาพมากขึ้น</div>
+            <div class="ex-jp">運動は<strong>集中力</strong>を高め、より効率的に仕事できるようにします。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เดินกลางแจ้งทำให้<span class="highlight-word">อารมณ</span>์ดีขึ้นมากเลย</div>
+            <div class="ex-jp">屋外でウォーキングすると<strong>気分</strong>がとても良くなります。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายเป็นวิธีที่ดีในการลด<span class="highlight-word">ความเครียด</span>หลังทำงาน</div>
+            <div class="ex-jp">運動は仕事後の<strong>ストレス</strong>を減らす良い方法です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินช่วยเพิ่ม<span class="highlight-word">neuroplasticity</span> ทำให้สมองเรียนรู้ได้ดีขึ้น</div>
+            <div class="ex-jp">ウォーキングは<strong>神経可塑性</strong>を高め、脳の学習能力を向上させます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายกลางแจ้งส่งผลดีต่อ<span class="highlight-word">จิตใจ</span>มากกว่าการออกกำลังกายในร่ม</div>
+            <div class="ex-jp">屋外での運動は室内より<strong>精神</strong>への良い効果が大きいです。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายสม่ำเสมอช่วยพัฒนา<span class="highlight-word">คุณภาพชีวิต</span>ได้อย่างมาก</div>
+            <div class="ex-jp">定期的な運動は<strong>生活の質</strong>を大幅に向上させます。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🏥 病気・リスク関連</h4>
+          <div class="example-item">
+            <div class="ex-thai">การเดินทุกวันช่วยลดความเสี่ยงของ<span class="highlight-word">โรคหัวใจและหลอดเลือด</span></div>
+            <div class="ex-jp">毎日歩くことで<strong>心血管疾患</strong>のリスクが下がります。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายช่วยป้องกัน<span class="highlight-word">โรคเบาหวาน</span>ชนิดที่ 2 ได้</div>
+            <div class="ex-jp">運動は2型<strong>糖尿病</strong>の予防に役立ちます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">นักวิจัยพบว่าการเดินช่วยลดความเสี่ยงของ<span class="highlight-word">โรคสมองเสื่อม</span>ได้</div>
+            <div class="ex-jp">研究者はウォーキングが<strong>認知症</strong>のリスクを下げることを発見しました。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายสม่ำเสมอลด<span class="highlight-word">ความเสี่ยง</span>ของโรคหลายชนิดได้</div>
+            <div class="ex-jp">定期的な運動は様々な病気の<strong>リスク</strong>を下げます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การนอนดีและออกกำลังกาย<span class="highlight-word">ส่งผล</span>ดีต่อสุขภาพทั้งคู่</div>
+            <div class="ex-jp">良い睡眠と運動は、どちらも健康に良い<strong>影響を与えます</strong>。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>📊 継続・習慣・トレンド関連</h4>
+          <div class="example-item">
+            <div class="ex-thai">สูตร 12 - 3 - 30 เป็น<span class="highlight-word">เทรนด์</span>ออกกำลังกายที่กำลังได้รับความสนใจทั่วโลก</div>
+            <div class="ex-jp">12-3-30公式は世界中で注目されているフィットネス<strong>トレンド</strong>です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกาย<span class="highlight-word">สม่ำเสมอ</span>สำคัญกว่าการออกกำลังกายหนักในบางครั้ง</div>
+            <div class="ex-jp"><strong>定期的に</strong>運動することは、たまに激しく運動するより大切です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เราควรคิดถึงสุขภาพ<span class="highlight-word">ระยะยาว</span> ไม่ใช่แค่ลดน้ำหนักเร็ว</div>
+            <div class="ex-jp">素早い減量だけでなく、<strong>長期的な</strong>健康を考えるべきです。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เดิน<span class="highlight-word">ต่อเนื่อง</span>30 นาทีดีกว่าเดิน 10 นาที 3 ครั้ง</div>
+            <div class="ex-jp"><strong>継続して</strong>30分歩く方が、10分を3回歩くより効果的です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเลือกการออกกำลังกายที่<span class="highlight-word">ยั่งยืน</span>สำคัญกว่าความหนัก</div>
+            <div class="ex-jp">運動の強度より、<strong>継続可能な</strong>運動を選ぶことが大切です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">สูตร 12 - 3 - 30 ช่วยลด<span class="highlight-word">อุปสรรค</span>ในการออกกำลังกายได้มาก</div>
+            <div class="ex-jp">12-3-30公式は運動するうえでの<strong>障壁</strong>を大幅に下げてくれます。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">สิ่งที่ดีที่สุดของสูตรนี้คือมัน<span class="highlight-word">ชัดเจน</span>และทำตามได้ง่าย</div>
+            <div class="ex-jp">この公式の最大の長所は<strong>明確で</strong>実践しやすい点です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายแบบมี<span class="highlight-word">โครงสร้าง</span>ทำให้คนทำต่อเนื่องได้มากกว่า</div>
+            <div class="ex-jp"><strong>構造化された</strong>運動は、より継続しやすい。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การออกกำลังกายควรเป็นส่วนหนึ่งของ<span class="highlight-word">วิถีชีวิต</span>ประจำวัน</div>
+            <div class="ex-jp">運動は日常の<strong>ライフスタイル</strong>の一部であるべきです。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">คนเริ่มเบื่อการออกกำลังกายแบบ<span class="highlight-word">สุดขั้ว</span>และหันมาชอบการเดินแทน</div>
+            <div class="ex-jp">人々は<strong>過激な</strong>フィットネスに飽きてウォーキングに惹かれてきました。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🔬 研究・データ関連</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">งานวิจัย</span>ใหม่แสดงให้เห็นว่าการเดินดีต่อสุขภาพมากกว่าที่คิด</div>
+            <div class="ex-jp">新しい<strong>研究</strong>が、ウォーキングが思った以上に健康に良いことを示しています。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">นักวิจัย</span>จากมหาวิทยาลัยชื่อดังกำลังศึกษาผลของการเดินต่อสมอง</div>
+            <div class="ex-jp">有名大学の<strong>研究者</strong>たちがウォーキングが脳に与える影響を研究中です。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">มี<span class="highlight-word">หลักฐาน</span>มากมายที่แสดงว่าการเดินช่วยลดความเสี่ยงโรคหัวใจ</div>
+            <div class="ex-jp">ウォーキングが心臓病リスクを下げることを示す<strong>証拠</strong>がたくさんあります。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">นักวิทยาศาสตร์<span class="highlight-word">เปรียบเทียบ</span>การเดินชันกับการวิ่งและพบว่าเผาผลาญใกล้เคียงกัน</div>
+            <div class="ex-jp">科学者たちは坂道ウォーキングとランニングを<strong>比較し</strong>、消費カロリーがほぼ同じだと発見しました。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ข้อมูล</span>จาก Virlo.ai แสดงว่าคนอายุ 30 - 50 ปีสนใจสูตร 12-3-30 มาก</div>
+            <div class="ex-jp">Virlo.aiの<strong>データ</strong>は、30〜50代が12-3-30公式に強い関心を示していることを示しています。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ผลการวิเคราะห์<span class="highlight-word">สะท้อน</span>ว่าคนต้องการการออกกำลังกายที่เรียบง่ายและทำได้จริง</div>
+            <div class="ex-jp">分析結果は、人々がシンプルで実践可能な運動を求めていることを<strong>示しています</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">แพลตฟอร์ม</span>ออนไลน์หลายแห่งกำลังเผยแพร่ข้อมูลสุขภาพเพิ่มขึ้น</div>
+            <div class="ex-jp">多くのオンライン<strong>プラットフォーム</strong>が健康情報をより多く広めています。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🌿 動詞・基本表現</h4>
+          <div class="example-item">
+            <div class="ex-thai">ฉัน<span class="highlight-word">เพิ่ม</span>ความชันของลู่วิ่งเพื่อทำให้การออกกำลังกายหนักขึ้น</div>
+            <div class="ex-jp">運動をきつくするためにトレッドミルの傾斜を<strong>上げました</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินบนเนิน<span class="highlight-word">เสริม</span>กล้ามเนื้อขาได้อย่างมีประสิทธิภาพ</div>
+            <div class="ex-jp">丘道ウォーキングは脚の筋肉を効率よく<strong>強化します</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">คุณสามารถ<span class="highlight-word">ปรับ</span>ความเร็วและความชันตามความสามารถของตัวเอง</div>
+            <div class="ex-jp">自分の体力に合わせて速度と傾斜を<strong>調整できます</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">คนจำนวนมาก<span class="highlight-word">หันมา</span>สนใจการเดินแทนการวิ่งมาราธอน</div>
+            <div class="ex-jp">多くの人がマラソンの代わりにウォーキングへと<strong>転向しています</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การเดินสม่ำเสมอ<span class="highlight-word">สัมพันธ์กับ</span>การลดความเสี่ยงของโรคเรื้อรังหลายชนิด</div>
+            <div class="ex-jp">定期的なウォーキングは複数の慢性疾患リスク低下と<strong>関連しています</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">สูตร 12 - 3 - 30<span class="highlight-word">เหมาะ</span>กับคนทุกวัยและทุกระดับความฟิต</div>
+            <div class="ex-jp">12-3-30公式はすべての年齢・体力レベルの人に<strong>適しています</strong>。</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function showTab(name, e) {
+        document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+        document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        if (e && e.target) e.target.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function toggleAnswer(btn) {
+        const box = btn.nextElementSibling;
+        if (box.style.display === "block") {
+          box.style.display = "none";
+          btn.textContent = "答えを見る";
+        } else {
+          box.style.display = "block";
+          btn.textContent = "閉じる";
+        }
+      }
+    </script>
+  </body>
+</html>
