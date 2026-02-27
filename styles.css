@@ -6,8 +6,7 @@
 
 body {
   font-family: "Noto Sans JP", "Sarabun", sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #f9ffff;
   min-height: 100vh;
 }
 header {
