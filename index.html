@@ -21,11 +21,7 @@
         --shadow: 0 2px 12px rgba(45, 106, 79, 0.1);
         --shadow-lg: 0 6px 28px rgba(45, 106, 79, 0.15);
       }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
       body {
         font-family: "Noto Sans JP", "Sarabun", sans-serif;
         background: var(--bg);
@@ -98,21 +94,14 @@
         transition: all 0.2s;
         letter-spacing: 0.04em;
       }
-      .tab-btn:hover {
-        background: var(--bg2);
-        color: var(--primary);
-      }
+      .tab-btn:hover { background: var(--bg2); color: var(--primary); }
       .tab-btn.active {
         color: var(--primary);
         border-bottom-color: var(--primary);
         background: var(--primary-pale);
       }
-      .tab-content {
-        display: none;
-      }
-      .tab-content.active {
-        display: block;
-      }
+      .tab-content { display: none; }
+      .tab-content.active { display: block; }
       .content-wrap {
         max-width: 860px;
         margin: 0 auto;
@@ -126,15 +115,8 @@
         margin-bottom: 16px;
         padding-left: 4px;
       }
-      ol {
-        list-style: none;
-        padding: 0;
-        counter-reset: article-counter;
-      }
-      ol li {
-        counter-increment: article-counter;
-        margin-bottom: 12px;
-      }
+      ol { list-style: none; padding: 0; counter-reset: article-counter; }
+      ol li { counter-increment: article-counter; margin-bottom: 12px; }
       ol li a {
         display: flex;
         align-items: center;
@@ -155,14 +137,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 28px;
-        height: 28px;
-        background: var(--primary);
-        color: white;
-        border-radius: 50%;
-        font-size: 0.78rem;
-        font-weight: 700;
+        min-width: 32px;
+        padding: 2px 6px;
+        height: 22px;
+        background: var(--bg2);
+        color: var(--text-light);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
         flex-shrink: 0;
+        font-family: "Noto Sans JP", monospace;
       }
       ol li a:hover {
         background: var(--bg2);
@@ -182,15 +167,8 @@
         padding: 60px 20px;
         color: var(--text-light);
       }
-      .empty-state .icon {
-        font-size: 3rem;
-        margin-bottom: 16px;
-        opacity: 0.5;
-      }
-      .empty-state p {
-        font-size: 0.92rem;
-        opacity: 0.7;
-      }
+      .empty-state .icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.5; }
+      .empty-state p { font-size: 0.92rem; opacity: 0.7; }
     </style>
   </head>
   <body>
@@ -214,6 +192,7 @@
             </a>
           </li>
         </ol>
+      </div>
       </div>
     </div>
     <!-- 健康 -->
@@ -244,8 +223,8 @@
 
     <script>
       function showTab(name, btn) {
-        document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
-        document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+        document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
         document.getElementById("tab-" + name).classList.add("active");
         btn.classList.add("active");
         window.scrollTo({ top: 0, behavior: "smooth" });
