@@ -1,0 +1,1643 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="タイ語長文読解, タイ語検定対策" name="description" />
+    <meta name="author" content="谷口直樹 naoki.tany@gmail.com" />
+    <title>イランvsアメリカ、どれほど深刻で私たちと何の関係があるのか | タイ語長文読解</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #2d6a4f;
+        --primary-light: #52b788;
+        --primary-pale: #d8f3dc;
+        --accent: #e76f51;
+        --accent-light: #ffddd2;
+        --bg: #f8fffe;
+        --bg2: #edf7f0;
+        --text: #1b2e22;
+        --text-light: #4a6855;
+        --border: #b7e4c7;
+        --white: #ffffff;
+        --shadow: 0 2px 12px rgba(45, 106, 79, 0.1);
+        --shadow-lg: 0 6px 28px rgba(45, 106, 79, 0.15);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Noto Sans JP", "Sarabun", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
+        color: #fff;
+        padding: 36px 24px 28px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      header::before {
+        content: "🌍";
+        position: absolute;
+        font-size: 140px;
+        opacity: 0.07;
+        top: -20px;
+        left: -20px;
+      }
+      header::after {
+        content: "⚡";
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.07;
+        bottom: -20px;
+        right: -10px;
+      }
+      .header-source {
+        font-size: 0.78rem;
+        opacity: 0.75;
+        margin-top: 6px;
+      }
+      .header-source a {
+        color: #a9d6b0;
+      }
+      header h1 {
+        font-family: "Sarabun", sans-serif;
+        font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      header h2 {
+        font-family: "Noto Serif JP", serif;
+        font-size: clamp(0.9rem, 2.8vw, 1.15rem);
+        font-weight: 400;
+        opacity: 0.92;
+        margin-bottom: 8px;
+      }
+
+      /* TABS */
+      .tab-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+        background: var(--white);
+        border-bottom: 2px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 8px rgba(45, 106, 79, 0.08);
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-nav::-webkit-scrollbar {
+        height: 3px;
+      }
+      .tab-nav::-webkit-scrollbar-track {
+        background: #e8f5e9;
+      }
+      .tab-nav::-webkit-scrollbar-thumb {
+        background: var(--primary-light);
+        border-radius: 2px;
+      }
+      .tab-btn {
+        flex: none;
+        padding: 14px 18px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--text-light);
+        cursor: pointer;
+        white-space: nowrap;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        letter-spacing: 0.02em;
+      }
+      .tab-btn:hover {
+        background: var(--bg2);
+        color: var(--primary);
+      }
+      .tab-btn.active {
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+        background: var(--primary-pale);
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .content-wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 20px 60px;
+      }
+
+      /* ARTICLE */
+      .article-intro {
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-left: 4px solid var(--primary);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 28px;
+        font-size: 0.92rem;
+        color: var(--text-light);
+      }
+      .article-section {
+        margin-bottom: 36px;
+      }
+      .article-section h3 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--primary);
+        border-left: 4px solid var(--primary-light);
+        padding: 6px 12px;
+        background: var(--bg2);
+        border-radius: 0 6px 6px 0;
+        margin-bottom: 16px;
+      }
+      .para-block {
+        margin-bottom: 20px;
+      }
+      .para-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: var(--text);
+        background: var(--white);
+        border-radius: 8px;
+        padding: 14px 18px;
+        border: 1px solid var(--border);
+      }
+      .para-jp {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.86rem;
+        line-height: 1.7;
+        color: var(--text-light);
+        background: var(--bg2);
+        border-radius: 8px;
+        padding: 12px 18px;
+        border: 1px solid var(--border);
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      /* QUIZ */
+      .quiz-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow);
+      }
+      .quiz-num {
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .quiz-q-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--text);
+      }
+      .quiz-q-jp {
+        font-size: 0.84rem;
+        color: var(--text-light);
+        margin-bottom: 14px;
+      }
+      .quiz-options {
+        list-style: none;
+        margin-bottom: 12px;
+      }
+      .quiz-options li {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1.5px solid var(--border);
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-family: "Sarabun", sans-serif;
+        font-size: 0.97rem;
+        transition: all 0.15s;
+        background: var(--bg);
+      }
+      .quiz-options li:hover {
+        background: var(--primary-pale);
+        border-color: var(--primary-light);
+      }
+      .answer-btn {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 18px;
+        font-size: 0.87rem;
+        font-family: "Noto Sans JP", sans-serif;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .answer-btn:hover {
+        background: #1b4332;
+      }
+      .answer-box {
+        display: none;
+        margin-top: 12px;
+        background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        border-left: 4px solid var(--primary);
+      }
+      .answer-box .correct {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1rem;
+      }
+      .answer-box .exp {
+        color: var(--text-light);
+        margin-top: 4px;
+        font-size: 0.85rem;
+      }
+
+      /* DIALOGUE */
+      .dialogue-intro {
+        background: var(--accent-light);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-bottom: 24px;
+        font-size: 0.88rem;
+        color: #7c3b2a;
+        border-left: 4px solid var(--accent);
+      }
+      .dialogue-turn {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+      }
+      .dialogue-turn.right {
+        flex-direction: row-reverse;
+      }
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        font-weight: 700;
+        font-family: "Sarabun", sans-serif;
+      }
+      .avatar-a {
+        background: var(--primary-pale);
+        color: var(--primary);
+      }
+      .avatar-b {
+        background: var(--accent-light);
+        color: var(--accent);
+      }
+      .bubble {
+        border-radius: 14px;
+        padding: 12px 16px;
+        max-width: 75%;
+        box-shadow: var(--shadow);
+      }
+      .bubble-a {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-top-left-radius: 4px;
+      }
+      .bubble-b {
+        background: var(--primary-pale);
+        border: 1px solid var(--primary-light);
+        border-top-right-radius: 4px;
+      }
+      .bubble-name {
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: var(--text-light);
+      }
+      .bubble-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--text);
+      }
+      .bubble-jp {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        color: var(--text-light);
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: 1px dashed var(--border);
+      }
+
+      /* VOCAB */
+      .vocab-category {
+        margin-bottom: 36px;
+      }
+      .vocab-cat-title {
+        font-family: "Noto Serif JP", serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 8px 16px;
+        border-radius: 7px;
+        border-left: 5px solid var(--primary);
+        margin-bottom: 12px;
+      }
+      .vocab-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .vocab-table th {
+        background: var(--primary);
+        color: #fff;
+        padding: 10px 12px;
+        text-align: left;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+      .vocab-table td {
+        padding: 9px 12px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+        line-height: 1.55;
+      }
+      .vocab-table tr:last-child td {
+        border-bottom: none;
+      }
+      .vocab-table tr:nth-child(even) td {
+        background: var(--bg2);
+      }
+      .thai-word {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      .sup-note {
+        font-size: 0.82rem;
+        color: var(--text-light);
+      }
+
+      /* EXAMPLES */
+      .example-section {
+        margin-bottom: 30px;
+      }
+      .example-section h4 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1.05rem;
+        color: var(--primary);
+        background: var(--bg2);
+        padding: 6px 14px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        border-left: 4px solid var(--primary-light);
+      }
+      .example-item {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 10px;
+      }
+      .ex-thai {
+        font-family: "Sarabun", sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--text);
+        margin-bottom: 4px;
+      }
+      .ex-jp {
+        font-size: 0.84rem;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      .highlight-word {
+        font-weight: 700;
+        color: #e76f51;
+      }
+
+      @media (max-width: 600px) {
+        .content-wrap {
+          padding: 20px 14px 50px;
+        }
+        header {
+          padding: 24px 16px 20px;
+        }
+        .tab-btn {
+          padding: 12px 13px;
+          font-size: 0.82rem;
+        }
+        .bubble {
+          max-width: 85%;
+        }
+        header h1 {
+          font-size: 1rem;
+        }
+        header h2 {
+          font-size: 0.88rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .vocab-table {
+          font-size: 0.82rem;
+        }
+        .vocab-table th,
+        .vocab-table td {
+          padding: 7px 8px;
+        }
+        .thai-word {
+          font-size: 0.93rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>อิหร่าน VS อเมริกา หนักแค่ไหน เกี่ยวอะไรกับเรา?</h1>
+      <h2>イランvsアメリカ、どれほど深刻で私たちと何の関係があるのか</h2>
+      <div class="header-source">出典: <a href="https://youtu.be/uL-IdP1OOW4" target="_blank">youtube.com（Point of View / วิว）</a>　|　動画日付: 2026年3月2日</div>
+    </header>
+
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
+      <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
+      <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
+      <button class="tab-btn" onclick="showTab('vocab', this)">📚 単語</button>
+      <button class="tab-btn" onclick="showTab('examples', this)">✏️ 例文</button>
+    </nav>
+
+    <!-- ========== TAB 1: 記事 ========== -->
+    <div id="tab-article" class="tab-content active">
+      <div class="content-wrap">
+        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+
+        <div class="article-section">
+          <div class="para-block">
+            <div class="para-thai">
+              สวัสดีค่ะ ฉันชื่อวิวนะคะ วันนี้จะเล่าเรื่องข่าวใหญ่ที่กำลังเกิดขึ้นอยู่ตอนนี้ค่ะ นั่นก็คือเรื่องของสงครามระหว่างอิหร่านกับสหรัฐอเมริกา ทั้งสองฝ่ายมีการโต้ตอบกันไปมา หลายคนอาจจะรู้สึกว่า
+              "อีกแล้วหรอ" แต่บางคนก็เริ่มกังวลแล้วค่ะ เพราะเที่ยวบินจำนวนมากต้องหยุดให้บริการ และคนที่สนใจเรื่องเศรษฐกิจโลกก็เริ่มรู้สึกว่ารอบนี้อาจจะหนักกว่าปกติ
+              แล้วเรื่องนี้จะส่งผลกระทบอะไรกับพวกเราหรือเปล่า ในบางประเทศแถบอาหรับ แฮชแท็กอันดับ 1 ตอนนี้คือ #สงครามโลกครั้งที่3 ค่ะ วันนี้เลยขอรวบรวมข้อมูลมาเล่าให้ฟังนะคะ
+            </div>
+            <div class="para-jp">
+              こんにちは、วิวです。今日は今まさに起きている大きなニュース、イランとアメリカの間の戦争についてお話しします。両者は互いに応酬を続けています。「またか」と思う人もいれば、多くの便が運休になったことで不安を感じ始めた人もいます。世界経済に注目している人は、今回は普段より深刻かもしれないと感じています。そして、これが私たちに影響を与えるのでしょうか。一部のアラブ圏の国では、今トレンド1位のハッシュタグが「#第三次世界大戦」です。今日はその情報をまとめてお伝えします。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ก่อนอื่นเลย ถ้าเราอยากเข้าใจความสัมพันธ์ระหว่างประเทศ เราต้องรู้ประวัติศาสตร์ของความสัมพันธ์นั้นก่อนค่ะ ว่าอเมริกา อิสราเอล อิหร่าน รวมถึงประเทศในกลุ่มอาหรับมีความสัมพันธ์กันอย่างไร
+              วันนี้ขอเล่าแบบสั้นๆเพื่อให้เข้าใจในระดับพื้นฐานนะคะ
+            </div>
+            <div class="para-jp">
+              まず、国際関係を理解するためには、その歴史的な関係を知る必要があります。アメリカ・イスラエル・イラン、そしてアラブ諸国がどのように関係しているのか。今日は基本的なレベルで理解できるよう、簡単にお話しします。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ตอนที่ข่าวนี้เริ่มออกมาใหม่ๆ คู่ขัดแย้งหลักคืออิสราเอลกับอิหร่านค่ะ แต่ตอนนี้มันเปลี่ยนไปแล้ว กลายเป็นอิสราเอลและสหรัฐอเมริกาจับมือกันต่อสู้กับอิหร่าน
+              ในขณะที่อิหร่านมีปัญหากับทั้งอเมริกา อิสราเอล และประเทศอาหรับอีกหลายประเทศด้วยค่ะ
+            </div>
+            <div class="para-jp">
+              このニュースが出始めた当初、主な対立はイスラエルとイランでした。しかし今はそれが変わり、イスラエルとアメリカが手を組んでイランに対立しています。一方のイランはアメリカ・イスラエル、そして他の多くのアラブ諸国とも問題を抱えています。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>มองจากฝั่งอเมริกาและฝั่งอิหร่าน（アメリカ側とイラン側からの視点）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              ในมุมของอเมริกา อิหร่านเป็นประเทศที่ทำร้ายพวกเขามามาก ทำให้ชาวอเมริกันเสียชีวิตในหลายเหตุการณ์ ตามที่ประธานาธิบดีทรัมป์พูดไว้ ถ้าเราฟังแค่ฝั่งอเมริกา
+              เราก็จะเข้าใจว่าทำไมอเมริกาถึงรู้สึกว่าอิหร่านคอยรบกวนพวกเขาตลอดเวลา แต่ถ้าเราไปมองฝั่งอิหร่าน อิหร่านก็มีประวัติศาสตร์ที่เจ็บปวดจากโลกตะวันตกมาตั้งนานแล้ว
+              ตั้งแต่ก่อนตั้งประเทศด้วยซ้ำค่ะ
+            </div>
+            <div class="para-jp">
+              アメリカの視点では、イランは多くのアメリカ人を死なせてきた国です。トランプ大統領が述べたように。アメリカ側だけを聞けば、なぜアメリカがイランに常に干渉されていると感じるかが理解できます。しかしイラン側から見ると、建国前から欧米世界に対して深く傷ついた歴史があります。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ประวัติศาสตร์ความสัมพันธ์อิหร่าน-ตะวันตก（イランと欧米の関係の歴史）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              ถ้าดูย้อนไปก่อนสงครามโลกครั้งที่ 1 ตอนนั้นอิหร่านยังเป็นเปอร์เซียอยู่ค่ะ เพราะเปอร์เซียอ่อนแอในช่วงนั้น ก็เลยโดนอังกฤษกับรัสเซียเข้ามามีอิทธิพล เปอร์เซียไม่มีสิทธิ์พูดอะไรเลย
+              ได้แต่ดูมหาอำนาจ 2 ประเทศมาแย่งดินแดนและขีดเส้นแบ่งโดยไม่ถามความเห็น ชาวเปอร์เซียก็เลยเกลียดชาติตะวันตกมาตั้งแต่นั้นค่ะ แล้วก็มองหาคนช่วย สุดท้ายก็เจอกับมหาอำนาจใหม่อย่างสหรัฐอเมริกา
+            </div>
+            <div class="para-jp">
+              第一次世界大戦前まで遡ると、イランはまだペルシャでした。当時ペルシャは弱体化していたため、イギリスとロシアに影響を受けました。ペルシャには何も言う権利がなく、ただ2つの大国が領土を奪い合い、意見も聞かずに境界線を引くのを見ているだけでした。そのためペルシャ人は西洋を憎むようになりました。そして助けを求めた結果、新たな大国であるアメリカを見つけました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ตอนแรกๆ ความสัมพันธ์ระหว่างสหรัฐอเมริกากับเปอร์เซียดีมากค่ะ เปอร์เซียมองอเมริกาเป็นไอดอล แต่พอมาถึงสงครามโลกครั้งที่ 2 อิหร่านทำผิดพลาดนิดนึงค่ะ คือเอนเอียงไปทางเยอรมนี
+              ฝ่ายสัมพันธมิตรก็รับไม่ได้ เลยเข้ามาควบคุมอิหร่าน ทำให้อเมริกากับอังกฤษใช้พื้นที่อิหร่านได้เต็มที่ อิหร่านเหมือนมีมหาอำนาจ 3 เจ้ารุมล้อมอยู่เลยค่ะ
+            </div>
+            <div class="para-jp">
+              当初、アメリカとペルシャの関係は非常に良好でした。ペルシャはアメリカを理想の存在として見ていました。しかし第二次世界大戦になると、イランは少し判断を誤りました。ドイツ側に傾いたのです。連合国はそれを容認できず、イランを掌握しました。アメリカとイギリスがイランの領土を完全に利用する形となり、イランは3つの大国に囲まれている状態でした。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              พอจบสงครามโลกครั้งที่ 2 ทหารกลับไปแล้ว แต่บริษัทน้ำมันของอังกฤษที่ถือสัมปทานในอิหร่านยังอยู่ค่ะ ชาวอิหร่านเกลียดอังกฤษมาก ก็เลยเกิดกระแสชาตินิยมขึ้น
+              มีการพยายามเอาบริษัทน้ำมันคืนจากอังกฤษ อังกฤษไม่พอใจ ก็ไปบอกอเมริกาว่าที่ชาวอิหร่านลุกขึ้นมาขับไล่นี้ ต้องมีโซเวียตหนุนหลังแน่ๆ คอมมิวนิสต์กำลังเข้ามาที่อิหร่านแล้ว
+              คำว่าคอมมิวนิสต์ในยุคสงครามเย็นนี่แตะไม่ได้เลยสำหรับอเมริกาค่ะ
+            </div>
+            <div class="para-jp">
+              第二次世界大戦終結後、兵士は帰りましたが、イランで利権を持つイギリスの石油会社は残りました。イラン人はイギリスをひどく憎み、ナショナリズムの波が起き、石油会社をイギリスから取り戻そうとする動きが生まれました。イギリスは不満を持ち、アメリカにイラン人の反乱はソ連が後押ししているはずだ、共産主義がイランに入ってきていると訴えました。冷戦時代の「共産主義」という言葉は、アメリカにとって触れてはならないものでした。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ดังนั้น อังกฤษกับอเมริกาก็ร่วมมือกัน ส่ง CIA และหน่วยข่าวกรองอังกฤษเข้าไปในอิหร่าน แล้วปลุกปั่นคนในประเทศจนเกิดรัฐประหาร ได้รัฐบาลที่เป็นฝ่ายตะวันตกอย่างชัดเจนมาแทน
+              นี่แหละคือจุดเริ่มต้นที่อเมริกาเข้ามายุ่งกับการเมืองอิหร่านอย่างจริงจังค่ะ
+            </div>
+            <div class="para-jp">
+              そこでイギリスとアメリカは協力し、CIAとイギリスの情報機関をイランに送り込み、国内を扇動してクーデターを起こしました。明確に親欧米の政府に交代させたのです。これがアメリカがイランの政治に本格的に介入し始めた出発点です。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              แต่ก็มีคนที่ไม่พอใจตะวันตกอยู่ หนึ่งในนั้นคือ อิหม่ามโคไมนี่ ที่มองว่าประเทศโปรตะวันตกเกินไป เขารณรงค์บอกว่าต้องกลับมาชาตินิยมนะ สุดท้ายกระแสนี้จุดติด
+              ฝ่ายอนุรักษ์นิยมลุกขึ้นมาขับไล่ชาวตะวันตก มีการเผาบ้านและกิจการของชาวอเมริกันในอิหร่านสมัยนั้นด้วย สุดท้ายทั้งอเมริกาและยุโรปก็ต้องให้คนของตัวเองออกจากพื้นที่ไปค่ะ และในปี 1978
+              โคมีนี่ที่ถูกเนรเทศก็กลับเข้ามาในอิหร่าน ขึ้นเป็นผู้นำสูงสุด และสถาปนาอิหร่านให้เป็นรัฐอิสลาม
+              ฉันรู้สึกว่าอิหร่านที่เป็นรัฐอิสลามนี้ก่อตั้งขึ้นมาได้ด้วยความเกลียดตะวันตกและความเกลียดอเมริกาเลยค่ะ เพราะเขาใช้ความเกลียดนี้ในการรวมคนมาสนับสนุนตัวเอง
+            </div>
+            <div class="para-jp">
+              しかし欧米に不満を持つ人々がいました。その一人がホメイニー師で、彼はイランが欧米に依存しすぎていると考え、ナショナリズムへの回帰を訴えました。この波は広がり、保守派が立ち上がり欧米人を追い出しました。イランにいたアメリカ人の家や事業が焼かれ、最終的にアメリカもヨーロッパも自国民を撤退させました。そして1978年、亡命中だったホメイニーがイランに帰国し、最高指導者となり、イランをイスラム国家として建国しました。このイスラム共和国は反欧米・反アメリカ感情を土台に成立したと思います。その憎しみを利用して人々を結集させたからです。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              หลังจากนั้น ชาวอิหร่านบุกเข้าไปยึดสถานทูตอเมริกา จับเจ้าหน้าที่และพลเมืองอเมริกันเป็นตัวประกันนานถึง 444 วัน ชาวอเมริกันที่เกิดทันยุคนั้นก็เกลียดอิหร่านมากค่ะ
+              แล้วพอดีช่วงนั้นอิหร่านไปทำสงครามกับอิรักในปี 1980 อเมริกาก็เลยสนับสนุนอิรัก อิหร่านก็ยิ่งไม่พอใจ ปี 1988 อเมริกายังพลาดไปยิงเครื่องบินพลเรือนของอิหร่าน คนตายไป 290 คน
+              อเมริกายอมรับว่าทำจริงแต่ไม่ขอโทษ ความสัมพันธ์ระหว่างอเมริกากับอิหร่านก็เลยแย่มาตั้งแต่นั้นมาจนถึงตอนนี้ค่ะ
+            </div>
+            <div class="para-jp">
+              その後、イラン人がアメリカ大使館を占拠し、職員と市民を444日間も人質にしました。その時代を知るアメリカ人はイランを深く憎みます。ちょうど1980年にイランがイラクと戦争を始めると、アメリカはイラクを支援しました。イランはさらに不満を募らせました。1988年にはアメリカが誤ってイランの民間機を撃墜し、290人が死亡しました。アメリカは事実を認めましたが謝罪しませんでした。こうしてアメリカとイランの関係はずっと悪いままで今日に至ります。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ปัญหานิวเคลียร์และการโจมตี（核問題と攻撃）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              อเมริกามองว่าอิหร่านเป็นประเทศที่สนับสนุนผู้ก่อการร้ายมากที่สุดในโลก ดังนั้นจะปล่อยให้อิหร่านมีอาวุธนิวเคลียร์ไม่ได้เด็ดขาด ปัญหานิวเคลียร์ระหว่างอเมริกากับอิหร่านมันใหญ่มากตั้งแต่ปี
+              2025 ค่ะ อิหร่านมีโรงงานนิวเคลียร์หลัก 3 แห่ง อเมริกาออกมาบอกว่าทำไมอิหร่านสะสมยูเรเนียมเพิ่มขึ้นมาก ต้องซ่อนทำอะไรบางอย่างแน่ๆ ส่วนอิหร่านบอกว่าเอามาใช้ผลิตไฟฟ้า ไม่ได้ใช้เพื่อการทหาร
+              แต่อเมริกาบอกว่าสะสมขนาดนี้ทำอาวุธนิวเคลียร์ได้แล้ว และมันละเมิดสัญญาไม่แพร่ขยายอาวุธนิวเคลียร์ด้วย อิสราเอลก็บอกอเมริกาว่าอิหร่านสะสมอาวุธ รู้สึกไม่ปลอดภัยมาก
+            </div>
+            <div class="para-jp">
+              アメリカはイランを世界最大のテロ支援国家とみなしており、イランに核兵器を持たせるわけにはいかないと考えています。アメリカとイランの核問題は2025年から特に大きくなりました。イランには主要な核施設が3か所あります。アメリカはイランがウランをなぜ大幅に蓄積しているかを問い、何かを秘密裏に進めているはずだと指摘しました。イランは電力生産用だと言い、軍事目的ではないと主張しました。しかしアメリカはこれほど蓄積すれば核兵器が作れると言い、核不拡散条約に違反すると判断しました。イスラエルもアメリカにイランが武装していて不安だと訴えました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ทรัมป์ก็เลยเริ่มกดดันอิหร่านอย่างหนัก พยายามคว่ำบาตรเพื่อบีบให้อิหร่านเลิกสะสมนิวเคลียร์แล้วมาเซ็นข้อตกลงใหม่ แต่เจรจาไปเจรจามาก็ไม่ได้ผล จนเดือนมิถุนายน 2025 ก็เกิดเหตุการณ์ช็อกโลก
+              อิสราเอลโจมตีฐานนิวเคลียร์ของอิหร่านทางอากาศหลายสิบแห่ง อิหร่านตอบโต้ไป ทุกคนกลัวกันว่าจะเกิดสงครามโลกครั้งที่ 3 แต่โชคดีมันจบในเวลา 12 วันค่ะ รอบนั้นอิหร่านเสียหายมากกว่าอิสราเอล
+              ถึงระดับโครงสร้างพื้นฐานเลย
+            </div>
+            <div class="para-jp">
+              そこでトランプはイランへの圧力を強め、制裁によってイランに核の蓄積をやめさせ、新しい合意に署名させようとしました。しかし交渉は何度やっても成果が出ませんでした。そして2025年6月、世界を驚かせる出来事が起きました。イスラエルがイランの核施設を数十か所、航空攻撃したのです。イランも反撃しました。第三次世界大戦になるかと恐れましたが、幸いにも12日間で終結しました。そのラウンドではイランがイスラエルよりはるかに大きな打撃を受け、インフラレベルでの被害も出ました。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              แต่อิหร่านก็ยังไม่ยอมทำตามที่อเมริกาต้องการ แถมขับไล่ผู้ตรวจการนิวเคลียร์ออกไปจากประเทศอีก ชาติยุโรปอย่างฝรั่งเศส เยอรมัน และอังกฤษ ก็ใช้กลไกพิเศษเพื่อคว่ำบาตรอิหร่านเพิ่ม
+              ผลจากการคว่ำบาตรทำให้ค่าเงินอิหร่านตก เศรษฐกิจพังค่ะ คนก็เริ่มไม่เชื่อมั่นในผู้นำตัวเอง แถมยังมีข่าวว่าผู้นำสูงสุดคาเมเนอีอายุ 86 แล้ว น่าจะป่วยหนัก บางคนลือว่าเสียชีวิตแล้ว
+              ทำให้ประชาชนยิ่งไม่พอใจ ก็เลยเกิดการประท้วงใหญ่ที่สุดตั้งแต่ปี 1979 แต่รัฐบาลอิหร่านปราบปรามแบบรุนแรงมากๆ ก็เลยเปลี่ยนแปลงไม่สำเร็จค่ะ
+            </div>
+            <div class="para-jp">
+              しかしイランはアメリカの要求に従わず、さらに核査察官を国外追放しました。フランス・ドイツ・イギリスのヨーロッパ諸国は特別な仕組みを使ってイランへの制裁を追加しました。制裁の結果、イランの通貨は下落し、経済は崩壊しました。国民は自国の指導者への信頼を失い始めました。さらに最高指導者カメネイが86歳で重病との情報もあり、死亡説まで流れました。国民の不満はさらに高まり、1979年以来最大の抗議活動が発生しましたが、イラン政府による激しい弾圧で変化には至りませんでした。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              อเมริกากับอิหร่านไปเจรจาเรื่องนิวเคลียร์อีกรอบที่เจนีวา แต่ก็ยังไม่ลงตัวค่ะ ทรัมป์ก็บอกไว้แล้วว่าจะบุก สุดท้ายก็เกิดเหตุการณ์นี้จริงๆ อเมริกากับอิสราเอลจับมือกันบุกอิหร่าน
+              แล้วแถลงข่าวเปิดหน้าเลยว่าบุกจริง ตั้งใจบุก ฝั่งอิหร่านก็ยิงตอบโต้ไปทั้งที่อิสราเอลและที่ฐานทัพอเมริการอบอ่าวอาหรับ ทำให้บาห์เรน คูเวต กาตาร์ และสหรัฐอาหรับเอมิเรตส์โดนไปด้วยค่ะ
+            </div>
+            <div class="para-jp">
+              アメリカとイランはジュネーブで再び核交渉を行いましたが、やはり合意には至りませんでした。トランプは攻撃すると予告しており、ついにそれが実行されました。アメリカとイスラエルが手を組んでイランを攻撃し、公開の声明で攻撃したこと、意図的に攻撃したことを表明しました。イランはイスラエルとアラブ湾岸地域のアメリカ軍基地を反撃し、バーレーン・クウェート・カタール・アラブ首長国連邦も巻き込まれました。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ทำไมอเมริกาต้องสนใจอิหร่านมากขนาดนี้?（なぜアメリカはイランをそこまで重視するのか？）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              คำถามที่น่าสนใจคือ ทำไมอเมริกาถึงสนใจอิหร่านขนาดนี้ ประเทศอื่นก็มีนิวเคลียร์มากมาย ทำไมต้องเป็นอิหร่าน? สาเหตุหลักคือภูมิศาสตร์ของอิหร่านค่ะ อิหร่านเป็นประเทศใหญ่มาก ใหญ่กว่าไทยประมาณ 3
+              เท่า ตั้งอยู่ตรงกลางระหว่างเอเชียกลางกับคาบสมุทรอาหรับ มีทะเลประกบทั้งบนและล่าง ด้านบนเป็นทะเลแคสเปียน ด้านล่างเป็นอ่าวเปอร์เซียและอ่าวโอมาน
+              ตั้งแต่อดีตเปอร์เซียเป็นจุดศูนย์กลางการค้าของโลก จะไปยุโรปหรือเอเชียก็ต้องผ่านเปอร์เซียค่ะ
+            </div>
+            <div class="para-jp">
+              興味深い疑問は、なぜアメリカはイランをそれほど重視するのかということです。核保有国は世界に他にもたくさんあります。なぜイランなのでしょう？主な理由はイランの地政学的な位置です。イランは非常に大きな国で、タイの約3倍の広さです。中央アジアとアラビア半島の間に位置し、上下を海に挟まれています。上側はカスピ海、下側はペルシャ湾とオマーン湾です。古くからペルシャは世界の貿易の中心地で、ヨーロッパへもアジアへも必ずペルシャを通らなければなりませんでした。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              เส้นทางทางน้ำก็สำคัญมากค่ะ ถ้าเราซูมเข้าไปตรงอ่าวเปอร์เซียตรงที่เชื่อมกับอ่าวโอมาน จะเห็นช่องแคบที่แคบมากๆ เรียกว่าช่องแคบฮอร์มุซ ทุกครั้งที่มีข่าวเรื่องอิหร่าน อิสราเอล อเมริกา
+              เราจะได้ยินชื่อนี้เสมอค่ะ เพราะนี่คือเส้นทางคมนาคมที่สำคัญที่สุดในโลก ก๊าซธรรมชาติผ่านที่นี่ประมาณ 20% ของโลก น้ำมันผ่านประมาณ 25-30%
+              แปลว่าเส้นทางนี้คือเส้นทางลำเลียงพลังงานหลักของโลกเลยค่ะ
+            </div>
+            <div class="para-jp">
+              海上ルートも非常に重要です。ペルシャ湾とオマーン湾が接する地点を拡大すると、非常に狭い海峡が見えます。これをホルムズ海峡と呼びます。イラン・イスラエル・アメリカに関するニュースでは必ずこの名前が出てきます。なぜならここは世界で最も重要な航路だからです。世界の天然ガスの約20%、石油の約25〜30%がここを通ります。つまりこのルートは世界のエネルギー輸送の大動脈です。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              จุดที่แคบที่สุดมีความกว้างแค่ประมาณ 30 กิโลเมตร เอาเรือไปปิดได้ง่ายมาก ดังนั้นอิหร่านในฐานะประเทศที่อยู่ติดกับช่องแคบนี้ก็เลยสามารถขู่ตลอดว่าจะปิดช่องแคบได้เสมอ ถ้าช่องแคบนี้ปิด
+              ราคาน้ำมันและก๊าซต้องขึ้นแน่ๆ อย่างไทยเราก็ใช้พลังงานจากเส้นทางนี้ถึง 50% ของประเทศนะคะ พอน้ำมันหายไป ราคาน้ำมันขึ้น ต้นทุนการผลิตและขนส่งทุกอย่างขึ้น ราคาของก็แพงขึ้น กระทบตลาดหุ้น
+              กระทบเงินลงทุน กระทบไปหมดเลย และเรื่องนี้ไม่ได้เกิดแค่กับไทย แต่เกิดกับทั่วโลกค่ะ ถ้าช่องแคบนี้ปิดนานๆ ทุกอย่างจะพังเป็นโดมิโนแน่ๆ
+              นี่แหละคือสาเหตุที่อเมริกาไม่ยอมให้ช่องแคบนี้ตกไปอยู่ในมือของคนที่พร้อมจะปิดได้ทุกเมื่อค่ะ
+            </div>
+            <div class="para-jp">
+              最も狭い地点はわずか約30キロメートルで、船で封鎖するのは非常に簡単です。そのためホルムズ海峡に隣接するイランは、常に閉鎖すると脅すことができます。もしこの海峡が封鎖されれば、石油と天然ガスの価格は必ず上昇します。タイもエネルギーの約50%をこのルートに依存しています。石油が消えれば、石油価格が上がり、あらゆる生産・輸送コストが上がり、物価が上がり、株式市場・投資すべてに影響します。これはタイだけでなく世界中に起きることです。封鎖が長引けば、すべてがドミノ式に崩壊するでしょう。だからこそアメリカはこの海峡をいつでも封鎖できる人物の手に渡すわけにはいかないのです。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ยังมีอีกช่องแคบหนึ่งที่สำคัญค่ะ นั่นคือช่องแคบบับเอล-มันเดบ ซึ่งอยู่ติดกับเยเมน เป็นทางเข้าสู่ทะเลแดงและคลองสุเอซ ถ้าช่องแคบนี้ปิด ก็ต้องไปอ้อมแอฟริกา ซึ่งไกลมากๆ
+              ในเยเมนมีกลุ่มฮูษีซึ่งว่ากันว่าอิหร่านเป็นคนสนับสนุนอยู่ ตอนที่อิหร่านยิงตอบโต้ฐานทัพอเมริกา ฮูษีก็ประกาศสนับสนุนอิหร่านและจะร่วมสู้ด้วย ปัจจุบันฮูษีประกาศให้เรือหลบไป
+              อย่าผ่านช่องแคบนี้แล้ว ถ้าช่องแคบ 2 ช่องนี้ถูกปิดพร้อมกัน รับรองพินาศทั้งคู่เลยค่ะ
+            </div>
+            <div class="para-jp">
+              もう一つ重要な海峡があります。バブ・エル・マンデブ海峡です。イエメンに隣接し、紅海とスエズ運河への入り口となっています。この海峡が封鎖されると、アフリカを大回りしなければならず、非常に遠回りになります。イエメンにはフーシ派と呼ばれるグループがおり、イランが支援していると言われています。イランがアメリカ軍基地を反撃した際、フーシ派はイランを支持し共に戦うと宣言しました。現在フーシ派は船に対してこの海峡を通るなと警告を出しています。もし2つの海峡が同時に封鎖されれば、両方とも確実に崩壊します。
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h3>ประเทศอื่นๆจะทำอะไร? ต้องรอดูกันต่อไป（他の国々は何をする？今後を見守るしかない）</h3>
+          <div class="para-block">
+            <div class="para-thai">
+              ตอนนี้หลายคนในโลกกำลังจับตาดูกันค่ะ ว่าจะมีผู้เล่นคนอื่นเข้าร่วมมั้ย ไม่ว่าจะเป็นยุโรปที่ยังลังเลอยู่ หรือรัสเซียกับจีนที่ยังระวังท่าทีของตัวเอง
+              มีคนวิเคราะห์ว่าที่อเมริกาโจมตีอิหร่านครั้งนี้ก็เป็นการชะลอเศรษฐกิจจีนด้วย เราต้องรอดูว่ารัสเซียกับจีนจะเลือกช่วยอิหร่านหรือวางเฉยเพื่อให้เรื่องจบเร็วๆค่ะ
+            </div>
+            <div class="para-jp">
+              今、世界中の人々が注目しています。ヨーロッパやロシア・中国など他の主要プレイヤーが参戦するかどうかです。ヨーロッパはまだ迷っており、ロシアと中国も慎重な態度を保っています。アメリカによるイランへの攻撃は中国経済を減速させることにもなるという分析もあります。ロシアと中国がイランを支援するか、静観して事態の早期終結を目指すかを見守る必要があります。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              ส่วนฝั่งอิหร่านเองหลังจากที่ผู้นำสูงสุดเสียชีวิตไปแล้ว ก็ต้องรอดูว่าใครจะขึ้นมาเป็นผู้นำสูงสุดคนถัดไป และคนถัดไปนั้นจะเป็นแนวทางที่ผ่อนคลายลง
+              หรือจะเลือกทางที่แข็งกร้าวและต้องการแก้แค้นยิ่งขึ้น อันนี้ก็ต้องรอดูกันค่ะ
+            </div>
+            <div class="para-jp">
+              イラン側では最高指導者が亡くなった後、次の最高指導者が誰になるかを見守る必要があります。そしてその次の人物が穏健な路線を取るのか、それとも報復色を強めた強硬な路線を選ぶのか、これも注目です。
+            </div>
+          </div>
+          <div class="para-block">
+            <div class="para-thai">
+              และทั้งหมดนี้ก็คือเรื่องราวที่รวบรวมมาเล่าให้ทุกคนฟังนะคะ หวังว่าทุกคนจะชอบกันนะคะ ถ้าชื่นชอบคลิปนี้ อย่าลืมกดไลก์เป็นกำลังใจ แล้วก็กดแชร์เพื่อชวนเพื่อนๆมารู้ด้วยกันนะคะ
+              วันนี้ลาไปก่อนแล้วกัน บ๊ายบาย สวัสดีค่ะ
+            </div>
+            <div class="para-jp">
+              以上が皆さんにお伝えしたかったことでした。気に入っていただけたら幸いです。良かったらいいねを押して応援してください。また友達にもシェアして一緒に知ってもらいましょう。では今日はここで失礼します。バイバイ、さようなら。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== TAB 2: 問題 ========== -->
+    <div id="tab-quiz" class="tab-content">
+      <div class="content-wrap">
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+
+        <div class="quiz-item">
+          <div class="quiz-num">1</div>
+          <div class="quiz-q-thai">ในบางประเทศแถบอาหรับ แฮชแท็กอันดับ 1 ตอนนี้คืออะไร?</div>
+          <div class="quiz-q-jp">一部のアラブ圏の国で今トレンド1位のハッシュタグは何？</div>
+          <ul class="quiz-options">
+            <li>ก. #หยุดสงคราม（#戦争をやめろ）</li>
+            <li>ข. #สงครามโลกครั้งที่ 3（#第三次世界大戦）</li>
+            <li>ค. #อิหร่านสู้ไม่ถอย（#イランは諦めない）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. #สงครามโลกครั้งที่ 3（#第三次世界大戦）</div>
+            <div class="exp">動画の冒頭で、一部のアラブ諸国でトレンド1位が「#สงครามโลกครั้งที่3」だと述べています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">2</div>
+          <div class="quiz-q-thai">ทำไมชาวเปอร์เซียถึงเกลียดชาติตะวันตกมาตั้งแต่ก่อนสงครามโลกครั้งที่ 1?</div>
+          <div class="quiz-q-jp">なぜペルシャ人は第一次世界大戦前から欧米を憎んでいたのか？</div>
+          <ul class="quiz-options">
+            <li>ก. เพราะตะวันตกไม่ค้าขายกับเปอร์เซีย（欧米がペルシャと貿易しなかったから）</li>
+            <li>ข. เพราะอังกฤษกับรัสเซียเข้ามามีอิทธิพลและขีดเส้นแบ่งดินแดนโดยไม่ถามความเห็น（イギリスとロシアが影響力を持ち、意見も聞かず境界線を引いたから）</li>
+            <li>ค. เพราะตะวันตกเอาศาสนาอิสลามออกจากประเทศ（欧米がイスラム教を国から排除したから）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. เพราะอังกฤษกับรัสเซียเข้ามามีอิทธิพลและขีดเส้นแบ่งดินแดนโดยไม่ถามความเห็น</div>
+            <div class="exp">弱体化したペルシャにイギリスとロシアが介入し、意見も聞かず勝手に境界線を引いたため、西洋への憎しみが生まれました。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">3</div>
+          <div class="quiz-q-thai">CIA และหน่วยข่าวกรองอังกฤษเข้าไปในอิหร่านเพื่อทำอะไร?</div>
+          <div class="quiz-q-jp">CIAとイギリスの情報機関はイランで何をしたか？</div>
+          <ul class="quiz-options">
+            <li>ก. ช่วยพัฒนาเศรษฐกิจอิหร่าน（イランの経済発展を支援した）</li>
+            <li>ข. ปลุกปั่นจนเกิดรัฐประหาร ได้รัฐบาลที่เป็นฝ่ายตะวันตก（扇動してクーデターを起こし、親欧米政府を誕生させた）</li>
+            <li>ค. เจรจาสันติภาพกับรัฐบาลอิหร่าน（イラン政府と和平交渉した）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. ปลุกปั่นจนเกิดรัฐประหาร ได้รัฐบาลที่เป็นฝ่ายตะวันตก</div>
+            <div class="exp">イギリスとアメリカはCIAと情報機関をイランに送り込み、扇動してクーデターを引き起こし、親欧米政府を樹立しました。これがアメリカのイラン政治への本格介入の始まりです。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">4</div>
+          <div class="quiz-q-thai">ชาวอิหร่านจับตัวประกันชาวอเมริกันไว้นานเท่าไหร่?</div>
+          <div class="quiz-q-jp">イラン人はアメリカ人の人質を何日間拘束したか？</div>
+          <ul class="quiz-options">
+            <li>ก. 44 วัน（44日間）</li>
+            <li>ข. 244 วัน（244日間）</li>
+            <li>ค. 444 วัน（444日間）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. 444 วัน（444日間）</div>
+            <div class="exp">アメリカ大使館占拠事件で、人質は444日間拘束されました。これがアメリカ人のイランへの憎しみを決定的にしました。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">5</div>
+          <div class="quiz-q-thai">อิหร่านมีโรงงานนิวเคลียร์หลักกี่แห่ง?</div>
+          <div class="quiz-q-jp">イランには主要な核施設が何か所あるか？</div>
+          <ul class="quiz-options">
+            <li>ก. 2 แห่ง（2か所）</li>
+            <li>ข. 3 แห่ง（3か所）</li>
+            <li>ค. 5 แห่ง（5か所）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 3 แห่ง（3か所）</div>
+            <div class="exp">動画では、イランには主要な核施設が3か所あると述べています。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">6</div>
+          <div class="quiz-q-thai">การโจมตีฐานนิวเคลียร์อิหร่านโดยอิสราเอลในปี 2025 จบลงในกี่วัน?</div>
+          <div class="quiz-q-jp">2025年のイスラエルによるイランの核施設への攻撃は何日で終わったか？</div>
+          <ul class="quiz-options">
+            <li>ก. 7 วัน（7日間）</li>
+            <li>ข. 12 วัน（12日間）</li>
+            <li>ค. 30 วัน（30日間）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. 12 วัน（12日間）</div>
+            <div class="exp">第三次世界大戦を恐れる声もありましたが、その衝突は12日間で終結しました。イランがより大きな被害を受けました。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">7</div>
+          <div class="quiz-q-thai">ช่องแคบฮอร์มุซสำคัญเพราะอะไร?</div>
+          <div class="quiz-q-jp">ホルムズ海峡はなぜ重要なのか？</div>
+          <ul class="quiz-options">
+            <li>ก. เพราะเป็นจุดท่องเที่ยวสำคัญ（観光地として重要だから）</li>
+            <li>ข. เพราะน้ำมันและก๊าซธรรมชาติจำนวนมากของโลกต้องผ่านที่นี่（世界の石油と天然ガスの大部分がここを通るから）</li>
+            <li>ค. เพราะเป็นที่ตั้งฐานทัพอเมริกาหลัก（アメリカの主要基地があるから）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. เพราะน้ำมันและก๊าซธรรมชาติจำนวนมากของโลกต้องผ่านที่นี่</div>
+            <div class="exp">世界の天然ガスの約20%、石油の約25〜30%がホルムズ海峡を通ります。世界のエネルギー輸送の大動脈です。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">8</div>
+          <div class="quiz-q-thai">ไทยใช้พลังงานจากเส้นทางช่องแคบฮอร์มุซคิดเป็นกี่เปอร์เซ็นต์ของประเทศ?</div>
+          <div class="quiz-q-jp">タイはホルムズ海峡ルートのエネルギーを国内の何%使用しているか？</div>
+          <ul class="quiz-options">
+            <li>ก. 20%</li>
+            <li>ข. 35%</li>
+            <li>ค. 50%</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. 50%</div>
+            <div class="exp">動画では、タイはこのルートから国内エネルギーの50%を得ていると述べています。だからこそタイにとっても他人事ではありません。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">9</div>
+          <div class="quiz-q-thai">กลุ่มฮูษีในเยเมนมีความสัมพันธ์อย่างไรกับอิหร่าน?</div>
+          <div class="quiz-q-jp">イエメンのフーシ派はイランとどのような関係にあるか？</div>
+          <ul class="quiz-options">
+            <li>ก. อิหร่านเป็นศัตรูของฮูษี（イランはフーシ派の敵）</li>
+            <li>ข. อิหร่านสนับสนุนกลุ่มฮูษีอยู่（イランがフーシ派を支援している）</li>
+            <li>ค. ฮูษีเป็นส่วนหนึ่งของรัฐบาลอิหร่าน（フーシ派はイラン政府の一部）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ข. อิหร่านสนับสนุนกลุ่มฮูษีอยู่（イランがフーシ派を支援している）</div>
+            <div class="exp">イエメンのフーシ派はイランが支援していると言われており、イランがアメリカ軍基地を攻撃した際、フーシ派もイランを支持すると宣言しました。</div>
+          </div>
+        </div>
+
+        <div class="quiz-item">
+          <div class="quiz-num">10</div>
+          <div class="quiz-q-thai">ถ้าช่องแคบทั้ง 2 แห่งถูกปิดพร้อมกัน จะเกิดอะไรขึ้น?</div>
+          <div class="quiz-q-jp">2つの海峡が同時に封鎖されたらどうなるか？</div>
+          <ul class="quiz-options">
+            <li>ก. ราคาน้ำมันจะลดลง ทำให้เศรษฐกิจโลกดีขึ้น（石油価格が下がり世界経済が良くなる）</li>
+            <li>ข. จะส่งผลกระทบแค่กับประเทศอาหรับเท่านั้น（アラブ諸国だけに影響する）</li>
+            <li>ค. เศรษฐกิจโลกจะพังเป็นโดมิโน（世界経済がドミノ式に崩壊する）</li>
+          </ul>
+          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <div class="answer-box">
+            <div class="correct">✅ ค. เศรษฐกิจโลกจะพังเป็นโดมิโน（世界経済がドミノ式に崩壊する）</div>
+            <div class="exp">石油価格上昇→生産・輸送コスト上昇→物価上昇→株式市場・投資への影響、という連鎖が起き、世界規模でドミノ崩壊が起きると説明しています。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== TAB 3: 会話 ========== -->
+    <div id="tab-dialogue" class="tab-content">
+      <div class="content-wrap">
+        <div class="dialogue-intro">💬 登場人物: <strong>มิ้น (ミン・女性)</strong> と <strong>เต (テー・男性)</strong> — 大学のクラスメート同士が昼食後に話しています。</div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้น</div>
+            <div class="bubble-thai">เต เห็นข่าวอิหร่านกับอเมริกาไหม? ฉันดูคลิปของวิวมาแล้ว รู้สึกตกใจมากเลย</div>
+            <div class="bubble-jp">テー、イランとアメリカのニュース見た？ วิวのYouTube見たんだけど、すごく驚いちゃった。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เต</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เต</div>
+            <div class="bubble-thai">เห็นครับ ผมก็ตกใจเหมือนกัน โดยเฉพาะที่บอกว่าไทยใช้พลังงานจากเส้นทางนั้นถึง 50% เลย</div>
+            <div class="bubble-jp">見ましたよ。特にタイがそのルートのエネルギーを50%も使ってるっていうところに驚きました。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้น</div>
+            <div class="bubble-thai">ใช่เลย แล้วช่องแคบฮอร์มุซนี่มันแคบมากด้วย แค่ 30 กิโลเมตร ถ้าอิหร่านปิดจริงๆ ราคาน้ำมันต้องขึ้นแน่ๆเลยนะ</div>
+            <div class="bubble-jp">そうなのよ。しかもホルムズ海峡って30キロしかないんだって。イランが本当に封鎖したら石油価格絶対上がるよね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เต</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เต</div>
+            <div class="bubble-thai">แล้วยังมีช่องแคบบับเอล-มันเดบด้วยนะครับ ถ้าสองช่องแคบปิดพร้อมกัน เศรษฐกิจโลกก็พังแน่ๆเลย</div>
+            <div class="bubble-jp">それにバブ・エル・マンデブ海峡もあるじゃないですか。2つ同時に封鎖されたら世界経済確実に崩れますよね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้น</div>
+            <div class="bubble-thai">แต่ที่ฉันสงสัยคือ ทำไมอเมริกากับอิหร่านถึงเกลียดกันมาขนาดนี้? มันมีสาเหตุจากอะไร?</div>
+            <div class="bubble-jp">でも私が疑問に思ったのは、なんでアメリカとイランってそんなに憎み合ってるの？何か原因があるの？</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เต</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เต</div>
+            <div class="bubble-thai">ผมก็เพิ่งรู้จากคลิปนั้นครับ มันมีประวัติศาสตร์ยาวมากเลย ตั้งแต่ที่อเมริกาส่ง CIA ไปปลุกปั่นให้เกิดรัฐประหารในอิหร่านอ่ะ</div>
+            <div class="bubble-jp">僕もそのクリップで初めて知りました。歴史が長くて、アメリカがCIAを送ってイランでクーデターを扇動したところから始まるんですよ。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้น</div>
+            <div class="bubble-thai">อ้าว ฉันไม่รู้เรื่องนั้นมาก่อนเลย แล้วยังมีเรื่องที่อิหร่านจับตัวประกันชาวอเมริกันไว้ 444 วันด้วยนะ</div>
+            <div class="bubble-jp">え、それ全然知らなかった。それにアメリカ人の人質を444日も拘束したっていう話もあったよね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เต</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เต</div>
+            <div class="bubble-thai">ใช่ครับ แล้วก็มีเรื่องที่อเมริกายิงเครื่องบินพลเรือนของอิหร่านแล้วไม่ขอโทษด้วย ทำให้ความสัมพันธ์แย่มากขึ้นอีก</div>
+            <div class="bubble-jp">そうですね。それとアメリカがイランの民間機を撃墜して謝罪しなかったっていうのも関係をさらに悪化させましたよね。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn">
+          <div class="avatar avatar-a">มิ้น</div>
+          <div class="bubble bubble-a">
+            <div class="bubble-name">มิ้น</div>
+            <div class="bubble-thai">แล้วตอนนี้เราทำอะไรได้บ้างคะ นอกจากดูข่าว?</div>
+            <div class="bubble-jp">じゃあ今私たちにできることって何かあるの？ニュースを見る以外に。</div>
+          </div>
+        </div>
+
+        <div class="dialogue-turn right">
+          <div class="avatar avatar-b">เต</div>
+          <div class="bubble bubble-b">
+            <div class="bubble-name">เต</div>
+            <div class="bubble-thai">ผมว่าก็ติดตามข่าวให้เข้าใจบริบทก่อน แล้วก็เตรียมตัวรับมือกับราคาของที่อาจจะขึ้น อย่างน้อยก็ไม่ตกใจเวลาเกิดเรื่องครับ</div>
+            <div class="bubble-jp">まずはニュースを文脈を理解して追いかけることですかね。それと物価が上がることに備えておくこと。少なくとも何かが起きても驚かないようにはなれますよ。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== TAB 4: 単語 ========== -->
+    <div id="tab-vocab" class="tab-content">
+      <div class="content-wrap">
+        <div class="vocab-category">
+          <div class="vocab-cat-title">⚔️ 戦争・紛争に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">สงคราม</td>
+              <td>戦争</td>
+              <td class="sup-note">สงครามโลก＝世界大戦。สงครามกลางเมือง＝内戦。สงครามเย็น＝冷戦。ทำสงคราม＝戦争をする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ความขัดแย้ง</td>
+              <td>対立・紛争</td>
+              <td class="sup-note">ขัดแย้ง＝対立する。คู่ขัดแย้ง＝対立する双方。ความขัดแย้งทางการเมือง＝政治的対立</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โจมตี</td>
+              <td>攻撃する</td>
+              <td class="sup-note">โจมตีทางอากาศ＝空爆する。โจมตีทางไซเบอร์＝サイバー攻撃する。ถูกโจมตี＝攻撃される</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ตอบโต้</td>
+              <td>反撃する・応酬する</td>
+              <td class="sup-note">ยิงตอบโต้＝撃ち返す。ตอบโต้ทางการทูต＝外交的に報復する。โต้ตอบ＝（互いに）応じる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">รัฐประหาร</td>
+              <td>クーデター</td>
+              <td class="sup-note">ก่อรัฐประหาร＝クーデターを起こす。รัฐ＝国家。ประหาร＝処罰する・倒す</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ตัวประกัน</td>
+              <td>人質</td>
+              <td class="sup-note">จับตัวประกัน＝人質を取る。ปล่อยตัวประกัน＝人質を解放する。เรียกค่าไถ่＝身代金を要求する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ผู้ก่อการร้าย</td>
+              <td>テロリスト</td>
+              <td class="sup-note">การก่อการร้าย＝テロ（行為）。กลุ่มก่อการร้าย＝テロ組織。ผู้ก่อการ＝行為者・実行者</td>
+            </tr>
+            <tr>
+              <td class="thai-word">อาวุธนิวเคลียร์</td>
+              <td>核兵器</td>
+              <td class="sup-note">อาวุธ＝武器。นิวเคลียร์＝核の。สะสมอาวุธ＝武器を蓄積する。ยูเรเนียม＝ウラン</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สนับสนุน</td>
+              <td>支援する・後援する</td>
+              <td class="sup-note">สนับสนุนทหาร＝軍事支援する。ผู้สนับสนุน＝後援者。スポンサーの意味でも使われる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ปราบปราม</td>
+              <td>弾圧する・鎮圧する</td>
+              <td class="sup-note">ปราบปรามการประท้วง＝抗議を弾圧する。ปราบ＝制圧する。ปรามใจ＝なだめる</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🌍 国際関係・外交に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">ความสัมพันธ์ระหว่างประเทศ</td>
+              <td>国際関係</td>
+              <td class="sup-note">ความสัมพันธ์＝関係。ระหว่าง＝〜の間。สร้างความสัมพันธ์＝関係を構築する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">มหาอำนาจ</td>
+              <td>大国・超大国</td>
+              <td class="sup-note">มหา＝大きな・偉大な（サンスクリット由来）。อำนาจ＝権力・権限。มหาอำนาจโลก＝世界の大国</td>
+            </tr>
+            <tr>
+              <td class="thai-word">คว่ำบาตร</td>
+              <td>制裁する・ボイコットする</td>
+              <td class="sup-note">การคว่ำบาตร＝制裁（名詞）。คว่ำ＝ひっくり返す。บาตร＝托鉢鉢。制裁で「締め付ける」イメージ</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เจรจา</td>
+              <td>交渉する・話し合う</td>
+              <td class="sup-note">โต๊ะเจรจา＝交渉テーブル。เจรจาสันติภาพ＝和平交渉。การเจรจา＝交渉（名詞）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สัญญา</td>
+              <td>条約・契約・約束</td>
+              <td class="sup-note">เซ็นสัญญา＝条約・契約に署名する。ละเมิดสัญญา＝条約に違反する。สัญญาใจ＝心に誓う</td>
+            </tr>
+            <tr>
+              <td class="thai-word">มีอิทธิพล</td>
+              <td>影響力を持つ</td>
+              <td class="sup-note">อิทธิพล＝影響力・勢力。อิทธิพลเหนือ＝〜への影響力。ผู้มีอิทธิพล＝有力者・インフルエンサー</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ชาตินิยม</td>
+              <td>ナショナリズム・民族主義</td>
+              <td class="sup-note">ชาติ＝国・民族。นิยม＝好む・主義。คนชาตินิยม＝ナショナリスト。ความรักชาติ＝愛国心</td>
+            </tr>
+            <tr>
+              <td class="thai-word">การประท้วง</td>
+              <td>抗議活動・デモ</td>
+              <td class="sup-note">ประท้วง＝抗議する（動詞）。ผู้ประท้วง＝デモ参加者。ชุมนุม＝集会・集まる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เนรเทศ</td>
+              <td>追放する・亡命させる</td>
+              <td class="sup-note">ถูกเนรเทศ＝追放される。เนรเทศตัวเอง＝自ら国を去る。追放された状態をอยู่ในต่างแดんとも言う</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ผู้นำสูงสุด</td>
+              <td>最高指導者</td>
+              <td class="sup-note">ผู้นำ＝指導者・リーダー。สูงสุด＝最高の。ผู้นำประเทศ＝国のリーダー。ผู้นำโลก＝世界のリーダー</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🛢️ 地政学・エネルギーに関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">ภูมิศาสตร์</td>
+              <td>地理・地政学</td>
+              <td class="sup-note">ภูมิ＝大地・地勢。ศาสตร์＝学問。ภูมิศาสตร์การเมือง＝政治地理学。ภูมิประเทศ＝地形・地勢</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ช่องแคบ</td>
+              <td>海峡</td>
+              <td class="sup-note">ช่อง＝通路・隙間。แคบ＝狭い。ช่องแคบฮอร์มุซ＝ホルムズ海峡。กว้าง（広い）の反対語がแคบ</td>
+            </tr>
+            <tr>
+              <td class="thai-word">น้ำมัน</td>
+              <td>石油・油</td>
+              <td class="sup-note">น้ำมันดิบ＝原油。น้ำมันเชื้อเพลิง＝燃料油。ราคาน้ำมัน＝石油価格。ปั้มน้ำมัน＝ガソลスタンド</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ก๊าซธรรมชาติ</td>
+              <td>天然ガス</td>
+              <td class="sup-note">ก๊าซ＝ガス。ธรรมชาติ＝自然。ก๊าซหุงต้ม＝LPGガス。พลังงานธรรมชาติ＝自然エネルギー</td>
+            </tr>
+            <tr>
+              <td class="thai-word">พลังงาน</td>
+              <td>エネルギー</td>
+              <td class="sup-note">พลังงานไฟฟ้า＝電気エネルギー。พลังงานหมุนเวียน＝再生可能エネルギー。แหล่งพลังงาน＝エネルギー源</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สัมปทาน</td>
+              <td>利権・コンセッション</td>
+              <td class="sup-note">สัมปทานน้ำมัน＝石油利権。ผู้ถือสัมปทาน＝利権を持つ者。การให้สัมปทาน＝利権を与えること</td>
+            </tr>
+            <tr>
+              <td class="thai-word">การคมนาคม</td>
+              <td>交通・輸送</td>
+              <td class="sup-note">คมนาคมทางน้ำ＝水上輸送。คมนาคมทางอากาศ＝航空輸送。กระทรวงคมนาคม＝国土交通省</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ปิดช่องแคบ</td>
+              <td>海峡を封鎖する</td>
+              <td class="sup-note">ปิด＝閉じる・封じる。ปิดพรมแดน＝国境を封鎖する。ปิดล้อม＝包囲する・封鎖する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ต้นทุน</td>
+              <td>コスト・原価</td>
+              <td class="sup-note">ต้นทุนการผลิต＝生産コスト。ต้นทุนการขนส่ง＝輸送コスト。ลดต้นทุน＝コストを下げる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ตลาดหุ้น</td>
+              <td>株式市場</td>
+              <td class="sup-note">หุ้น＝株。ตลาด＝市場。หุ้นขึ้น＝株が上がる。หุ้นตก＝株が下がる。ลงทุน＝投資する</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🏛️ 政治・歴史に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">ประวัติศาสตร์</td>
+              <td>歴史</td>
+              <td class="sup-note">ประวัติ＝経歴・歴史。ศาสตร์＝学問。เรียนประวัติศาสตร์＝歴史を学ぶ。นักประวัติศาสตร์＝歴史家</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สงครามเย็น</td>
+              <td>冷戦</td>
+              <td class="sup-note">เย็น＝冷たい。หลังสงครามเย็น＝冷戦後。ยุคสงครามเย็น＝冷戦時代。สหรัฐฯ vs. โซเวียต</td>
+            </tr>
+            <tr>
+              <td class="thai-word">คอมมิวนิสต์</td>
+              <td>共産主義・共産党</td>
+              <td class="sup-note">ลัทธิคอมมิวนิสต์＝共産主義思想。ประเทศคอมมิวนิสต์＝共産主義国家。ทุนนิยม＝資本主義</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ฝ่ายสัมพันธมิตร</td>
+              <td>連合国・同盟国側</td>
+              <td class="sup-note">สัมพันธมิตร＝同盟国。ฝ่าย＝側・派。ฝ่ายอักษะ＝枢軸国側。พันธมิตร＝同盟国・パートナー</td>
+            </tr>
+            <tr>
+              <td class="thai-word">รัฐอิสลาม</td>
+              <td>イスラム国家</td>
+              <td class="sup-note">รัฐ＝国家・州。อิสลาม＝イスラム。สถาปนารัฐ＝国家を建設する。กฎหมายอิสลาม＝イスラム法</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สถานทูต</td>
+              <td>大使館</td>
+              <td class="sup-note">ทูต＝大使・外交官。สถาน＝場所・施設。กงสุล＝領事館。เอกอัครราชทูต＝特命全権大使</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ผู้ตรวจการ</td>
+              <td>査察官・監察官</td>
+              <td class="sup-note">ผู้ตรวจการนิวเคลียร์＝核査察官。ตรวจ＝調べる・検査する。ตรวจสอบ＝検証する・監査する</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ขบวนการ</td>
+              <td>運動・ムーブメント</td>
+              <td class="sup-note">ขบวนการชาตินิยม＝民族主義運動。ขบวน＝行列・グループ。การ＝〜のこと。ขบวนรถ＝車列</td>
+            </tr>
+            <tr>
+              <td class="thai-word">แถลงข่าว</td>
+              <td>記者会見・声明を発表する</td>
+              <td class="sup-note">แถลง＝公式に発表する。แถลงการณ์＝声明文。โฆษก＝スポークスマン・広報担当</td>
+            </tr>
+            <tr>
+              <td class="thai-word">กดดัน</td>
+              <td>圧力をかける</td>
+              <td class="sup-note">ความกดดัน＝プレッシャー（名詞）。กดดันทางการทูต＝外交圧力をかける。รับแรงกดดัน＝圧力を受ける</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">💰 経済・影響に関する語彙</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">เศรษฐกิจ</td>
+              <td>経済</td>
+              <td class="sup-note">เศรษฐกิจโลก＝世界経済。เศรษฐกิจพัง＝経済が崩壊する。นักเศรษฐศาสตร์＝経済学者</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ผลกระทบ</td>
+              <td>影響・インパクト</td>
+              <td class="sup-note">ส่งผลกระทบ＝影響を与える。ผลกระทบทางเศรษฐกิจ＝経済的影響。กระทบ＝影響する（動詞単独でも使用可）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ราคาน้ำมันขึ้น</td>
+              <td>石油価格が上がる</td>
+              <td class="sup-note">ราคา＝価格。ขึ้น＝上がる。ราคาตก＝価格が下がる。ราคาสินค้า＝商品価格。ราคาคงที่＝価格が安定している</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โดมิโน</td>
+              <td>ドミノ（倒し）</td>
+              <td class="sup-note">พังเป็นโดมิโน＝ドミノ式に崩壊する。ทฤษฎีโดมิโน＝ドミノ理論。連鎖崩壊のたとえとして使われる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เงินลงทุน</td>
+              <td>投資資金</td>
+              <td class="sup-note">ลงทุน＝投資する。นักลงทุน＝投資家。ดึงดูดการลงทุน＝投資を誘致する。ผลตอบแทน＝リターン</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ค่าเงิน</td>
+              <td>通貨価値・為替</td>
+              <td class="sup-note">ค่าเงินตก＝通貨価値が下落する。ค่าเงินบาท＝バーツの為替レート。อัตราแลกเปลี่ยน＝為替レート</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ชะลอ</td>
+              <td>減速させる・遅らせる</td>
+              <td class="sup-note">ชะลอเศรษฐกิจ＝経済を減速させる。ชะลอตัว＝勢いが鈍る。ชะลอโครงการ＝プロジェクトを遅らせる</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โครงสร้างพื้นฐาน</td>
+              <td>インフラ・基礎構造</td>
+              <td class="sup-note">โครงสร้าง＝構造。พื้นฐาน＝基盤・基本。เสียหายถึงโครงสร้างพื้นฐาน＝インフラレベルの被害を受ける</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vocab-category">
+          <div class="vocab-cat-title">🗣️ 記事でよく使われる表現・副詞・接続詞</div>
+          <table class="vocab-table">
+            <tr>
+              <th>タイ語</th>
+              <th>意味</th>
+              <th>補足</th>
+            </tr>
+            <tr>
+              <td class="thai-word">ในมุมของ</td>
+              <td>〜の視点から</td>
+              <td class="sup-note">ในมุมของอเมริกา＝アメリカの視点から。มุมมอง＝視点・観点。มองจากมุมนี้＝この角度から見ると</td>
+            </tr>
+            <tr>
+              <td class="thai-word">โดยเฉพาะ</td>
+              <td>特に・とりわけ</td>
+              <td class="sup-note">โดยเฉพาะอย่างยิ่ง＝特に（強調）。เฉพาะ＝特定の・専用の。เฉพาะกาล＝一時的な</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ในฐานะ</td>
+              <td>〜として・〜の立場で</td>
+              <td class="sup-note">ในฐานะประเทศที่อยู่ติดกับ＝〜に隣接する国として。ในฐานะผู้นำ＝リーダーとして。ฐานะ＝立場・地位</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ในขณะที่</td>
+              <td>〜の一方で・〜している間に</td>
+              <td class="sup-note">逆接・対比を示す接続詞。ในขณะเดียวกัน＝同時に・それと同時に。ขณะ＝〜する時・その瞬間</td>
+            </tr>
+            <tr>
+              <td class="thai-word">จับตาดู</td>
+              <td>注目する・見守る</td>
+              <td class="sup-note">จับตา＝目を向ける。ดู＝見る。จับตาดูสถานการณ์＝状況を注視する。ตาจับ＝（慣用的に使わない逆）</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ว่ากันว่า</td>
+              <td>〜と言われている・〜だそうだ</td>
+              <td class="sup-note">伝聞・噂を表す。เขาว่ากันว่า＝みんなが言うには。ว่า＝〜と言う・〜ということ</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ต้องรอดูกัน</td>
+              <td>見守る必要がある・今後の展開待ち</td>
+              <td class="sup-note">รอ＝待つ。ดู＝見る。กัน＝一緒に。ต้องรอดูกันต่อไป＝引き続き見守る必要がある</td>
+            </tr>
+            <tr>
+              <td class="thai-word">สงวนท่าที</td>
+              <td>慎重な態度を保つ・態度を保留する</td>
+              <td class="sup-note">สงวน＝保留する・大切にする。ท่าที＝態度・姿勢。ลังเล＝迷う・ためらう。ยึกยือ＝ぐずぐずする</td>
+            </tr>
+            <tr>
+              <td class="thai-word">เปิดหน้า</td>
+              <td>堂々と・公然と</td>
+              <td class="sup-note">แถลงข่าวเปิดหน้า＝公開の記者発表で。โต้งๆ（ตรงๆ）と同じニュアンス。隠さずに表向きに行動するさま</td>
+            </tr>
+            <tr>
+              <td class="thai-word">ชะลอ / เลื่อน</td>
+              <td>遅らせる / 延期する</td>
+              <td class="sup-note">ชะลอ＝速度を落とす・一時的に遅らせる。เลื่อน＝スライドする・（予定を）延期する。เลื่อนการประชุม＝会議を延期する</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== TAB 5: 例文 ========== -->
+    <div id="tab-examples" class="tab-content">
+      <div class="content-wrap">
+        <div class="example-section">
+          <h4>⚔️ 戦争・紛争</h4>
+          <div class="example-item">
+            <div class="ex-thai">ไม่มีใครอยากเห็น<span class="highlight-word">สงคราม</span>เกิดขึ้นในโลกนี้อีกแล้ว</div>
+            <div class="ex-jp">この世界でこれ以上<strong>戦争</strong>が起きることを望む人は誰もいない。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ความขัดแย้ง</span>ระหว่างสองประเทศนี้มีมาตั้งแต่หลายสิบปีก่อนแล้ว</div>
+            <div class="ex-jp">この2か国間の<strong>対立</strong>は何十年も前から続いている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิสราเอล<span class="highlight-word">โจมตี</span>ฐานนิวเคลียร์ของอิหร่านด้วยอาวุธทางอากาศ</div>
+            <div class="ex-jp">イスラエルは航空兵器でイランの核施設を<strong>攻撃した</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่านก็ยิง<span class="highlight-word">ตอบโต้</span>ไปยังฐานทัพอเมริกาในอ่าวอาหรับทันที</div>
+            <div class="ex-jp">イランもすぐにアラブ湾岸のアメリカ軍基地に向けて<strong>反撃した</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">CIA เข้าไปปลุกปั่นประชาชนจนเกิด<span class="highlight-word">รัฐประหาร</span>ในอิหร่าน</div>
+            <div class="ex-jp">CIAが国民を扇動し、イランで<strong>クーデター</strong>が起きた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ชาวอเมริกันถูกจับเป็น<span class="highlight-word">ตัวประกัน</span>ในสถานทูตนานถึง 444 วัน</div>
+            <div class="ex-jp">アメリカ人は大使館で444日間も<strong>人質</strong>として拘束された。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อเมริกามองว่าอิหร่านเป็นประเทศที่สนับสนุน<span class="highlight-word">ผู้ก่อการร้าย</span>มากที่สุดในโลก</div>
+            <div class="ex-jp">アメリカはイランを世界で最も<strong>テロリスト</strong>を支援する国とみなしている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การสะสม<span class="highlight-word">อาวุธนิวเคลียร์</span>ขนาดนี้ถือว่าละเมิดสัญญาระหว่างประเทศแล้ว</div>
+            <div class="ex-jp">これほどの<strong>核兵器</strong>の蓄積は国際条約違反に当たる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่านกล่าวว่ายังคง<span class="highlight-word">สนับสนุน</span>กลุ่มฮูษีในเยเมนต่อไป</div>
+            <div class="ex-jp">イランはイエメンのフーシ派を引き続き<strong>支援する</strong>と述べた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">รัฐบาลตัดสินใจ<span class="highlight-word">ปราบปราม</span>การประท้วงอย่างรุนแรง ทำให้ประชาชนยิ่งโกรธ</div>
+            <div class="ex-jp">政府が抗議を激しく<strong>弾圧する</strong>ことを決定したため、国民の怒りはさらに高まった。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🌍 国際関係・外交</h4>
+          <div class="example-item">
+            <div class="ex-thai">เราต้องเข้าใจ<span class="highlight-word">ความสัมพันธ์ระหว่างประเทศ</span>ก่อน ถึงจะวิเคราะห์ข่าวได้ถูกต้อง</div>
+            <div class="ex-jp"><strong>国際関係</strong>を理解してから初めて、ニュースを正確に分析できる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">สหรัฐอเมริกาและจีนเป็น<span class="highlight-word">มหาอำนาจ</span>ที่มีอิทธิพลมากที่สุดในโลกตอนนี้</div>
+            <div class="ex-jp">アメリカと中国は現在世界で最も影響力のある<strong>大国</strong>だ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ยุโรปตัดสินใจ<span class="highlight-word">คว่ำบาตร</span>อิหร่านเพิ่มหลังจากที่อิหร่านขับไล่ผู้ตรวจการออกไป</div>
+            <div class="ex-jp">イランが査察官を追放した後、ヨーロッパはイランへの追加<strong>制裁</strong>を決定した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อเมริกากับอิหร่านไป<span class="highlight-word">เจรจา</span>เรื่องนิวเคลียร์ที่เจนีวา แต่ก็ยังไม่ลงตัว</div>
+            <div class="ex-jp">アメリカとイランはジュネーブで核問題について<strong>交渉した</strong>が、合意には至らなかった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่านละเมิด<span class="highlight-word">สัญญา</span>ไม่แพร่ขยายอาวุธนิวเคลียร์ตามที่หลายประเทศกล่าวหา</div>
+            <div class="ex-jp">イランが核不拡散<strong>条約</strong>に違反しているとして多くの国が非難している。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อังกฤษกับรัสเซีย<span class="highlight-word">มีอิทธิพล</span>เหนือเปอร์เซียมานานก่อนสงครามโลกครั้งที่ 1</div>
+            <div class="ex-jp">イギリスとロシアは第一次世界大戦前からペルシャに<strong>影響力を持って</strong>いた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">กระแส<span class="highlight-word">ชาตินิยม</span>ที่เกิดขึ้นในอิหร่านทำให้ประชาชนลุกขึ้นมาต่อต้านชาวตะวันตก</div>
+            <div class="ex-jp">イランで起きた<strong>ナショナリズム</strong>の波が国民を立ち上がらせ、欧米人に対抗させた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">การประท้วง</span>ครั้งใหญ่ที่สุดตั้งแต่ปี 1979 เกิดขึ้นในอิหร่าน แต่ถูกปราบปรามอย่างรุนแรง</div>
+            <div class="ex-jp">1979年以来最大の<strong>抗議活動</strong>がイランで発生したが、激しく弾圧された。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">โคมีนี่ที่ถูก<span class="highlight-word">เนรเทศ</span>ก็เดินทางกลับอิหร่านในปี 1978 และขึ้นเป็นผู้นำสูงสุด</div>
+            <div class="ex-jp"><strong>追放された</strong>ホメイニーは1978年にイランに帰国し、最高指導者の座に就いた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">หลังจาก<span class="highlight-word">ผู้นำสูงสุด</span>เสียชีวิต อิหร่านก็ต้องหาคนขึ้นมาแทนใหม่</div>
+            <div class="ex-jp"><strong>最高指導者</strong>が亡くなった後、イランは新たな後継者を見つけなければならなかった。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🛢️ 地政学・エネルギー</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ภูมิศาสตร์</span>ของอิหร่านทำให้ประเทศนี้มีความสำคัญทางยุทธศาสตร์มากค่ะ</div>
+            <div class="ex-jp">イランの<strong>地政学的位置</strong>がこの国を戦略的に非常に重要にしている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ช่องแคบ</span>ฮอร์มุซกว้างแค่ 30 กิโลเมตร แต่มีความสำคัญต่อเศรษฐกิจโลกมาก</div>
+            <div class="ex-jp">ホルムズ<strong>海峡</strong>は幅30キロしかないが、世界経済にとって非常に重要だ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ราคา<span class="highlight-word">น้ำมัน</span>ในตลาดโลกขึ้นทันทีที่มีข่าวความขัดแย้งในตะวันออกกลาง</div>
+            <div class="ex-jp">中東での紛争ニュースが出るたびに、世界市場の<strong>石油</strong>価格がすぐに上がる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ประมาณ 20% ของ<span class="highlight-word">ก๊าซธรรมชาติ</span>ในโลกผ่านช่องแคบฮอร์มุซ</div>
+            <div class="ex-jp">世界の<strong>天然ガス</strong>の約20%がホルムズ海峡を通っている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ไทยต้องหาแหล่ง<span class="highlight-word">พลังงาน</span>ทางเลือกให้มากขึ้น เพื่อไม่ต้องพึ่งพาเส้นทางเดียว</div>
+            <div class="ex-jp">タイは一つのルートに依存しないよう、代替<strong>エネルギー</strong>源をもっと探す必要がある。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">บริษัทน้ำมันของอังกฤษได้รับ<span class="highlight-word">สัมปทาน</span>น้ำมันในอิหร่านมานานหลายปี</div>
+            <div class="ex-jp">イギリスの石油会社はイランで長年にわたって石油<strong>利権</strong>を持っていた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เส้นทาง<span class="highlight-word">การคมนาคม</span>ทางน้ำผ่านช่องแคบฮอร์มุซสำคัญมากสำหรับการส่งออกพลังงาน</div>
+            <div class="ex-jp">ホルムズ海峡を通る水上<strong>輸送</strong>ルートはエネルギー輸出に非常に重要だ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่านขู่ว่าจะ<span class="highlight-word">ปิดช่องแคบ</span>ฮอร์มุซถ้าอเมริกาไม่หยุดกดดัน</div>
+            <div class="ex-jp">アメリカが圧力をやめなければホルムズ<strong>海峡を封鎖する</strong>とイランが脅した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การขนส่งน้ำมันมีต้นทุนสูงขึ้นเพราะต้อง<span class="highlight-word">ต้นทุน</span>เพิ่มเติมสำหรับเส้นทางทางเลือก</div>
+            <div class="ex-jp">代替ルートの追加<strong>コスト</strong>がかかるため、石油輸送のコストが上昇している。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ตลาดหุ้น</span>ทั่วโลกร่วงลงทันทีที่มีข่าวการโจมตีในตะวันออกกลาง</div>
+            <div class="ex-jp">中東での攻撃ニュースが出るとすぐに世界中の<strong>株式市場</strong>が下落した。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🏛️ 政治・歴史</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ประวัติศาสตร์</span>ความสัมพันธ์ระหว่างอิหร่านกับอเมริกายาวนานและซับซ้อนมาก</div>
+            <div class="ex-jp">イランとアメリカの関係の<strong>歴史</strong>は長く、非常に複雑だ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ในยุค<span class="highlight-word">สงครามเย็น</span>คำว่าคอมมิวนิสต์เป็นเรื่องที่อเมริกาแตะไม่ได้เลย</div>
+            <div class="ex-jp"><strong>冷戦</strong>時代、「共産主義」という言葉はアメリカにとって触れてはならないものだった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อังกฤษบอกอเมริกาว่าที่ชาวอิหร่านลุกขึ้นมานั้นเพราะมี<span class="highlight-word">คอมมิวนิสต์</span>หนุนหลัง</div>
+            <div class="ex-jp">イギリスはイラン人が立ち上がったのは<strong>共産主義者</strong>が後押ししているからだとアメリカに訴えた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ในสงครามโลกครั้งที่ 2 อิหร่านเอนเอียงไปทางเยอรมนี ทำให้<span class="highlight-word">ฝ่ายสัมพันธมิตร</span>รับไม่ได้</div>
+            <div class="ex-jp">第二次世界大戦でイランがドイツ側に傾いたため、<strong>連合国</strong>はそれを容認できなかった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">โคมีนี่สถาปนาอิหร่านให้กลายเป็น<span class="highlight-word">รัฐอิสลาม</span>ในปี 1978</div>
+            <div class="ex-jp">ホメイニーは1978年にイランを<strong>イスラム国家</strong>として建国した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ชาวอิหร่านบุกเข้าไปยึด<span class="highlight-word">สถานทูต</span>อเมริกาและจับพลเมืองเป็นตัวประกัน</div>
+            <div class="ex-jp">イラン人がアメリカ<strong>大使館</strong>を占拠し、市民を人質にした。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่านขับไล่<span class="highlight-word">ผู้ตรวจการ</span>นิวเคลียร์ออกจากประเทศ ทำให้นานาชาติไม่พอใจมาก</div>
+            <div class="ex-jp">イランが核<strong>査察官</strong>を国外追放したことで、国際社会の強い不満を招いた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ขบวนการ</span>ชาตินิยมในอิหร่านต้องการเอาบริษัทน้ำมันคืนจากอังกฤษ</div>
+            <div class="ex-jp">イランの<strong>ナショナリズム運動</strong>はイギリスから石油会社を取り戻そうとした。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ทรัมป์<span class="highlight-word">แถลงข่าว</span>เปิดหน้าเลยว่าอเมริกาตั้งใจโจมตีอิหร่าน</div>
+            <div class="ex-jp">トランプはアメリカが意図的にイランを攻撃したと公開の<strong>記者会見</strong>で述べた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อเมริกาพยายาม<span class="highlight-word">กดดัน</span>อิหร่านด้วยการคว่ำบาตรหลายรูปแบบ</div>
+            <div class="ex-jp">アメリカはさまざまな形の制裁でイランに<strong>圧力をかけ</strong>ようとした。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>💰 経済・影響</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">เศรษฐกิจ</span>อิหร่านพังเลยจากการคว่ำบาตรหลายรอบ</div>
+            <div class="ex-jp">度重なる制裁によりイランの<strong>経済</strong>は崩壊した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">เรื่องนี้จะส่ง<span class="highlight-word">ผลกระทบ</span>ต่อราคาสินค้าในชีวิตประจำวันของเราแน่ๆ</div>
+            <div class="ex-jp">この問題は私たちの日常の商品価格に確実に<strong>影響を与える</strong>だろう。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ถ้าช่องแคบปิด<span class="highlight-word">ราคาน้ำมันขึ้น</span>ทันที ทุกอย่างก็แพงขึ้นตามมาด้วย</div>
+            <div class="ex-jp">海峡が封鎖されれば<strong>石油価格が上がり</strong>、すべてのものが連動して高くなる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ถ้าทั้งสองช่องแคบปิดพร้อมกัน เศรษฐกิจโลกจะพังเป็น<span class="highlight-word">โดมิโน</span>แน่นอน</div>
+            <div class="ex-jp">2つの海峡が同時に封鎖されれば、世界経済は確実に<strong>ドミノ</strong>式に崩壊する。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">นักลงทุนต่างชาติเริ่มถอน<span class="highlight-word">เงินลงทุน</span>ออกจากภูมิภาคนี้เพราะกลัวสงคราม</div>
+            <div class="ex-jp">外国の投資家が戦争を恐れてこの地域から<strong>投資資金</strong>を引き引いている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การคว่ำบาตรทำให้<span class="highlight-word">ค่าเงิน</span>อิหร่านตกต่ำลงอย่างมาก ประชาชนซื้อของยากขึ้น</div>
+            <div class="ex-jp">制裁によりイランの<strong>通貨価値</strong>が大幅に下落し、国民の生活が苦しくなった。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ความขัดแย้งนี้อาจ<span class="highlight-word">ชะลอ</span>การฟื้นตัวทางเศรษฐกิจของหลายประเทศ</div>
+            <div class="ex-jp">この紛争は多くの国の経済回復を<strong>遅らせる</strong>可能性がある。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">การโจมตีทำให้<span class="highlight-word">โครงสร้างพื้นฐาน</span>ของอิหร่านเสียหายอย่างหนัก</div>
+            <div class="ex-jp">攻撃によりイランの<strong>インフラ</strong>が深刻な被害を受けた。</div>
+          </div>
+        </div>
+
+        <div class="example-section">
+          <h4>🗣️ よく使われる表現・副詞・接続詞</h4>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ในมุมของ</span>อิหร่าน อเมริกาเป็นคนที่เข้ามายุ่งกับการเมืองของพวกเขาก่อน</div>
+            <div class="ex-jp"><strong>イランの視点から</strong>、アメリカが先に彼らの政治に介入してきた。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ฉันชอบทุกอย่างในเมืองนี้ <span class="highlight-word">โดยเฉพาะ</span>อาหารและคนที่นี่</div>
+            <div class="ex-jp">この街のすべてが好きで、<strong>特に</strong>料理と人が好きだ。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อิหร่าน<span class="highlight-word">ในฐานะ</span>ประเทศที่อยู่ติดกับช่องแคบฮอร์มุซ ก็สามารถขู่ปิดช่องแคบได้เสมอ</div>
+            <div class="ex-jp">ホルムズ海峡に隣接する国<strong>として</strong>、イランは常に封鎖すると脅すことができる。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">อเมริกาบอกว่าอิหร่านทำร้ายพวกเขา<span class="highlight-word">ในขณะที่</span>อิหร่านก็รู้สึกว่าตัวเองเป็นฝ่ายเจ็บปวดมาก่อน</div>
+            <div class="ex-jp">アメリカはイランが傷つけてきたと言う<strong>一方で</strong>、イランは自分こそが先に傷ついた側だと感じている。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ทั่วโลกกำลัง<span class="highlight-word">จับตาดู</span>ว่ารัสเซียกับจีนจะตัดสินใจเข้าร่วมหรือวางเฉย</div>
+            <div class="ex-jp">ロシアと中国が参戦を決めるか静観するかを世界中が<strong>注目している</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai"><span class="highlight-word">ว่ากันว่า</span>อิหร่านเป็นคนสนับสนุนกลุ่มฮูษีอยู่เบื้องหลัง</div>
+            <div class="ex-jp"><strong>〜と言われている</strong>が、イランがフーシ派を陰で支援していると。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ใครจะขึ้นเป็นผู้นำสูงสุดของอิหร่านคนต่อไป <span class="highlight-word">ต้องรอดูกัน</span>ค่ะ</div>
+            <div class="ex-jp">イランの次の最高指導者が誰になるか、<strong>見守るしかない</strong>。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">รัสเซียและจีนยังคง<span class="highlight-word">สงวนท่าที</span>อยู่ ยังไม่ประกาศจุดยืนชัดเจน</div>
+            <div class="ex-jp">ロシアと中国はまだ<strong>慎重な態度を保ち</strong>、明確な立場を表明していない。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ทรัมป์แถลงข่าว<span class="highlight-word">เปิดหน้า</span>โต้งๆเลยว่าอเมริกาบุกอิหร่านจริง</div>
+            <div class="ex-jp">トランプはアメリカが実際にイランを攻撃したと<strong>堂々と</strong>公言した。</div>
+          </div>
+          <div class="example-item">
+            <div class="ex-thai">ความขัดแย้งนี้อาจ<span class="highlight-word">เลื่อน</span>การประชุมสุดยอดทางเศรษฐกิจที่วางแผนไว้ออกไป</div>
+            <div class="ex-jp">この紛争により、予定されていた経済サミットが<strong>延期される</strong>可能性がある。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTab(name, btn) {
+        document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
+        document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        btn.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      function toggleAnswer(btn) {
+        const box = btn.nextElementSibling;
+        if (box.style.display === "block") {
+          box.style.display = "none";
+          btn.textContent = "答えを見る";
+        } else {
+          box.style.display = "block";
+          btn.textContent = "閉じる";
+        }
+      }
+    </script>
+  </body>
+</html>
