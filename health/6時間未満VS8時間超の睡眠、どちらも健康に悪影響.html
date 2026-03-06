@@ -39,7 +39,7 @@
       header {
         background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
         color: #fff;
-        padding: 36px 24px 28px;
+        padding: 28px 24px 28px;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -47,7 +47,17 @@
       .header-inner {
         position: relative;
         z-index: 1;
-        padding-top: 28px;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 12px;
+      }
+      .header-titles {
+        width: 100%;
+        text-align: center;
       }
       header::before {
         content: "💤";
@@ -105,12 +115,11 @@
 
       /* FONT SIZE CONTROL */
       .font-size-ctrl {
-        position: absolute;
-        top: 10px;
-        right: 14px;
         display: flex;
         align-items: center;
         gap: 4px;
+        flex-shrink: 0;
+        padding-bottom: 2px;
       }
       .font-size-label {
         font-size: 0.68rem;
@@ -539,16 +548,18 @@
   </head>
   <body>
     <header>
-      <div class="font-size-ctrl" aria-label="テキストサイズ">
-        <span class="font-size-label">Text Size</span>
-        <button class="font-size-btn font-size-active" onclick="setFontSize('medium')" aria-label="中">A</button>
-        <button class="font-size-btn" onclick="setFontSize('large')" aria-label="大">A</button>
-        <button class="font-size-btn" onclick="setFontSize('xlarge')" aria-label="特大">A</button>
-      </div>
       <div class="header-inner">
-        <h1>นอนน้อยกว่า 6 ชม. VS นอนมากกว่า 8 ชม. ส่งผลเสียต่อสุขภาพทั้งคู่</h1>
-        <h2>6時間未満VS8時間超の睡眠、どちらも健康に悪影響</h2>
-        <div class="header-source">出典: <a href="https://www.bangkokbiznews.com/health/well-being/1222193" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ　|　記事日付: 2026年2月21日</div>
+        <div class="font-size-ctrl" aria-label="テキストサイズ">
+          <span class="font-size-label">Text Size</span>
+          <button class="font-size-btn font-size-active" onclick="setFontSize('medium')" aria-label="中">A</button>
+          <button class="font-size-btn" onclick="setFontSize('large')" aria-label="大">A</button>
+          <button class="font-size-btn" onclick="setFontSize('xlarge')" aria-label="特大">A</button>
+        </div>
+        <div class="header-titles">
+          <h1>นอนน้อยกว่า 6 ชม. VS นอนมากกว่า 8 ชม. ส่งผลเสียต่อสุขภาพทั้งคู่</h1>
+          <h2>6時間未満VS8時間超の睡眠、どちらも健康に悪影響</h2>
+          <div class="header-source">出典: <a href="https://www.bangkokbiznews.com/health/well-being/1222193" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ　|　記事日付: 2026年2月21日</div>
+        </div>
       </div>
     </header>
 
