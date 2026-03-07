@@ -45,15 +45,9 @@ function toggleAnswer(btn) {
   }
 })();
 
-// スクロール位置をリアルタイムで記録
-var _lastScrollY = 0;
-window.addEventListener("scroll", function () {
-  _lastScrollY = document.documentElement.scrollTop;
-}, { passive: true });
-
-// Homeボタン用：記録したスクロール位置をURLに埋め込んで遷移
+// Homeボタン用：スクロール位置をURLに埋め込んで遷移
 function goHome(url) {
-  const y = _lastScrollY;
+  const y = document.documentElement.scrollTop;
   const hashIndex = url.indexOf("#");
   const base = hashIndex >= 0 ? url.substring(0, hashIndex) : url;
   const hash = hashIndex >= 0 ? url.substring(hashIndex) : "";
