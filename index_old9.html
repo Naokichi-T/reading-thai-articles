@@ -656,10 +656,11 @@
             document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
             document.getElementById("tab-" + hash).classList.add("active");
             btn.classList.add("active");
-            const scrollY = localStorage.getItem("indexScrollY");
+            const params = new URLSearchParams(location.search);
+            const scrollY = params.get("scrollY") || sessionStorage.getItem("indexScrollY");
             history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
-              localStorage.removeItem("indexScrollY");
+              sessionStorage.removeItem("indexScrollY");
               document.addEventListener("DOMContentLoaded", function () {
                 document.documentElement.scrollTop = parseInt(scrollY);
               });

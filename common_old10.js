@@ -45,11 +45,10 @@ function toggleAnswer(btn) {
   }
 })();
 
-// スクロール位置を定期的にlocalStorageに保存（Homeボタンがある記事ページのみ）
-(function () {
-  if (!document.querySelector(".home-btn")) return;
-  setInterval(function () {
-    const y = document.documentElement.scrollTop;
-    if (y > 0) localStorage.setItem("indexScrollY", y);
-  }, 500);
-})();
+// ページを離れる前にスクロール位置をsessionStorageに保存
+window.addEventListener("beforeunload", function () {
+  const homeBtn = document.querySelector(".home-btn");
+  if (homeBtn) {
+    sessionStorage.setItem("indexScrollY", document.documentElement.scrollTop);
+  }
+});
