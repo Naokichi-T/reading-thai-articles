@@ -46,18 +46,11 @@ function toggleAnswer(btn) {
 })();
 
 // Homeボタンクリック時にスクロール位置を保存
-(function () {
-  function attachHomeBtn() {
-    const homeBtn = document.querySelector(".home-btn");
-    if (homeBtn) {
-      homeBtn.addEventListener("click", function () {
-        sessionStorage.setItem("indexScrollY", window.scrollY);
-      });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const homeBtn = document.querySelector(".home-btn");
+  if (homeBtn) {
+    homeBtn.addEventListener("click", function () {
+      sessionStorage.setItem("indexScrollY", window.scrollY);
+    });
   }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", attachHomeBtn);
-  } else {
-    attachHomeBtn();
-  }
-})();
+});
