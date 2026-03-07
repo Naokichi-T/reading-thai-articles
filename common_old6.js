@@ -51,12 +51,11 @@ window.addEventListener("scroll", function () {
   _lastScrollY = document.documentElement.scrollTop;
 }, { passive: true });
 
-// Homeボタン用：fromScrollYをURLから読んでindex.htmlに戻る
+// Homeボタン用：記録したスクロール位置をURLに埋め込んで遷移
 function goHome(url) {
-  const params = new URLSearchParams(window.location.search);
-  const scrollY = params.get("fromScrollY") || "0";
+  const y = _lastScrollY;
   const hashIndex = url.indexOf("#");
   const base = hashIndex >= 0 ? url.substring(0, hashIndex) : url;
   const hash = hashIndex >= 0 ? url.substring(hashIndex) : "";
-  window.location.href = base + "?scrollY=" + scrollY + hash;
+  window.location.href = base + "?scrollY=" + y + hash;
 }
