@@ -658,12 +658,10 @@
             btn.classList.add("active");
             const params = new URLSearchParams(location.search);
             const scrollY = params.get("scrollY");
-            history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
-              document.addEventListener("DOMContentLoaded", function () {
-                window.scrollTo({ top: parseInt(scrollY), behavior: "instant" });
-              });
+              document.documentElement.scrollTop = parseInt(scrollY);
             }
+            history.replaceState(null, "", "#" + hash);
           }
         }
       })();
