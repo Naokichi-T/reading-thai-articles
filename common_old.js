@@ -15,7 +15,6 @@ function showTab(name, btn) {
   document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
   document.getElementById("tab-" + name).classList.add("active");
   btn.classList.add("active");
-  history.replaceState(null, "", "#" + name);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function toggleAnswer(btn) {
@@ -28,19 +27,3 @@ function toggleAnswer(btn) {
     btn.textContent = "閉じる";
   }
 }
-
-// ページ読み込み時にハッシュからタブを復元（スクロール位置は維持）
-(function () {
-  const hash = location.hash.replace("#", "");
-  const validTabs = ["news", "health", "culture"];
-  if (validTabs.includes(hash)) {
-    const btn = document.querySelector(`.tab-btn[onclick*="'${hash}'"]`);
-    if (btn) {
-      document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
-      document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
-      document.getElementById("tab-" + hash).classList.add("active");
-      btn.classList.add("active");
-      history.replaceState(null, "", "#" + hash);
-    }
-  }
-})();
