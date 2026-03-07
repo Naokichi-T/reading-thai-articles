@@ -45,11 +45,8 @@ function toggleAnswer(btn) {
   }
 })();
 
-// Homeボタン用：スクロール位置をURLに埋め込んで遷移
+// Homeボタン用：スクロール位置を保存してから遷移
 function goHome(url) {
-  const y = document.documentElement.scrollTop;
-  const hashIndex = url.indexOf("#");
-  const base = hashIndex >= 0 ? url.substring(0, hashIndex) : url;
-  const hash = hashIndex >= 0 ? url.substring(hashIndex) : "";
-  window.location.href = base + "?scrollY=" + y + hash;
+  localStorage.setItem("indexScrollY", document.documentElement.scrollTop);
+  window.location.href = url;
 }
