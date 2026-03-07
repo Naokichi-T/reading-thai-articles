@@ -43,14 +43,4 @@ function toggleAnswer(btn) {
       history.replaceState(null, "", "#" + hash);
     }
   }
-
-  // Homeボタンにスクロール位置保存を追加
-  document.addEventListener("DOMContentLoaded", function () {
-    const homeBtn = document.querySelector(".home-btn");
-    if (homeBtn) {
-      homeBtn.addEventListener("click", function () {
-        sessionStorage.setItem("indexScrollY", window.scrollY);
-      });
-    }
-  });
 })();

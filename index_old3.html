@@ -657,11 +657,6 @@
             document.getElementById("tab-" + hash).classList.add("active");
             btn.classList.add("active");
             history.replaceState(null, "", "#" + hash);
-            const savedY = sessionStorage.getItem("indexScrollY");
-            if (savedY !== null) {
-              window.scrollTo({ top: parseInt(savedY), behavior: "instant" });
-              sessionStorage.removeItem("indexScrollY");
-            }
           }
         }
       })();
