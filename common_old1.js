@@ -50,7 +50,7 @@ function toggleAnswer(btn) {
   function attachHomeBtn() {
     const homeBtn = document.querySelector(".home-btn");
     if (!homeBtn) return;
-    homeBtn.addEventListener("mousedown", function () {
+    homeBtn.addEventListener("click", function () {
       const y = document.documentElement.scrollTop;
       localStorage.setItem("indexScrollY", y);
     });
