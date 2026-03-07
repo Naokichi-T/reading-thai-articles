@@ -51,7 +51,7 @@ function toggleAnswer(btn) {
     const homeBtn = document.querySelector(".home-btn");
     if (homeBtn) {
       homeBtn.addEventListener("click", function () {
-        sessionStorage.setItem("indexScrollY", document.documentElement.scrollTop);
+        sessionStorage.setItem("indexScrollY", window.scrollY);
       });
     }
   }
