@@ -657,10 +657,9 @@
             document.getElementById("tab-" + hash).classList.add("active");
             btn.classList.add("active");
             const params = new URLSearchParams(location.search);
-            const scrollY = params.get("scrollY") || sessionStorage.getItem("indexScrollY");
+            const scrollY = params.get("scrollY");
             history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
-              sessionStorage.removeItem("indexScrollY");
               document.addEventListener("DOMContentLoaded", function () {
                 document.documentElement.scrollTop = parseInt(scrollY);
               });
