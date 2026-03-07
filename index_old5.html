@@ -656,12 +656,12 @@
             document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
             document.getElementById("tab-" + hash).classList.add("active");
             btn.classList.add("active");
-            const params = new URLSearchParams(location.search);
-            const scrollY = params.get("scrollY");
-            if (scrollY !== null) {
-              document.documentElement.scrollTop = parseInt(scrollY);
-            }
             history.replaceState(null, "", "#" + hash);
+            const savedY = sessionStorage.getItem("indexScrollY");
+            if (savedY !== null) {
+              document.documentElement.scrollTop = parseInt(savedY);
+              sessionStorage.removeItem("indexScrollY");
+            }
           }
         }
       })();

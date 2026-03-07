@@ -45,15 +45,13 @@ function toggleAnswer(btn) {
   }
 })();
 
-// Homeボタンのhrefにスクロール位置をクエリパラメータとして付与
+// Homeボタンクリック時にスクロール位置を保存
 (function () {
   function attachHomeBtn() {
     const homeBtn = document.querySelector(".home-btn");
     if (homeBtn) {
-      homeBtn.addEventListener("mousedown", function () {
-        const scrollY = document.documentElement.scrollTop;
-        const href = homeBtn.getAttribute("href").split("?")[0];
-        homeBtn.setAttribute("href", href + "?scrollY=" + scrollY);
+      homeBtn.addEventListener("click", function () {
+        sessionStorage.setItem("indexScrollY", document.documentElement.scrollTop);
       });
     }
   }
