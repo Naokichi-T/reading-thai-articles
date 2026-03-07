@@ -4,12 +4,7 @@ const fontSizes = { medium: "100%", large: "125%", xlarge: "150%" };
         document.querySelectorAll(".font-size-btn").forEach((btn) => btn.classList.remove("font-size-active"));
         const idx = { medium: 0, large: 1, xlarge: 2 }[size];
         document.querySelectorAll(".font-size-btn")[idx].classList.add("font-size-active");
-        localStorage.setItem("fontSize", size);
       }
-      (function () {
-        const saved = localStorage.getItem("fontSize");
-        if (saved && fontSizes[saved]) setFontSize(saved);
-      })();
       function showTab(name, btn) {
         document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
         document.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
