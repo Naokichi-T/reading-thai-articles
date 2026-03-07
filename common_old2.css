@@ -535,16 +535,13 @@ header h2 {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 0.68rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.45);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   padding: 3px 8px;
   text-decoration: none;
-  transition:
-    background 0.15s,
-    color 0.15s,
-    border-color 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
 .home-btn:hover {
