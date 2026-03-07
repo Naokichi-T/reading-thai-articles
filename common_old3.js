@@ -43,14 +43,14 @@ function toggleAnswer(btn) {
       history.replaceState(null, "", "#" + hash);
     }
   }
-})();
 
-// Homeボタンクリック時にスクロール位置を保存
-document.addEventListener("DOMContentLoaded", function () {
-  const homeBtn = document.querySelector(".home-btn");
-  if (homeBtn) {
-    homeBtn.addEventListener("click", function () {
-      sessionStorage.setItem("indexScrollY", window.scrollY);
-    });
-  }
-});
+  // Homeボタンにスクロール位置保存を追加
+  document.addEventListener("DOMContentLoaded", function () {
+    const homeBtn = document.querySelector(".home-btn");
+    if (homeBtn) {
+      homeBtn.addEventListener("click", function () {
+        sessionStorage.setItem("indexScrollY", window.scrollY);
+      });
+    }
+  });
+})();
