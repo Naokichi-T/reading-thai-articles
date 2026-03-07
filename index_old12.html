@@ -663,9 +663,11 @@
             if (scrollY !== null) {
               localStorage.removeItem("indexScrollY");
               if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-              setTimeout(function () {
-                document.documentElement.scrollTop = parseInt(scrollY);
-              }, 100);
+              window.addEventListener("load", function () {
+                setTimeout(function () {
+                  document.documentElement.scrollTop = parseInt(scrollY);
+                }, 50);
+              });
             }
           }
         }
