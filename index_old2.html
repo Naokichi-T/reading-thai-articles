@@ -659,12 +659,15 @@
             document.getElementById("tab-" + hash).classList.add("active");
             btn.classList.add("active");
             const scrollY = localStorage.getItem("indexScrollY");
+            console.log("restoring scrollY:", scrollY);
             history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
-              localStorage.removeItem("indexScrollY");
-              document.addEventListener("DOMContentLoaded", function () {
+              // localStorage.removeItem("indexScrollY");
+              if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+              setTimeout(function () {
+                console.log("applying scrollTop:", scrollY);
                 document.documentElement.scrollTop = parseInt(scrollY);
-              });
+              }, 300);
             }
           }
         }

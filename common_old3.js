@@ -45,8 +45,19 @@ function toggleAnswer(btn) {
   }
 })();
 
-// Homeボタン用：スクロール位置を保存してから遷移
-function goHome(url) {
-  localStorage.setItem("indexScrollY", document.documentElement.scrollTop);
-  window.location.href = url;
-}
+// Homeボタンクリック時にスクロール位置をlocalStorageに保存
+(function () {
+  function attachHomeBtn() {
+    const homeBtn = document.querySelector(".home-btn");
+    if (!homeBtn) return;
+    homeBtn.addEventListener("mousedown", function () {
+      const y = document.documentElement.scrollTop;
+      localStorage.setItem("indexScrollY", y);
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", attachHomeBtn);
+  } else {
+    attachHomeBtn();
+  }
+})();
