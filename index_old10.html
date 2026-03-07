@@ -662,7 +662,7 @@
             history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
               localStorage.removeItem("indexScrollY");
-              window.addEventListener("load", function () {
+              document.addEventListener("DOMContentLoaded", function () {
                 document.documentElement.scrollTop = parseInt(scrollY);
               });
             }
