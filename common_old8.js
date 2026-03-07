@@ -51,8 +51,12 @@ function toggleAnswer(btn) {
     const homeBtn = document.querySelector(".home-btn");
     if (!homeBtn) return;
     homeBtn.addEventListener("mousedown", function () {
-      const scrollY = document.documentElement.scrollTop;
-      const raw = homeBtn.getAttribute("href").split("?")[0];
+      const scrollY = window.pageYOffset
+        || document.documentElement.scrollTop
+        || document.body.scrollTop
+        || 0;
+      // hrefからhashとbaseを分離して ?scrollY=N#hash の順に組み立てる
+      const raw = homeBtn.getAttribute("href").split("?")[0]; // ../index.html#health
       const hashIndex = raw.indexOf("#");
       const base = hashIndex >= 0 ? raw.substring(0, hashIndex) : raw;
       const hash = hashIndex >= 0 ? raw.substring(hashIndex) : "";

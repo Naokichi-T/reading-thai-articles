@@ -661,7 +661,7 @@
             history.replaceState(null, "", "#" + hash);
             if (scrollY !== null) {
               document.addEventListener("DOMContentLoaded", function () {
-                document.documentElement.scrollTop = parseInt(scrollY);
+                window.scrollTo({ top: parseInt(scrollY), behavior: "instant" });
               });
             }
           }
