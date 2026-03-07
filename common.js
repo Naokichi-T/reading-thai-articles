@@ -1,4 +1,4 @@
-const fontSizes = { small: "13.5px", medium: "", large: "22.5px" };
+const fontSizes = { small: "16px", medium: "", large: "21.56px" };
 function setFontSize(size) {
   document.documentElement.style.fontSize = fontSizes[size];
   document.querySelectorAll(".font-size-btn").forEach((btn) => btn.classList.remove("font-size-active"));
