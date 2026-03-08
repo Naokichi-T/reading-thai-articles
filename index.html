@@ -195,7 +195,17 @@
         font-size: 0.92rem;
         opacity: 0.7;
       }
+      .pagefind-ui {
+        --pagefind-ui-primary: #2d6a4f;
+        --pagefind-ui-text: #1b2e22;
+        --pagefind-ui-background: #f8fffe;
+        --pagefind-ui-border: #b7e4c7;
+        --pagefind-ui-tag: #d8f3dc;
+        font-family: "Noto Sans JP", "Sarabun", sans-serif;
+      }
     </style>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js"></script>
   </head>
   <body>
     <header>
@@ -207,6 +217,7 @@
       <button class="tab-btn active" onclick="showTab('news', this)">📰 時事</button>
       <button class="tab-btn" onclick="showTab('health', this)">🌿 健康</button>
       <button class="tab-btn" onclick="showTab('culture', this)">🎓 教養</button>
+      <button class="tab-btn" onclick="showTab('search', this)">🔍 検索</button>
     </nav>
 
     <!-- 時事 -->
@@ -275,6 +286,13 @@
       </div>
     </div>
 
+    <!-- 検索 -->
+    <div id="tab-search" class="tab-content">
+      <div class="content-wrap">
+        <div id="search"></div>
+      </div>
+    </div>
+
     <script>
       function showTab(name, btn) {
         document.querySelectorAll(".tab-content").forEach((el) => el.classList.remove("active"));
@@ -300,7 +318,7 @@
       // ページ読み込み時にハッシュからタブを復元（スクロール位置は維持）
       (function () {
         const hash = location.hash.replace("#", "");
-        const validTabs = ["news", "health", "culture"];
+        const validTabs = ["news", "health", "culture", "search"];
         if (validTabs.includes(hash)) {
           const btn = document.querySelector(`.tab-btn[onclick*="'${hash}'"]`);
           if (btn) {
@@ -320,6 +338,10 @@
           }
         }
       })();
+
+      window.addEventListener("DOMContentLoaded", () => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+      });
     </script>
   </body>
 </html>

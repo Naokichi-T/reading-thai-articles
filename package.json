@@ -4,7 +4,8 @@
   "description": "ฝึกอ่าน",
   "main": "index.html",
   "scripts": {
-    "start": "serve"
+    "start": "serve",
+    "build": "npx pagefind --source ."
   },
   "keywords": [
     "thai",
