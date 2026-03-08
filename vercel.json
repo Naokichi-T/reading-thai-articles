@@ -1,13 +1,13 @@
 {
   "rewrites": [
-    { "source": "/news/10002", "destination": "/news/イランvsアメリカ、どれほど深刻で私たちと何の関係があるのか.html" },
-    { "source": "/news/10001", "destination": "/news/なぜ中東地域に平和は訪れないのか？.html" },
+    { "source": "/news/10002", "destination": "/news/10002_イランvsアメリカ、どれほど深刻で私たちと何の関係があるのか.html" },
+    { "source": "/news/10001", "destination": "/news/10001_なぜ中東地域に平和は訪れないのか？.html" },
 
-    { "source": "/health/20004", "destination": "/health/ストレスを簡単に管理する方法.html" },
-    { "source": "/health/20003", "destination": "/health/12-3-30ウォーキング公式：2026年のフィットネストレンド、簡単で効果抜群.html" },
-    { "source": "/health/20002", "destination": "/health/肺がん危機・1日40人死亡、PM2.5が元凶！.html" },
-    { "source": "/health/20001", "destination": "/health/6時間未満VS8時間超の睡眠、どちらも健康に悪影響.html" },
+    { "source": "/health/20004", "destination": "/health/20004_ストレスを簡単に管理する方法.html" },
+    { "source": "/health/20003", "destination": "/health/20003_12-3-30ウォーキング公式：2026年のフィットネストレンド、簡単で効果抜群.html" },
+    { "source": "/health/20002", "destination": "/health/20002_肺がん危機・1日40人死亡、PM2.5が元凶！.html" },
+    { "source": "/health/20001", "destination": "/health/20001_6時間未満VS8時間超の睡眠、どちらも健康に悪影響.html" },
 
-    { "source": "/culture/30001", "destination": "/culture/マーカブーチャ（万仏節）2569 — 由来・意義・教え.html" }
+    { "source": "/culture/30001", "destination": "/culture/30001_マーカブーチャ（万仏節）2569 — 由来・意義・教え.html" }
   ]
 }
