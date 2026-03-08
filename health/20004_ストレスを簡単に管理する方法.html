@@ -31,7 +31,7 @@
   <body>
     <header>
       <div class="header-inner">
-        <div class="header-controls">
+        <div class="header-controls" data-pagefind-ignore>
           <button class="home-btn" onclick="goHome('/#health')" aria-label="ホームへ戻る">🏠 Home</button>
           <div class="font-size-ctrl" aria-label="テキストサイズ">
             <span class="font-size-label">Text Size</span>
@@ -43,12 +43,12 @@
         <div class="header-titles">
           <h1 data-pagefind-ignore>วิธีจัดการความเครียดง่ายๆ ที่คุณเองก็ทำได้</h1>
           <h2 data-pagefind-meta="title">ストレスを簡単に管理する方法</h2>
-          <div class="header-source">出典: <a href="https://www.thairath.co.th/lifestyle/health-and-beauty/2915843" target="_blank">thairath.co.th</a> ／ ไทยรัฐ　|　記事日付: 2026年2月23日</div>
+          <div class="header-source" data-pagefind-ignore>出典: <a href="https://www.thairath.co.th/lifestyle/health-and-beauty/2915843" target="_blank">thairath.co.th</a> ／ ไทยรัฐ　|　記事日付: 2026年2月23日</div>
         </div>
       </div>
     </header>
 
-    <nav class="tab-nav">
+    <nav class="tab-nav" data-pagefind-ignore>
       <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
       <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
       <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
@@ -59,7 +59,7 @@
     <!-- ========== TAB 1: 記事 ========== -->
     <div id="tab-article" class="tab-content active">
       <div class="content-wrap">
-        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+        <div class="article-intro" data-pagefind-ignore>📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
 
         <div class="article-section">
           <div class="para-block">
@@ -168,7 +168,7 @@
     <!-- ========== TAB 2: 問題 ========== -->
     <div id="tab-quiz" class="tab-content">
       <div class="content-wrap">
-        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px" data-pagefind-ignore>📝 内容確認問題（10問）</h2>
 
         <div class="quiz-item">
           <div class="quiz-num">1</div>
@@ -179,7 +179,7 @@
             <li>ข. การเงิน และการทำงานเท่านั้น（お金と仕事だけ）</li>
             <li>ค. การนอนหลับเท่านั้น（睡眠だけ）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. ร่างกาย จิตใจ อารมณ์ และพฤติกรรม（身体・精神・感情・行動）</div>
             <div class="exp">記事では、ストレスは身体・精神・感情・行動の各面に影響を与えると述べています。</div>
@@ -195,7 +195,7 @@
             <li>ข. คอร์ติซอล（コルチゾール）</li>
             <li>ค. เซโรโทนิน（セロトニン）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. คอร์ติซอล（コルチゾール）</div>
             <div class="exp">ストレスを感じるとコルチゾールが活発に働きます。運動によってエンドルフィンを分泌させることでバランスを取ることができます。</div>
@@ -211,7 +211,7 @@
             <li>ข. 30 นาที（30分）</li>
             <li>ค. 60 นาที（60分）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. 30 นาที（30分）</div>
             <div class="exp">仕事後に時間があれば、1日最低30分、週3〜5日の本格的な運動が推奨されています。なお、10分の軽い歩行でも気分転換の効果はあります。</div>
@@ -227,7 +227,7 @@
             <li>ข. ทำให้ชีพจรเต้นช้าลงและลืมเรื่องเครียด（脈拍が落ち着き、ストレスを忘れられる）</li>
             <li>ค. ทำให้รับประทานอาหารได้มากขึ้น（食欲が増す）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ทำให้ชีพจรเต้นช้าลงและลืมเรื่องเครียด（脈拍が落ち着き、ストレスを忘れられる）</div>
             <div class="exp">腹式呼吸や瞑想で脈拍が落ち着き、ストレスの原因からしばらく気持ちを離すことができます。</div>
@@ -243,7 +243,7 @@
             <li>ข. ช่วยไม่ให้เอาความเครียดไปให้ครอบครัว（ストレスを家族に持ち込まないで済む）</li>
             <li>ค. ช่วยให้ได้เงินเดือนสูงขึ้น（給料が上がる）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ช่วยไม่ให้เอาความเครียดไปให้ครอบครัว（ストレスを家族に持ち込まないで済む）</div>
             <div class="exp">仕事と私生活の時間をうまく分けることで、ストレスを家族に持ち込まず、充実した家庭生活を送ることができます。</div>
@@ -259,7 +259,7 @@
             <li>ข. ช่วยให้สมองปลอดโปร่งสักพัก（脳をしばらくスッキリさせてくれる）</li>
             <li>ค. ทำให้ลืมปัญหาทั้งหมดตลอดไป（問題をすべて永遠に忘れさせてくれる）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ช่วยให้สมองปลอดโปร่งสักพัก（脳をしばらくスッキリさせてくれる）</div>
             <div class="exp">映画や音楽はストレスの原因を直接解決するわけではありませんが、一時的に脳をリフレッシュさせ、その後より良く問題に向き合えるようになります。</div>
@@ -275,7 +275,7 @@
             <li>ข. สมอง（脳）</li>
             <li>ค. กระเพาะอาหาร（胃）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. สมอง（脳）</div>
             <div class="exp">科学的に、思考と脳は関連しています。何かを考えると、脳もそれに応じて反応します。</div>
@@ -291,7 +291,7 @@
             <li>ข. หลีกเลี่ยงการคิดทุกอย่าง（すべての思考を避ける）</li>
             <li>ค. ไม่สนใจปัญหาเลย（問題を完全に無視する）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. ลองมองปัญหาจากมุมของคนข้างนอก（問題を第三者の視点から見てみる）</div>
             <div class="exp">第三者の視点から問題を眺めると、原因や解決策が見えやすくなります。問題を無視するのではなく、視点を変えることがポイントです。</div>
@@ -307,7 +307,7 @@
             <li>ข. สุขภาพกาย（身体の健康）</li>
             <li>ค. ความสัมพันธ์กับเพื่อน（友人との関係）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. สุขภาพกาย（身体の健康）</div>
             <div class="exp">記事の最後で、メンタルヘルスのケアと同様に、食事と睡眠を通じて身体の健康もケアすることが重要だと述べています。</div>
@@ -323,7 +323,7 @@
             <li>ข. ดื่มเครื่องดื่มแอลกอฮอล์（アルコールを飲む）</li>
             <li>ค. นั่งสมาธิ（瞑想する）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ดื่มเครื่องดื่มแอลกอฮอล์（アルコールを飲む）</div>
             <div class="exp">記事が推奨しているのは「運動・瞑想・時間管理・映画や音楽・考え方の転換・良い食事と睡眠」です。アルコールは記事のどこにも登場しません。</div>
@@ -335,7 +335,7 @@
     <!-- ========== TAB 3: 会話 ========== -->
     <div id="tab-dialogue" class="tab-content">
       <div class="content-wrap">
-        <div class="dialogue-intro">💬 登場人物: <strong>มิ้ว (ミウ)</strong> と <strong>เอ็ม (エム)</strong> — 大学の友人同士がカフェでランチをしながら話しています。</div>
+        <div class="dialogue-intro" data-pagefind-ignore>💬 登場人物: <strong>มิ้ว (ミウ)</strong> と <strong>เอ็ม (エム)</strong> — 大学の友人同士がカフェでランチをしながら話しています。</div>
 
         <div class="dialogue-turn">
           <div class="avatar avatar-a">มิ้ว</div>
@@ -455,8 +455,8 @@
     <div id="tab-vocab" class="tab-content">
       <div class="content-wrap">
         <div class="vocab-category">
-          <div class="vocab-cat-title">😰 ストレス・感情に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>😰 ストレス・感情に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -516,8 +516,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏃 運動・身体に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏃 運動・身体に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -577,8 +577,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🧘 精神・メンタルヘルスに関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🧘 精神・メンタルヘルスに関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -638,8 +638,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">⏰ 時間・生活習慣に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>⏰ 時間・生活習慣に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -689,8 +689,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🎬 娯楽・活動に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🎬 娯楽・活動に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -725,8 +725,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🧠 思考・認知に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🧠 思考・認知に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -776,8 +776,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">💡 便利な表現・副詞・接続詞</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>💡 便利な表現・副詞・接続詞</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -832,7 +832,7 @@
     <div id="tab-examples" class="tab-content">
       <div class="content-wrap">
         <div class="example-section">
-          <h4>😰 ストレス・感情</h4>
+          <h4 data-pagefind-ignore>😰 ストレス・感情</h4>
           <div class="example-item">
             <div class="ex-thai">เขาสะสม<span class="highlight-word">ความเครียด</span>จากงานจนป่วยต้องพักงานอยู่สองสัปดาห์</div>
             <div class="ex-jp">彼は仕事の<strong>ストレス</strong>を蓄積し続けて体調を崩し、2週間休職せざるを得なかった。</div>
@@ -876,7 +876,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏃 運動・身体</h4>
+          <h4 data-pagefind-ignore>🏃 運動・身体</h4>
           <div class="example-item">
             <div class="ex-thai">หมอแนะนำให้เขา<span class="highlight-word">ออกกำลังกาย</span>อย่างน้อยสัปดาห์ละ 3 ครั้ง เพื่อลดความเครียด</div>
             <div class="ex-jp">医師は彼にストレス軽減のために週3回以上<strong>運動する</strong>よう勧めた。</div>
@@ -920,7 +920,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🧘 精神・メンタルヘルス</h4>
+          <h4 data-pagefind-ignore>🧘 精神・メンタルヘルス</h4>
           <div class="example-item">
             <div class="ex-thai">การดูแล<span class="highlight-word">สุขภาพจิต</span>มีความสำคัญพอๆ กับสุขภาพกาย</div>
             <div class="ex-jp"><strong>メンタルヘルス</strong>のケアは身体の健康と同じくらい大切だ。</div>
@@ -964,7 +964,7 @@
         </div>
 
         <div class="example-section">
-          <h4>⏰ 時間・生活習慣</h4>
+          <h4 data-pagefind-ignore>⏰ 時間・生活習慣</h4>
           <div class="example-item">
             <div class="ex-thai">การ<span class="highlight-word">จัดสรรเวลา</span>ให้ดีทำให้เราไม่ต้องทำงานดึกทุกคืน</div>
             <div class="ex-jp">上手に<strong>時間管理する</strong>ことで、毎晩遅くまで仕事しなくても済む。</div>
@@ -1000,7 +1000,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🎬 娯楽・活動</h4>
+          <h4 data-pagefind-ignore>🎬 娯楽・活動</h4>
           <div class="example-item">
             <div class="ex-thai">วันหยุดนี้เขาอยากอยู่บ้าน<span class="highlight-word">ดูหนัง</span>สักเรื่องเพื่อพักผ่อน</div>
             <div class="ex-jp">この休日、彼は休息のために家で映画を一本<strong>見たい</strong>と思っている。</div>
@@ -1024,7 +1024,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🧠 思考・認知</h4>
+          <h4 data-pagefind-ignore>🧠 思考・認知</h4>
           <div class="example-item">
             <div class="ex-thai">ทุกคนมี<span class="highlight-word">ปัญหา</span>ของตัวเอง สิ่งสำคัญคือวิธีที่เราเลือกรับมือกับมัน</div>
             <div class="ex-jp">誰もが自分の<strong>問題</strong>を抱えている。大切なのはそれにどう向き合うかだ。</div>
@@ -1060,7 +1060,7 @@
         </div>
 
         <div class="example-section">
-          <h4>💡 便利な表現・副詞・接続詞</h4>
+          <h4 data-pagefind-ignore>💡 便利な表現・副詞・接続詞</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">เมื่อไรก็ตาม</span>ที่รู้สึกเครียด ลองหยุดพักและหายใจลึกๆ สักครู่</div>
             <div class="ex-jp"><strong>ストレスを感じるときはいつでも</strong>、立ち止まってしばらく深呼吸してみよう。</div>

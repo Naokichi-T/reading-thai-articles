@@ -31,7 +31,7 @@
   <body>
     <header>
       <div class="header-inner">
-        <div class="header-controls">
+        <div class="header-controls" data-pagefind-ignore>
           <button class="home-btn" onclick="goHome('/#culture')" aria-label="ホームへ戻る">🏠 Home</button>
           <div class="font-size-ctrl" aria-label="テキストサイズ">
             <span class="font-size-label">Text Size</span>
@@ -43,12 +43,12 @@
         <div class="header-titles">
           <h1 data-pagefind-ignore>วันมาฆบูชา ๒๕๖๙ ประวัติ ความสำคัญ และหลักธรรม</h1>
           <h2 data-pagefind-meta="title">マーカブーチャ（万仏節）2569 — 由来・意義・教え</h2>
-          <div class="header-source">出典: <a href="https://www.sanook.com/campus/910849/" target="_blank">sanook.com</a> ／ Sanook Campus　|　記事日付: 2026年3月3日</div>
+          <div class="header-source" data-pagefind-ignore>出典: <a href="https://www.sanook.com/campus/910849/" target="_blank">sanook.com</a> ／ Sanook Campus　|　記事日付: 2026年3月3日</div>
         </div>
       </div>
     </header>
 
-    <nav class="tab-nav">
+    <nav class="tab-nav" data-pagefind-ignore>
       <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
       <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
       <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
@@ -59,7 +59,7 @@
     <!-- ========== TAB 1: 記事 ========== -->
     <div id="tab-article" class="tab-content active">
       <div class="content-wrap">
-        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+        <div class="article-intro" data-pagefind-ignore>📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
 
         <div class="article-section">
           <div class="para-block">
@@ -207,7 +207,7 @@
     <!-- ========== TAB 2: 問題 ========== -->
     <div id="tab-quiz" class="tab-content">
       <div class="content-wrap">
-        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px" data-pagefind-ignore>📝 内容確認問題（10問）</h2>
 
         <div class="quiz-item">
           <div class="quiz-num">1</div>
@@ -218,7 +218,7 @@
             <li>ข. วันขึ้น 15 ค่ำ เดือน 6（旧暦6月の満月）</li>
             <li>ค. วันขึ้น 15 ค่ำ เดือน 12（旧暦12月の満月）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. วันขึ้น 15 ค่ำ เดือน 3（旧暦3月の満月）</div>
             <div class="exp">マーカブーチャは旧暦3月（มาฆะ月）の満月の日です。ただし閏年（เดือน 8 สองครั้ง）の場合は旧暦4月の満月になります。</div>
@@ -234,7 +234,7 @@
             <li>ข. 1,000 รูป（1,000人）</li>
             <li>ค. 1,250 รูป（1,250人）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. 1,250 รูป（1,250人）</div>
             <div class="exp">1,250人の阿羅漢の弟子が事前の連絡なしに集まりました。この数字はマーカブーチャを象徴する重要な数です。</div>
@@ -250,7 +250,7 @@
             <li>ข. การประชุมพร้อมด้วยองค์ 4（4つの要素が揃った集会）</li>
             <li>ค. วันที่พระพุทธเจ้าตรัสรู้（仏陀が悟りを開いた日）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. การประชุมพร้อมด้วยองค์ 4（4つの要素が揃った集会）</div>
             <div class="exp">จาตุร＝4、องค์＝要素、สันนิบาต＝集会。4つの奇跡が同時に起きた集会を指します。</div>
@@ -266,7 +266,7 @@
             <li>ข. อุปสมบทโดยตรงจากพระพุทธเจ้า（仏陀から直接の受戒）</li>
             <li>ค. อุปสมบทที่วัดเวฬุวัน（ヴェールワナ寺での受戒）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. อุปสมบทโดยตรงจากพระพุทธเจ้า（仏陀から直接の受戒）</div>
             <div class="exp">これを「เอหิภิกขุอุปสัมปทา」と言います。エーヒ（来たれ）＋ビック（比丘）の意味で、仏陀が直接「来たれ、比丘よ」と呼びかけて受戒させる形式です。</div>
@@ -282,7 +282,7 @@
             <li>ข. รักษาศีล นั่งสมาธิ สวดมนต์（戒を守り、瞑想し、念仏する）</li>
             <li>ค. บวชเป็นพระ ออกบิณฑบาต สอนธรรม（出家し、托鉢し、法を教える）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. ละความชั่ว ทำความดี ทำจิตให้ผ่องใส（悪を離れ、善を積み、心を清める）</div>
             <div class="exp">これが仏教の核心的な3原則（หลักการ 3）です。記事中では「หัวใจของพระพุทธศาสนา（仏教の心髄）」と表現されています。</div>
@@ -298,7 +298,7 @@
             <li>ข. วัดแห่งแรกในพระพุทธศาสนา（仏教最初の寺院）</li>
             <li>ค. วัดที่พระพุทธเจ้าปรินิพพาน（仏陀が涅槃に入った寺）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. วัดแห่งแรกในพระพุทธศาสนา（仏教最初の寺院）</div>
             <div class="exp">ヴェールワナ寺（วัดเวฬุวัน）はビンビサーラ王が仏陀に寄進した竹林の庭園で、仏教史上最初の寺院です。</div>
@@ -314,7 +314,7 @@
             <li>ข. เคยถือพิธีศิวาราตรีในวันนั้นมาก่อน（元々その日にシヴァラートリー祭りをしていたから）</li>
             <li>ค. มีการประกาศในวัดทุกแห่ง（すべての寺院で告知があったから）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. เคยถือพิธีศิวาราตรีในวันนั้นมาก่อน（元々その日にシヴァラートリー祭りをしていたから）</div>
             <div class="exp">元々バラモン教徒だった阿羅漢たちは、旧暦3月の満月に行うシヴァ神を崇める儀式「ศิวาราตรี」の代わりに仏陀のもとへ集まりました。</div>
@@ -330,7 +330,7 @@
             <li>ข. รัชกาลที่ 4（ラーマ4世）</li>
             <li>ค. รัชกาลที่ 9（ラーマ9世）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. รัชกาลที่ 4（ラーマ4世）</div>
             <div class="exp">ラーマ4世（モンクット王）がこの儀式を制定しました。当初は王宮内のみで行われ、後に全国へ広まりました。</div>
@@ -346,7 +346,7 @@
             <li>ข. เวียนเทียนรอบพระอุโบสถ 3 รอบ（仏堂の周りを3周ろうそく巡りする）</li>
             <li>ค. สวดมนต์และฟังธรรมตลอดคืน（一晩中念仏し法話を聴く）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. เวียนเทียนรอบพระอุโบสถ 3 รอบ（仏堂の周りを3周ろうそく巡りする）</div>
             <div class="exp">花・線香・ろうそくを持って仏堂の周りを時計回りに3周します。歩きながら三宝（仏・法・僧）の徳を念じます。</div>
@@ -362,7 +362,7 @@
             <li>ข. รู้จักประมาณในการกิน（食を適度にする）</li>
             <li>ค. สะสมทรัพย์ให้มาก（財産をたくさん蓄える）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. สะสมทรัพย์ให้มาก（財産をたくさん蓄える）</div>
             <div class="exp">6つの方法は「悪口を言わない・傷つけない・戒律を守る・食を適度にする・静かな場所に住む・瞑想で心を鍛える」です。財産の蓄積はこれに含まれません。</div>
@@ -374,7 +374,7 @@
     <!-- ========== TAB 3: 会話 ========== -->
     <div id="tab-dialogue" class="tab-content">
       <div class="content-wrap">
-        <div class="dialogue-intro">💬 登場人物: <strong>ปุ้ย (プイ)</strong> と <strong>เต้ (テー)</strong> — 大学のクラスメート同士が授業の後に話しています。</div>
+        <div class="dialogue-intro" data-pagefind-ignore>💬 登場人物: <strong>ปุ้ย (プイ)</strong> と <strong>เต้ (テー)</strong> — 大学のクラスメート同士が授業の後に話しています。</div>
 
         <div class="dialogue-turn">
           <div class="avatar avatar-a">ปุ้ย</div>
@@ -472,8 +472,8 @@
     <div id="tab-vocab" class="tab-content">
       <div class="content-wrap">
         <div class="vocab-category">
-          <div class="vocab-cat-title">🛕 仏教・行事に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🛕 仏教・行事に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -548,8 +548,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">📖 仏教用語・教義</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>📖 仏教用語・教義</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -619,8 +619,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏛️ 歴史・場所に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏛️ 歴史・場所に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -665,8 +665,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🌙 カレンダー・時間・礼儀に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🌙 カレンダー・時間・礼儀に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -711,8 +711,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🧠 心・感情・精神に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🧠 心・感情・精神に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -762,8 +762,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏛️ 歴史・宗教の一般語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏛️ 歴史・宗教の一般語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -813,8 +813,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">💡 便利な表現・副詞・接続詞</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>💡 便利な表現・副詞・接続詞</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -869,7 +869,7 @@
     <div id="tab-examples" class="tab-content">
       <div class="content-wrap">
         <div class="example-section">
-          <h4>🛕 仏教・行事</h4>
+          <h4 data-pagefind-ignore>🛕 仏教・行事</h4>
           <div class="example-item">
             <div class="ex-thai">วันนี้เป็น<span class="highlight-word">วันมาฆบูชา</span> ทุกคนในครอบครัวไปวัดด้วยกัน</div>
             <div class="ex-jp">今日は<strong>マーカブーチャ</strong>なので、家族みんなでお寺に行く。</div>
@@ -925,7 +925,7 @@
         </div>
 
         <div class="example-section">
-          <h4>📖 仏教用語・教義</h4>
+          <h4 data-pagefind-ignore>📖 仏教用語・教義</h4>
           <div class="example-item">
             <div class="ex-thai">พระพุทธเจ้า<span class="highlight-word">ตรัสรู้</span>ใต้ต้นโพธิ์เมื่อ 2,500 กว่าปีก่อน</div>
             <div class="ex-jp">仏陀は2,500年以上前、菩提樹の下で<strong>悟りを開いた</strong>。</div>
@@ -977,7 +977,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏛️ 歴史・場所</h4>
+          <h4 data-pagefind-ignore>🏛️ 歴史・場所</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">วัดเวฬุวัน</span>ตั้งอยู่ใกล้เมืองราชคฤห์ในประเทศอินเดีย</div>
             <div class="ex-jp"><strong>ヴェールワナ寺</strong>はインドのラージャガハ近郊にある。</div>
@@ -1009,7 +1009,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🌙 カレンダー・礼儀</h4>
+          <h4 data-pagefind-ignore>🌙 カレンダー・礼儀</h4>
           <div class="example-item">
             <div class="ex-thai">วันสำคัญหลายวันในพุทธศาสนาคำนวณจาก<span class="highlight-word">ปฏิทินจันทรคติ</span></div>
             <div class="ex-jp">仏教の多くの重要な日は<strong>太陰暦</strong>をもとに計算される。</div>
@@ -1041,7 +1041,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🧠 心・感情・精神</h4>
+          <h4 data-pagefind-ignore>🧠 心・感情・精神</h4>
           <div class="example-item">
             <div class="ex-thai">หลังจากนั่งสมาธิ จิตใจของเขาดู<span class="highlight-word">ผ่องใส</span>มากขึ้น</div>
             <div class="ex-jp">瞑想の後、彼の心はよりいっそう<strong>清らか</strong>になったようだ。</div>
@@ -1077,7 +1077,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏛️ 歴史・宗教の一般語彙</h4>
+          <h4 data-pagefind-ignore>🏛️ 歴史・宗教の一般語彙</h4>
           <div class="example-item">
             <div class="ex-thai">ผู้คนนับถือ<span class="highlight-word">ศาสนา</span>แตกต่างกันไป แต่ต่างก็มีหลักธรรมดีงามเหมือนกัน</div>
             <div class="ex-jp">人々は異なる<strong>宗教</strong>を信じているが、どれも良い道徳的原則を持っている。</div>
@@ -1113,7 +1113,7 @@
         </div>
 
         <div class="example-section">
-          <h4>💡 便利な表現・副詞・接続詞</h4>
+          <h4 data-pagefind-ignore>💡 便利な表現・副詞・接続詞</h4>
           <div class="example-item">
             <div class="ex-thai">คำว่า "มาฆบูชา" <span class="highlight-word">หมายถึง</span>การบูชาในวันเพ็ญเดือนมาฆะ</div>
             <div class="ex-jp">「มาฆบูชา」という言葉は、マーカ月の満月の日の礼拝を<strong>意味する</strong>。</div>

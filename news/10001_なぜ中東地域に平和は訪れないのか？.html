@@ -34,7 +34,7 @@
   <body>
     <header>
       <div class="header-inner">
-        <div class="header-controls">
+        <div class="header-controls" data-pagefind-ignore>
           <button class="home-btn" onclick="goHome('/#news')" aria-label="ホームへ戻る">🏠 Home</button>
           <div class="font-size-ctrl" aria-label="テキストサイズ">
             <span class="font-size-label">Text Size</span>
@@ -46,12 +46,12 @@
         <div class="header-titles">
           <h1 data-pagefind-ignore>ทำไมภูมิภาคตะวันออกกลางถึงไม่เกิดความสงบ?</h1>
           <h2 data-pagefind-meta="title">なぜ中東地域に平和は訪れないのか？</h2>
-          <div class="header-source">出典: <a href="https://www.thaipbs.or.th/now/content/3732" target="_blank">thaipbs.or.th / Thai PBS NOW</a>　|　記事日付: 2026年3月2日</div>
+          <div class="header-source" data-pagefind-ignore>出典: <a href="https://www.thaipbs.or.th/now/content/3732" target="_blank">thaipbs.or.th / Thai PBS NOW</a>　|　記事日付: 2026年3月2日</div>
         </div>
       </div>
     </header>
 
-    <nav class="tab-nav">
+    <nav class="tab-nav" data-pagefind-ignore>
       <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
       <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
       <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
@@ -62,7 +62,7 @@
     <!-- ========== TAB 1: 記事 ========== -->
     <div id="tab-article" class="tab-content active">
       <div class="content-wrap">
-        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+        <div class="article-intro" data-pagefind-ignore>📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
 
         <div class="article-section">
           <div class="para-block">
@@ -204,7 +204,7 @@
     <!-- ========== TAB 2: 問題 ========== -->
     <div id="tab-quiz" class="tab-content">
       <div class="content-wrap">
-        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px" data-pagefind-ignore>📝 内容確認問題（10問）</h2>
 
         <div class="quiz-item">
           <div class="quiz-num">1</div>
@@ -215,7 +215,7 @@
             <li>ข. การท่องเที่ยวและวัฒนธรรมเท่านั้น（観光と文化のみ）</li>
             <li>ค. เทคโนโลยีและการศึกษา（テクノロジーと教育）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. ภูมิรัฐศาสตร์ ศาสนา และทรัพยากรธรรมชาติ</div>
             <div class="exp">記事では中東を「地政学・宗教・天然資源の面で世界の心臓」と表現しています。</div>
@@ -231,7 +231,7 @@
             <li>ข. อารยธรรมเมโสโปเตเมีย（メソポタミア文明）</li>
             <li>ค. อารยธรรมจีน（中国文明）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. อารยธรรมเมโสโปเตเมีย</div>
             <div class="exp">中東はメソポタミア文明の発祥地であり、エジプト文明とも隣接する地域です。</div>
@@ -247,7 +247,7 @@
             <li>ข. สหรัฐอเมริกา（アメリカ）</li>
             <li>ค. อังกฤษ（イギリス）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. อังกฤษ（イギリス）</div>
             <div class="exp">イギリスはオスマン帝国が弱体化した際に「分割統治」政策を用い、各勢力に矛盾する約束をしました。</div>
@@ -263,7 +263,7 @@
             <li>ข. จะยอมรับให้ดินแดนปาเลสไตน์เป็นรัฐของชาวยิว（パレスチナをユダヤ人国家として認める）</li>
             <li>ค. จะให้เอกราชแก่ชาวยิวในยุโรป（ヨーロッパのユダヤ人に独立を与える）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. จะยอมรับให้ดินแดนปาเลสไตน์เป็นรัฐของชาวยิว</div>
             <div class="exp">イギリスはユダヤ人にパレスチナをユダヤ人国家として認めると約束しました。これが現在まで影響を及ぼす取り決めの一つです。</div>
@@ -279,7 +279,7 @@
             <li>ข. แบ่งผลประโยชน์ในตะวันออกกลางระหว่างกันเอง（中東の利権を二国間で分け合った）</li>
             <li>ค. ถอนกำลังออกจากตะวันออกกลางทั้งหมด（中東から完全撤退した）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. แบ่งผลประโยชน์ในตะวันออกกลางระหว่างกันเอง</div>
             <div class="exp">戦後、西洋列強は各勢力への約束を果たさず、イギリスとフランスが中東の利権を二国間で分け合いました。これが現地勢力の反感と武装勢力誕生の原因となりました。</div>
@@ -295,7 +295,7 @@
             <li>ข. ความมั่นคงทางพลังงานและการคานอำนาจคู่แข่ง（エネルギー安全保障と競合国への対抗）</li>
             <li>ค. เพื่อปกป้องสิทธิมนุษยชน（人権保護のため）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ความมั่นคงทางพลังงานและการคานอำนาจคู่แข่ง</div>
             <div class="exp">アメリカの最大の関心はエネルギー安全保障と、ロシア・中国といった競合国が中東に影響力を拡大するのを阻止することです。</div>
@@ -311,7 +311,7 @@
             <li>ข. จักรวรรดิโรมันและเปอร์เซีย（ローマ帝国とペルシャ帝国）</li>
             <li>ค. จักรวรรดิญี่ปุ่นและอเมริกา（日本とアメリカ帝国）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. จักรวรรดิโรมันและเปอร์เซีย</div>
             <div class="exp">イラク・シリア・ヨルダンなどの地域はローマ帝国とペルシャ帝国の戦場として使われ、さらに十字軍の舞台にもなりました。</div>
@@ -327,7 +327,7 @@
             <li>ข. ช่วงสงครามโลกครั้งที่ 2（第二次世界大戦中）</li>
             <li>ค. ช่วงสงครามเย็น（冷戦中）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. ช่วงสงครามโลกครั้งที่ 1</div>
             <div class="exp">第一次世界大戦中にオスマン帝国が崩壊したことが中東情勢の重要な転換点となりました。</div>
@@ -343,7 +343,7 @@
             <li>ข. ต้องการกำจัดภัยคุกคาม（脅威を排除したい）</li>
             <li>ค. ต้องการช่วยเหลือประชาชนอิหร่าน（イラン国民を助けたい）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ต้องการกำจัดภัยคุกคาม</div>
             <div class="exp">トランプはイランへの攻撃の理由として「脅威の排除」を挙げましたが、攻撃後にイラン国民に政府打倒を呼びかけるなど、その行動は予測不可能でした。</div>
@@ -359,7 +359,7 @@
             <li>ข. ประชาชนในภูมิภาคไม่ต้องการสันติภาพ（地域の人々が平和を望んでいない）</li>
             <li>ค. ภูมิภาคนี้มีอากาศร้อนมากเกินไป（この地域は暑すぎる）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. โลกยังพึ่งพาน้ำมัน และมหาอำนาจมองภูมิภาคนี้ว่าเป็นเกมการเมือง</div>
             <div class="exp">記事の結論として、世界が石油に依存し大国がすべてを政治ゲームと利権として見続ける限り、戦争の炎は消えないと述べています。</div>
@@ -371,7 +371,7 @@
     <!-- ========== TAB 3: 会話 ========== -->
     <div id="tab-dialogue" class="tab-content">
       <div class="content-wrap">
-        <div class="dialogue-intro">💬 登場人物: <strong>มิน (ミン)</strong> と <strong>แนน (ナン)</strong> — 大学の友人同士が授業後にカフェで話しています。</div>
+        <div class="dialogue-intro" data-pagefind-ignore>💬 登場人物: <strong>มิน (ミン)</strong> と <strong>แนน (ナン)</strong> — 大学の友人同士が授業後にカフェで話しています。</div>
 
         <div class="dialogue-turn">
           <div class="avatar avatar-a">มิน</div>
@@ -473,8 +473,8 @@
     <div id="tab-vocab" class="tab-content">
       <div class="content-wrap">
         <div class="vocab-category">
-          <div class="vocab-cat-title">🌍 地理・地政学に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🌍 地理・地政学に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -519,8 +519,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">⚔️ 紛争・戦争に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>⚔️ 紛争・戦争に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -580,8 +580,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏛️ 政治・権力に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏛️ 政治・権力に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -641,8 +641,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🛢️ 資源・経済に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🛢️ 資源・経済に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -682,8 +682,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">📜 歴史・文明に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>📜 歴史・文明に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -728,8 +728,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🤝 外交・国際関係に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🤝 外交・国際関係に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -769,8 +769,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">💡 便利な表現・副詞・接続詞</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>💡 便利な表現・副詞・接続詞</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -835,7 +835,7 @@
     <div id="tab-examples" class="tab-content">
       <div class="content-wrap">
         <div class="example-section">
-          <h4>🌍 地理・地政学</h4>
+          <h4 data-pagefind-ignore>🌍 地理・地政学</h4>
           <div class="example-item">
             <div class="ex-thai">ประเทศต่าง ๆ ในแถบ<span class="highlight-word">ตะวันออกกลาง</span>มีน้ำมันสำรองจำนวนมากที่สุดในโลก</div>
             <div class="ex-jp"><strong>中東</strong>の各国は世界最大の石油埋蔵量を持っています。</div>
@@ -867,7 +867,7 @@
         </div>
 
         <div class="example-section">
-          <h4>⚔️ 紛争・戦争</h4>
+          <h4 data-pagefind-ignore>⚔️ 紛争・戦争</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">สงคราม</span>ในตะวันออกกลางทำให้ผู้คนนับล้านต้องอพยพออกจากบ้าน</div>
             <div class="ex-jp">中東での<strong>戦争</strong>により、何百万人もの人々が家を追われました。</div>
@@ -911,7 +911,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏛️ 政治・権力</h4>
+          <h4 data-pagefind-ignore>🏛️ 政治・権力</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">มหาอำนาจ</span>อย่างสหรัฐฯ และจีนต่างพยายามขยายอิทธิพลในภูมิภาคนี้</div>
             <div class="ex-jp">アメリカや中国のような<strong>大国</strong>はこの地域での影響力拡大を競い合っています。</div>
@@ -955,7 +955,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🛢️ 資源・経済</h4>
+          <h4 data-pagefind-ignore>🛢️ 資源・経済</h4>
           <div class="example-item">
             <div class="ex-thai">ประเทศกำลังพัฒนาหลายแห่งยังขาดการจัดการ<span class="highlight-word">ทรัพยากรธรรมชาติ</span>ที่ดี</div>
             <div class="ex-jp">多くの途上国はまだ<strong>天然資源</strong>の適切な管理ができていません。</div>
@@ -983,7 +983,7 @@
         </div>
 
         <div class="example-section">
-          <h4>📜 歴史・文明</h4>
+          <h4 data-pagefind-ignore>📜 歴史・文明</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">อารยธรรม</span>เมโสโปเตเมียถือเป็นหนึ่งในอารยธรรมที่เก่าแก่ที่สุดในโลก</div>
             <div class="ex-jp">メソポタミア<strong>文明</strong>は世界最古の文明の一つとされています。</div>
@@ -1015,7 +1015,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🤝 外交・国際関係</h4>
+          <h4 data-pagefind-ignore>🤝 外交・国際関係</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">การทูต</span>เป็นเครื่องมือสำคัญในการแก้ปัญหาระหว่างประเทศโดยไม่ต้องใช้กำลัง</div>
             <div class="ex-jp"><strong>外交</strong>は武力に頼らずに国際問題を解決するための重要なツールです。</div>
@@ -1043,7 +1043,7 @@
         </div>
 
         <div class="example-section">
-          <h4>💡 便利な表現・副詞・接続詞</h4>
+          <h4 data-pagefind-ignore>💡 便利な表現・副詞・接続詞</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">ตราบใดที่</span>ความไม่เท่าเทียมยังมีอยู่ ความขัดแย้งก็ยากจะสิ้นสุด</div>
             <div class="ex-jp"><strong>不平等がある限り</strong>、対立はなかなか終わりません。</div>

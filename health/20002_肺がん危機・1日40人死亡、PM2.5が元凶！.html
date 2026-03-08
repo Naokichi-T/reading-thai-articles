@@ -31,7 +31,7 @@
   <body>
     <header>
       <div class="header-inner">
-        <div class="header-controls">
+        <div class="header-controls" data-pagefind-ignore>
           <button class="home-btn" onclick="goHome('/#health')" aria-label="ホームへ戻る">🏠 Home</button>
           <div class="font-size-ctrl" aria-label="テキストサイズ">
             <span class="font-size-label">Text Size</span>
@@ -43,12 +43,12 @@
         <div class="header-titles">
           <h1 data-pagefind-ignore>มะเร็งปอดวิกฤต คร่า 40 ชีวิตต่อวัน ฝุ่น PM2.5 ตัวการร้าย!</h1>
           <h2 data-pagefind-meta="title">肺がん危機・1日40人死亡、PM2.5が元凶！</h2>
-          <div class="header-source">出典: <a href="https://www.bangkokbiznews.com/health/well-being/1185465" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ　|　記事日付: 2025年6月18日</div>
+          <div class="header-source" data-pagefind-ignore>出典: <a href="https://www.bangkokbiznews.com/health/well-being/1185465" target="_blank">bangkokbiznews.com</a> ／ กรุงเทพธุรกิจ　|　記事日付: 2025年6月18日</div>
         </div>
       </div>
     </header>
 
-    <nav class="tab-nav">
+    <nav class="tab-nav" data-pagefind-ignore>
       <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
       <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
       <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
@@ -59,7 +59,7 @@
     <!-- ===================== TAB 1: 記事 ===================== -->
     <div id="tab-article" class="tab-content active">
       <div class="content-wrap">
-        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
+        <div class="article-intro" data-pagefind-ignore>📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えています。段落ごとに日本語訳を掲載しています。</div>
 
         <div class="article-section">
           <h3>ไทยเผชิญวิกฤตมะเร็งปอด（タイで肺がん危機）</h3>
@@ -138,7 +138,7 @@
     <!-- ===================== TAB 2: 問題 ===================== -->
     <div id="tab-quiz" class="tab-content">
       <div class="content-wrap">
-        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px" data-pagefind-ignore>📝 内容確認問題（10問）</h2>
 
         <!-- Q1 -->
         <div class="quiz-item">
@@ -150,7 +150,7 @@
             <li>ข. วันละ 40 คน（1日40人）</li>
             <li>ค. วันละ 60 คน（1日60人）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. วันละ 40 คน（1日40人）</div>
             <div class="exp">肺がんによる死者は1日40人で、新規患者は1日48人です。</div>
@@ -167,7 +167,7 @@
             <li>ข. มากกว่า 77%（77%以上）</li>
             <li>ค. มากกว่า 100%（100%以上）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. มากกว่า 77%（77%以上）</div>
             <div class="exp">WHOは今後25年以内に世界のがん患者数が77%以上増加すると予測しています。</div>
@@ -184,7 +184,7 @@
             <li>ข. ประมาณ 140,000 คน（約14万人）</li>
             <li>ค. ประมาณ 200,000 คน（約20万人）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ประมาณ 140,000 คน（約14万人）</div>
             <div class="exp">2022年のデータでは年間約14万人の新規がん患者が発生しています。</div>
@@ -201,7 +201,7 @@
             <li>ข. มะเร็งเต้านม（乳がん）</li>
             <li>ค. มะเร็งลำไส้（大腸がん）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. มะเร็งเต้านม（乳がん）</div>
             <div class="exp">タイでは乳がんの患者数が最も多く1位で、肺がんは2位です。</div>
@@ -218,7 +218,7 @@
             <li>ข. เพราะออกซิเจนทำให้เซลล์มะเร็งโตเร็วขึ้น（酸素ががん細胞の成長を促すから）</li>
             <li>ค. เพราะออกซิเจนทำให้ปอดอักเสบ（酸素が肺炎を引き起こすから）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. เพราะออกซิเจนช่วยให้เลือดไหลเวียนดี ทำให้ภูมิคุ้มกันแข็งแรง</div>
             <div class="exp">酸素が血流を良くして免疫を強化するため、がんは酸素が嫌いとされています。</div>
@@ -235,7 +235,7 @@
             <li>ข. ผ่านทางการหายใจ เข้าสู่หลอดลมและกระแสเลือด（呼吸を通じて気管から血流へ）</li>
             <li>ค. ผ่านทางการดื่มน้ำ（飲み水を通じて）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ผ่านทางการหายใจ เข้าสู่หลอดลมและกระแสเลือด</div>
             <div class="exp">PM2.5は非常に小さいため、呼吸を通じて気管を経由して血流にまで入り込むことができます。</div>
@@ -252,7 +252,7 @@
             <li>ข. น้ำอัดลม ขนมหวาน มันฝรั่งทอด（炭酸飲料・甘いお菓子・フライドポテト）</li>
             <li>ค. เนื้อแดง ไข่ นม（赤身肉・卵・牛乳）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. บร็อกโคลี ชาเขียว แครอท（ブロッコリー・緑茶・ニンジン）</div>
             <div class="exp">ブロッコリー・緑茶・ニンジン・カボチャなどは抗酸化作用があり、がん予防に役立ちます。</div>
@@ -269,7 +269,7 @@
             <li>ข. ขิง ขมิ้นชัน（生姜・ターメリック）</li>
             <li>ค. กาแฟ ชาดำ（コーヒー・紅茶）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ขิง ขมิ้นชัน（生姜・ターメリック）</div>
             <div class="exp">生姜やターメリックは抗炎症作用を持ち、体内の炎症を抑えるのに役立ちます。</div>
@@ -286,7 +286,7 @@
             <li>ข. 70%</li>
             <li>ค. 80%</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. 80%</div>
             <div class="exp">早期発見すれば治癒率は80%にまで高まります。定期的な検診が重要です。</div>
@@ -303,7 +303,7 @@
             <li>ข. คนที่กินอาหารเผ็ด（辛い食べ物を食べる人）</li>
             <li>ค. คนที่ออกกำลังกายทุกวัน（毎日運動する人）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ก. คนที่สูบบุหรี่มาก คนที่มีแผลในปอด หรือเคยได้รับการฉายแสง</div>
             <div class="exp">ヘビースモーカー、肺に病変がある人、放射線治療を受けた人は肺がんリスクが高いため、特に定期検診が推奨されています。</div>
@@ -315,7 +315,7 @@
     <!-- ===================== TAB 3: 会話 ===================== -->
     <div id="tab-dialogue" class="tab-content">
       <div class="content-wrap">
-        <div class="dialogue-intro">💬 登場人物: <strong>บิ๊ก (ビック)</strong> と <strong>มิ้น (ミン)</strong> — 友人2人がランチを食べながら話しています。</div>
+        <div class="dialogue-intro" data-pagefind-ignore>💬 登場人物: <strong>บิ๊ก (ビック)</strong> と <strong>มิ้น (ミン)</strong> — 友人2人がランチを食べながら話しています。</div>
 
         <div class="dialogue-turn">
           <div class="avatar avatar-a">บิ๊ก</div>
@@ -413,8 +413,8 @@
     <div id="tab-vocab" class="tab-content">
       <div class="content-wrap">
         <div class="vocab-category">
-          <div class="vocab-cat-title">🫁 肺・呼吸に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🫁 肺・呼吸に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -464,8 +464,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏭 大気汚染に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏭 大気汚染に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -515,8 +515,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🦠 がん・病気に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🦠 がん・病気に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -571,8 +571,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🥦 予防・健康に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🥦 予防・健康に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -642,8 +642,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">📊 統計・医療情報に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>📊 統計・医療情報に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -693,8 +693,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏥 医療機関・専門家に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏥 医療機関・専門家に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -729,7 +729,7 @@
     <div id="tab-examples" class="tab-content">
       <div class="content-wrap">
         <div class="example-section">
-          <h4>🫁 肺・呼吸</h4>
+          <h4 data-pagefind-ignore>🫁 肺・呼吸</h4>
           <div class="example-item">
             <div class="ex-thai">หมอบอกว่า<span class="highlight-word">ปอด</span>ของเขาแข็งแรงดี ไม่พบความผิดปกติใดเลย</div>
             <div class="ex-jp">医者は彼の<strong>肺</strong>は健康で、何も異常は見つからないと言った。</div>
@@ -753,7 +753,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏭 大気汚染</h4>
+          <h4 data-pagefind-ignore>🏭 大気汚染</h4>
           <div class="example-item">
             <div class="ex-thai">ในช่วงฤดูหนาว ค่า<span class="highlight-word">ฝุ่น PM2.5</span>ในกรุงเทพฯ สูงเกินมาตรฐานหลายเท่า</div>
             <div class="ex-jp">冬の時期、バンコクの<strong>PM2.5</strong>の値は基準値を何倍も超える。</div>
@@ -777,7 +777,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🦠 がん・病気</h4>
+          <h4 data-pagefind-ignore>🦠 がん・病気</h4>
           <div class="example-item">
             <div class="ex-thai">จำนวน<span class="highlight-word">ผู้ป่วย</span>มะเร็งปอดรายใหม่เพิ่มขึ้นทุกปี</div>
             <div class="ex-jp">肺がんの新規<strong>患者</strong>数は毎年増えている。</div>
@@ -801,7 +801,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🥦 予防・健康</h4>
+          <h4 data-pagefind-ignore>🥦 予防・健康</h4>
           <div class="example-item">
             <div class="ex-thai">เราควร<span class="highlight-word">ป้องกัน</span>ตัวเองจากฝุ่น PM2.5 โดยใส่หน้ากากเมื่ออยู่กลางแจ้ง</div>
             <div class="ex-jp">屋外にいるときはマスクをつけてPM2.5から自分を<strong>予防する</strong>べきだ。</div>
@@ -831,7 +831,7 @@
         </div>
 
         <div class="example-section">
-          <h4>📊 統計・状況</h4>
+          <h4 data-pagefind-ignore>📊 統計・状況</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">สถิติ</span>ล่าสุดแสดงให้เห็นว่าจำนวนผู้ป่วยมะเร็งปอดเพิ่มขึ้นทุกปี</div>
             <div class="ex-jp">最新の<strong>統計</strong>は毎年肺がん患者数が増加していることを示している。</div>

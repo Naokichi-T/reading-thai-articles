@@ -31,7 +31,7 @@
   <body>
     <header>
       <div class="header-inner">
-        <div class="header-controls">
+        <div class="header-controls" data-pagefind-ignore>
           <button class="home-btn" onclick="goHome('/#news')" aria-label="ホームへ戻る">🏠 Home</button>
           <div class="font-size-ctrl" aria-label="テキストサイズ">
             <span class="font-size-label">Text Size</span>
@@ -43,12 +43,12 @@
         <div class="header-titles">
           <h1 data-pagefind-ignore>อิหร่าน VS อเมริกา หนักแค่ไหน เกี่ยวอะไรกับเรา?</h1>
           <h2 data-pagefind-meta="title">イランvsアメリカ、どれほど深刻で私たちと何の関係があるのか</h2>
-          <div class="header-source">出典: <a href="https://youtu.be/uL-IdP1OOW4" target="_blank">youtube.com（Point of View / วิว）</a>　|　動画日付: 2026年3月2日</div>
+          <div class="header-source" data-pagefind-ignore>出典: <a href="https://youtu.be/uL-IdP1OOW4" target="_blank">youtube.com（Point of View / วิว）</a>　|　動画日付: 2026年3月2日</div>
         </div>
       </div>
     </header>
 
-    <nav class="tab-nav">
+    <nav class="tab-nav" data-pagefind-ignore>
       <button class="tab-btn active" onclick="showTab('article', this)">📄 記事</button>
       <button class="tab-btn" onclick="showTab('quiz', this)">❓ 問題</button>
       <button class="tab-btn" onclick="showTab('dialogue', this)">💬 会話</button>
@@ -59,7 +59,7 @@
     <!-- ========== TAB 1: 記事 ========== -->
     <div id="tab-article" class="tab-content active">
       <div class="content-wrap">
-        <div class="article-intro">📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えて要約しています。段落ごとに日本語訳を掲載しています。</div>
+        <div class="article-intro" data-pagefind-ignore>📝 タイ語学習者向けに、できるだけ平易な語彙・文体に書き換えて要約しています。段落ごとに日本語訳を掲載しています。</div>
 
         <div class="article-section">
           <div class="para-block">
@@ -292,7 +292,7 @@
     <!-- ========== TAB 2: 問題 ========== -->
     <div id="tab-quiz" class="tab-content">
       <div class="content-wrap">
-        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px">📝 内容確認問題（10問）</h2>
+        <h2 style="font-family: &quot;Noto Serif JP&quot;, serif; font-size: 1.2rem; color: var(--primary); margin-bottom: 24px" data-pagefind-ignore>📝 内容確認問題（10問）</h2>
 
         <div class="quiz-item">
           <div class="quiz-num">1</div>
@@ -303,7 +303,7 @@
             <li>ข. #สงครามโลกครั้งที่ 3（#第三次世界大戦）</li>
             <li>ค. #อิหร่านสู้ไม่ถอย（#イランは諦めない）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. #สงครามโลกครั้งที่ 3（#第三次世界大戦）</div>
             <div class="exp">動画の冒頭で、一部のアラブ諸国でトレンド1位が「#สงครามโลกครั้งที่3」だと述べています。</div>
@@ -319,7 +319,7 @@
             <li>ข. เพราะอังกฤษกับรัสเซียเข้ามามีอิทธิพลและขีดเส้นแบ่งดินแดนโดยไม่ถามความเห็น（イギリスとロシアが影響力を持ち、意見も聞かず境界線を引いたから）</li>
             <li>ค. เพราะตะวันตกเอาศาสนาอิสลามออกจากประเทศ（欧米がイスラム教を国から排除したから）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. เพราะอังกฤษกับรัสเซียเข้ามามีอิทธิพลและขีดเส้นแบ่งดินแดนโดยไม่ถามความเห็น</div>
             <div class="exp">弱体化したペルシャにイギリスとロシアが介入し、意見も聞かず勝手に境界線を引いたため、西洋への憎しみが生まれました。</div>
@@ -335,7 +335,7 @@
             <li>ข. ปลุกปั่นจนเกิดรัฐประหาร ได้รัฐบาลที่เป็นฝ่ายตะวันตก（扇動してクーデターを起こし、親欧米政府を誕生させた）</li>
             <li>ค. เจรจาสันติภาพกับรัฐบาลอิหร่าน（イラン政府と和平交渉した）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. ปลุกปั่นจนเกิดรัฐประหาร ได้รัฐบาลที่เป็นฝ่ายตะวันตก</div>
             <div class="exp">イギリスとアメリカはCIAと情報機関をイランに送り込み、扇動してクーデターを引き起こし、親欧米政府を樹立しました。これがアメリカのイラン政治への本格介入の始まりです。</div>
@@ -351,7 +351,7 @@
             <li>ข. 244 วัน（244日間）</li>
             <li>ค. 444 วัน（444日間）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. 444 วัน（444日間）</div>
             <div class="exp">アメリカ大使館占拠事件で、人質は444日間拘束されました。これがアメリカ人のイランへの憎しみを決定的にしました。</div>
@@ -367,7 +367,7 @@
             <li>ข. 3 แห่ง（3か所）</li>
             <li>ค. 5 แห่ง（5か所）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. 3 แห่ง（3か所）</div>
             <div class="exp">動画では、イランには主要な核施設が3か所あると述べています。</div>
@@ -383,7 +383,7 @@
             <li>ข. 12 วัน（12日間）</li>
             <li>ค. 30 วัน（30日間）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. 12 วัน（12日間）</div>
             <div class="exp">第三次世界大戦を恐れる声もありましたが、その衝突は12日間で終結しました。イランがより大きな被害を受けました。</div>
@@ -399,7 +399,7 @@
             <li>ข. เพราะน้ำมันและก๊าซธรรมชาติจำนวนมากของโลกต้องผ่านที่นี่（世界の石油と天然ガスの大部分がここを通るから）</li>
             <li>ค. เพราะเป็นที่ตั้งฐานทัพอเมริกาหลัก（アメリカの主要基地があるから）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. เพราะน้ำมันและก๊าซธรรมชาติจำนวนมากของโลกต้องผ่านที่นี่</div>
             <div class="exp">世界の天然ガスの約20%、石油の約25〜30%がホルムズ海峡を通ります。世界のエネルギー輸送の大動脈です。</div>
@@ -415,7 +415,7 @@
             <li>ข. 35%</li>
             <li>ค. 50%</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. 50%</div>
             <div class="exp">動画では、タイはこのルートから国内エネルギーの50%を得ていると述べています。だからこそタイにとっても他人事ではありません。</div>
@@ -431,7 +431,7 @@
             <li>ข. อิหร่านสนับสนุนกลุ่มฮูษีอยู่（イランがフーシ派を支援している）</li>
             <li>ค. ฮูษีเป็นส่วนหนึ่งของรัฐบาลอิหร่าน（フーシ派はイラン政府の一部）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ข. อิหร่านสนับสนุนกลุ่มฮูษีอยู่（イランがフーシ派を支援している）</div>
             <div class="exp">イエメンのフーシ派はイランが支援していると言われており、イランがアメリカ軍基地を攻撃した際、フーシ派もイランを支持すると宣言しました。</div>
@@ -447,7 +447,7 @@
             <li>ข. จะส่งผลกระทบแค่กับประเทศอาหรับเท่านั้น（アラブ諸国だけに影響する）</li>
             <li>ค. เศรษฐกิจโลกจะพังเป็นโดมิโน（世界経済がドミノ式に崩壊する）</li>
           </ul>
-          <button class="answer-btn" onclick="toggleAnswer(this)">答えを見る</button>
+          <button class="answer-btn" onclick="toggleAnswer(this)" data-pagefind-ignore>答えを見る</button>
           <div class="answer-box">
             <div class="correct">✅ ค. เศรษฐกิจโลกจะพังเป็นโดมิโน（世界経済がドミノ式に崩壊する）</div>
             <div class="exp">石油価格上昇→生産・輸送コスト上昇→物価上昇→株式市場・投資への影響、という連鎖が起き、世界規模でドミノ崩壊が起きると説明しています。</div>
@@ -459,7 +459,7 @@
     <!-- ========== TAB 3: 会話 ========== -->
     <div id="tab-dialogue" class="tab-content">
       <div class="content-wrap">
-        <div class="dialogue-intro">💬 登場人物: <strong>มิ้น (ミン)</strong> と <strong>เต (テー)</strong> — 会社の同僚同士が昼食後に話しています。</div>
+        <div class="dialogue-intro" data-pagefind-ignore>💬 登場人物: <strong>มิ้น (ミン)</strong> と <strong>เต (テー)</strong> — 会社の同僚同士が昼食後に話しています。</div>
 
         <div class="dialogue-turn">
           <div class="avatar avatar-a">มิ้น</div>
@@ -557,8 +557,8 @@
     <div id="tab-vocab" class="tab-content">
       <div class="content-wrap">
         <div class="vocab-category">
-          <div class="vocab-cat-title">⚔️ 戦争・紛争に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>⚔️ 戦争・紛争に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -618,8 +618,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🌍 国際関係・外交に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🌍 国際関係・外交に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -679,8 +679,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🛢️ 地政学・エネルギーに関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🛢️ 地政学・エネルギーに関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -740,8 +740,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">🏛️ 政治・歴史に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>🏛️ 政治・歴史に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -801,8 +801,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">💰 経済・影響に関する語彙</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>💰 経済・影響に関する語彙</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -852,8 +852,8 @@
         </div>
 
         <div class="vocab-category">
-          <div class="vocab-cat-title">💡 便利な表現・副詞・接続詞</div>
-          <table class="vocab-table">
+          <div class="vocab-cat-title" data-pagefind-ignore>💡 便利な表現・副詞・接続詞</div>
+          <table class="vocab-table" data-pagefind-ignore>
             <tr>
               <th>タイ語</th>
               <th>意味</th>
@@ -918,7 +918,7 @@
     <div id="tab-examples" class="tab-content">
       <div class="content-wrap">
         <div class="example-section">
-          <h4>⚔️ 戦争・紛争</h4>
+          <h4 data-pagefind-ignore>⚔️ 戦争・紛争</h4>
           <div class="example-item">
             <div class="ex-thai">ไม่มีใครอยากเห็น<span class="highlight-word">สงคราม</span>เกิดขึ้นในโลกนี้อีกแล้ว</div>
             <div class="ex-jp">この世界でこれ以上<strong>戦争</strong>が起きることを望む人は誰もいない。</div>
@@ -962,7 +962,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🌍 国際関係・外交</h4>
+          <h4 data-pagefind-ignore>🌍 国際関係・外交</h4>
           <div class="example-item">
             <div class="ex-thai">เราต้องเข้าใจ<span class="highlight-word">ความสัมพันธ์ระหว่างประเทศ</span>ก่อน ถึงจะวิเคราะห์ข่าวได้ถูกต้อง</div>
             <div class="ex-jp"><strong>国際関係</strong>を理解してから初めて、ニュースを正確に分析できる。</div>
@@ -1006,7 +1006,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🛢️ 地政学・エネルギー</h4>
+          <h4 data-pagefind-ignore>🛢️ 地政学・エネルギー</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">ภูมิศาสตร์</span>ของอิหร่านทำให้ประเทศนี้มีความสำคัญทางยุทธศาสตร์มากค่ะ</div>
             <div class="ex-jp">イランの<strong>地政学的位置</strong>がこの国を戦略的に非常に重要にしている。</div>
@@ -1050,7 +1050,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🏛️ 政治・歴史</h4>
+          <h4 data-pagefind-ignore>🏛️ 政治・歴史</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">ประวัติศาสตร์</span>ความสัมพันธ์ระหว่างอิหร่านกับอเมริกายาวนานและซับซ้อนมาก</div>
             <div class="ex-jp">イランとアメリカの関係の<strong>歴史</strong>は長く、非常に複雑だ。</div>
@@ -1094,7 +1094,7 @@
         </div>
 
         <div class="example-section">
-          <h4>💰 経済・影響</h4>
+          <h4 data-pagefind-ignore>💰 経済・影響</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">เศรษฐกิจ</span>อิหร่านพังเลยจากการคว่ำบาตรหลายรอบ</div>
             <div class="ex-jp">度重なる制裁によりイランの<strong>経済</strong>は崩壊した。</div>
@@ -1130,7 +1130,7 @@
         </div>
 
         <div class="example-section">
-          <h4>🗣️ よく使われる表現・副詞・接続詞</h4>
+          <h4 data-pagefind-ignore>🗣️ よく使われる表現・副詞・接続詞</h4>
           <div class="example-item">
             <div class="ex-thai"><span class="highlight-word">ในมุมของ</span>อิหร่าน อเมริกาเป็นคนที่เข้ามายุ่งกับการเมืองของพวกเขาก่อน</div>
             <div class="ex-jp"><strong>イランの視点から</strong>、アメリカが先に彼らの政治に介入してきた。</div>
